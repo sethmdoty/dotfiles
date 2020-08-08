@@ -30,6 +30,7 @@ dotfiles: ## Installs the dotfiles.
 	cp -f ${PWD}/DefaultKeyBinding.dict ${HOME}/Library/KeyBindings/
 	cp -f ${PWD}/homebrew.gpg.gpg-agent.plist ${HOME}/Library/LaunchAgents/}
 	cp -f ${PWD}/link-ssh-auth-sock.plist ${HOME}/Library/LaunchAgents/
+	ln -s Library/Mobile\ Documents/com\~apple\~CloudDocs/org ~/org
 	git update-index --skip-worktree ${PWD}/.gitconfig;
 
 .PHONY: ohmyzsh
