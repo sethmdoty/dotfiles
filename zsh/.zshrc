@@ -1,15 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/sethdoty/.oh-my-zsh"
-#ZSH_DISABLE_COMPFIX="true"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="gentoo"
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -26,8 +26,14 @@ ZSH_THEME="spaceship"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -62,13 +68,26 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( git z gpg-agent tmux docker poetry golang kubectl terraform osx zsh-completions zsh-syntax-highlighting)
-#needed for zsh-completions
-autoload -U compinit && compinit
+plugins=( git z gpg-agent docker kubectl golang osx terraform poetry pyenv)
+
 source $ZSH/oh-my-zsh.sh
-#iterm2 integration
-source ~/.iterm2_shell_integration.zsh
+
 # User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -79,32 +98,18 @@ source ~/.iterm2_shell_integration.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-# Needed for emacs vterm integration
-function vterm_printf(){
-    if [ -n "$TMUX" ]; then
-        # Tell tmux to pass the escape sequences through
-        # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
-        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
-    elif [ "${TERM%%-*}" = "screen" ]; then
-        # GNU screen (screen, screen-256color, screen-256color-bce)
-        printf "\eP\e]%s\007\e\\" "$1"
-    else
-        printf "\e]%s\e\\" "$1"
-    fi
-}
-export PULUMI_PYTHON_CMD=python3
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
+export GCP_APPLICATION_CREDENTIALS=/Users/sethdoty/Documents/gcp-creds.json
+export GOOGLE_CREDENTIALS=/Users/sethdoty/Documents/gcp-creds.json
 eval $(thefuck --alias)
-eval "$(pyenv init -)"
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+#eval "$(pyenv init -)"
 
 source /Users/sethdoty/Library/Preferences/org.dystroy.broot/launcher/bash/br
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='exa --long --git'
 alias cat='bat -p'
-alias ec="emacsclient --c"
-alias man="batman"
