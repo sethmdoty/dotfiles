@@ -24,7 +24,6 @@ dotfiles: ## Installs the dotfiles.
 	stow emacs
 	stow git
 	stow mail
-	stow tmux
 	stow zsh
 	cp -f ${PWD}/pgp/gpg.conf ${HOME}/.gnupg/gpg.conf;
 	cp -f ${PWD}/gpg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf;
