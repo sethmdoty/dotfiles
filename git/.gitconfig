@@ -1,3 +1,7 @@
 [user]
 	name = Seth Doty
-	email = seth.doty@posteo.net
+	email = seth.doty@objectpartners.com
+[init]
+	templateDir = /Users/sethdoty/.git-template
+[core]
+	excludesfile = /Users/sethdoty/.gitignore_global
