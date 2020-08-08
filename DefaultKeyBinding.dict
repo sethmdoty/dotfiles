@@ -1,0 +1,46 @@
+/* 
+INSTALL:
+Rename this file to DefaultKeyBinding.dict
+Then, place the file in this dir:
+~/Library/KeyBindings/DefaultKeyBinding.dict
+Create the KeyBindings dir if you don't have it already.
+
+Now, launch or re-launch any application, such as TextEdit. The app should now use Emacs keybinding.
+
+REFERENCES:
+Prefix	Meaning
+~	⌥ Option key
+$	⇧ Shift key
+^	^ Control key
+@	⌘ Command key
+#	keys on number pad
+
+*/
+
+{
+"^c" = "moveUp:";
+"^n" = "moveDown:";
+"^f" = "moveLeft:";
+"^b" = "moveRight:";
+
+"@f" = "moveWordRight:";
+"@b" = "moveWordLeft:";
+"^a" = "moveToBeginningOfLine:";
+"^e" = "moveToEndOfLine:";
+
+"@v" = "pageUp:";
+"^v" = "pageDown:";
+"^g" = "_cancelKey:";         
+
+"^G" = ("moveToBeginningOfParagraph:", "moveLeft");
+"^R" = ("moveToEndOfParagraph:", "moveRight");
+
+"^H" = "moveToBeginningOfDocument:";
+"^N" = "moveToEndOfDocument:";
+
+"^w" = "cut:";
+"^W" = ("selectAll:", "cut:");
+"@w" = "copy:";
+"@w" = ("selectAll:", "copy:");
+"^y" = "paste:";
+}
