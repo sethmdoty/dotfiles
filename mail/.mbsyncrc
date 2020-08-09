@@ -13,8 +13,8 @@ Account icloud
 
 MaildirStore icloud-local
 SubFolders Verbatim
-Path ~/.mbox/icloud/
-Inbox ~/.mbox/icloud/inbox
+Path ~/.mail/icloud/
+Inbox ~/.mail/icloud/inbox
 
 #
 # Channels and Groups 
@@ -41,8 +41,8 @@ IMAPStore gmail-remote
 Account gmail
 
 MaildirStore gmail-local
-Path ~/.mbox/gmail/
-Inbox ~/.mbox/gmail/inbox
+Path ~/.mail/gmail/
+Inbox ~/.mail/gmail/inbox
 
 Channel gmail-default
 Master :gmail-remote:
@@ -64,37 +64,6 @@ Channel gmail-junk
 Master :gmail-remote:"[Gmail]/Spam"
 slave  :gmail-local:JunkCreate
 
-Create Both
-Expunge Both
-SyncState *
-
-####Posteo#######
-IMAPAccount posteo
-Host posteo.de
-User sethmdoty@posteo.net
-PassCmd "security find-generic-password -s mbsync-posteo-password -w"
-Port 993
-SSLType IMAPS
-SSLVersions TLSv1.2
-AuthMechs PLAIN
-
-IMAPStore posteo-remote
-Account posteo
-
-MaildirStore posteo-local
-SubFolders Verbatim
-Path ~/.mbox/posteo/
-Inbox ~/.mbox/posteo/INBOX
-
-#
-# Channels and Groups
-# (so that we can rename local directories and flatten the hierarchy)
-#
-#
-Channel posteo-folders
-Master :posteo-remote:
-Slave :posteo-local:
-Patterns *
 Create Both
 Expunge Both
 SyncState *
