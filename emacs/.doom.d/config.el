@@ -506,7 +506,7 @@
 				   ( smtpmail-smtp-server . "" )
                    ( user-full-name . "Seth Doty" )
 				   ( mu4e-trash-folder . "/icloud/Deleted Messages" )
-				   ( mu4e-refile-folder . "/icloud/All Mail" )
+				   ( mu4e-refile-folder . "/icloud/Archive" )
                                    (mu4e-sent-folder . "/icloud/Sent Messages")
 				   ( mu4e-drafts-folder . "/icloud/Drafts" )
                    ( mu4e-compose-signature  .
