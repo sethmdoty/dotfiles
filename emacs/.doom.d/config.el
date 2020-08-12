@@ -433,6 +433,13 @@
         message-sendmail-extra-arguments '("--read-envelope-from"); , "--read-recipients")
         message-send-mail-function 'message-send-mail-with-sendmail))
 ;;
+;;Lets set the sync interval
+(after! mu4e
+  (setq
+  mu4e-get-mail-command "/usr/local/bin/mbsync -a"   ;; or fetchmail, or ...
+  mu4e-update-interval 300))           ;;update every 5 minutes
+;;
+;;
 ;; Lets try to guess the context of the account when I compose a message
 ;;
 (after! mu4e
