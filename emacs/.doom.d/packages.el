@@ -51,8 +51,6 @@
 ;
 (package! org-super-agenda :pin "dd0d104c26...")
 
-(package! org-ref :pin "9a8053f0b0...")
-
 (package! org-chef)
 
 (package! doct)

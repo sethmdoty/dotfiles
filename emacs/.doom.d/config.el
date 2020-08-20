@@ -135,10 +135,10 @@
 ;;
 ;;Org cite
 ;;
-(use-package! org-ref
-   :after org
-   :config
-   (setq org-ref-completion-library 'org-ref-ivy-cite))
+;; (use-package! org-ref
+;;    :after org
+;;    :config
+;;    (setq org-ref-completion-library 'org-ref-ivy-cite))
 ;;
 ;;Org SuperAgenda
 ;;
