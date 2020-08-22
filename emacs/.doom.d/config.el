@@ -412,17 +412,18 @@
 ;;mu4e
 ;;
 ;; Use gnus as my mail reader so I get inline images without much extra work
-;; 
+;;
+(after! mu4e
 (setq mu4e-view-use-gnus t)
 ;;
 ;; Need to define the default email account for mu4e
-;; 
+;;
 (set-email-account! "icloud.com"
   '((mu4e-sent-folder       . "/icloud/Sent Messages")
     (mu4e-drafts-folder     . "/icloud/Drafts")
     (mu4e-trash-folder      . "/icloud/Deleted Messages")
     (mu4e-refile-folder     . "/icloud/All Mail"))
-  t)
+  t))
 ;;
 ;; Set mu4e to use external msmtp
 ;; 
@@ -471,7 +472,7 @@
 ;;
 ;; Bookmarks for common searches that I use.  Its a mail app, it needs an Inbox....
 ;; 
-  (setq mu4e-bookmarks '(("(maildir:/icloud/inbox OR maildir:/gmail/inbox)" "Inbox" ?i)
+  (setq mu4e-bookmarks '(("(maildir:/icloud/inbox OR maildir:/gmail/Inbox)" "Inbox" ?i)
 			 ("flag:unread" "Unread messages" ?u)
 			 ("date:today..now" "Today's messages" ?t)
 			 ("date:7d..now" "Last 7 days" ?w)

@@ -5,3 +5,5 @@
 	templateDir = /Users/sethdoty/.git-template
 [core]
 	excludesfile = /Users/sethdoty/.gitignore_global
+[pull]
+	rebase = false
