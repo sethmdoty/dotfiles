@@ -49,7 +49,7 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 ;
-(package! org-super-agenda :pin "dd0d104c26...")
+(package! org-super-agenda)
 
 (package! org-chef)
 
