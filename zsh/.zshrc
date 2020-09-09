@@ -1,115 +1,164 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/sethdoty/.oh-my-zsh"
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="spaceship"
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-rust \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-bin-gem-node
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+### End of Zinit's installer chunk
+## Themes #####
+#zinit light denysdovhan/spaceship-prompt
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+## Path
+typeset -gU PATH path=(
+  $path
+  .
+)
+zinit light-mode for id-as'brew/shellenv' atclone'brew shellenv > brew-shellenv.zsh' \
+  atpull'!%atclone' run-atpull src'brew-shellenv.zsh' zdharma/null
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+### OMZ #######
+zinit snippet OMZ::plugins/git/git.plugin.zsh
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+#########
+# Advanced auto-completion
+# zstyle ':autocomplete:*' groups always
+zinit light-mode for marlonrichert/zsh-autocomplete
+# source ~/.zinit/plugins/marlonrichert---zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Automatic `pipenv shell`
+# Must come AFTER initializing the prompt.
+# Requires `brew install pipenv`.
+zinit light-mode for MichaelAquilina/zsh-autoswitch-virtualenv
+zinit light-mode for id-as'pipenv/completion' \
+  atclone'pipenv --completion > pipenv-completion.zsh' atpull'!%atclone' run-atpull \
+  src'pipenv-completion.zsh' zdharma/null
 
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# Sensible defaults
+zstyle ':prezto:*:*' color 'yes'
+zinit light-mode for \
+  id-as'prezto/environment' \
+    https://github.com/sorin-ionescu/prezto/blob/master/modules/environment/init.zsh \
+  id-as'prezto/history' \
+    https://github.com/sorin-ionescu/prezto/blob/master/modules/history/init.zsh \
+  id-as'prezto/directory' \
+    https://github.com/sorin-ionescu/prezto/blob/master/modules/directory/init.zsh
+HISTSIZE=200000
+SAVEHIST=100000
 
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+# Environment variables
+export LANG='en_US.UTF-8'
+export WORDCHARS='*?~&|;!#$%^'
+export VISUAL='code'
+export EDITOR='emacsclient'
+export PAGER='less'
+export LESS='-g -i -M -R -S -w -z-4'
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+# History settings
+setopt histfcntllock histreduceblanks NO_histignorespace
 
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+# History editing tools
+local key_codes=( '^Q' '^[Q' '^[q' )
+eval 'bindkey '${(b)^key_codes}' push-line-or-edit; '
+zinit light-mode for marlonrichert/zsh-hist
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+# Bash/Readline compatibility
+# Zsh's default kills the whole line.
+bindkey '^U' backward-kill-line
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+# Prezto/Emacs-undo-tree compatibility
+# Zsh does not have a default keybinding for this.
+bindkey '^[_' redo
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+# Enable alt-h help function.
+unalias run-help
+autoload -Uz  run-help    run-help-git  run-help-ip   run-help-openssl \
+              run-help-p4 run-help-sudo run-help-svk  run-help-svn
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+# Pattern matching support for `cp`, `ln` and `mv`
+# See http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#index-zmv
+autoload -Uz zmv
+alias zcp='zmv -Civ'
+alias zln='zmv -Liv'
+alias zmv='zmv -Miv'
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# Fuzzy search
+# Requires `brew install fd`, `brew install fzf` and `brew install ripgrep`
+export FZF_DEFAULT_COMMAND='fd -HI --color=always'
+zinit light-mode for \
+  id-as'fzf/completion' https://github.com/junegunn/fzf/blob/master/shell/completion.zsh \
+  id-as'fzf/key-bindings' https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
+alias find='fd -HI -E=".git" --color=always'
+alias fzf='fzf --ansi --exact --multi --no-sort'
+alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --no-heading --sort=path'
 
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=( git z gpg-agent docker kubectl golang osx terraform poetry pyenv)
+##########
+# Better `ls`
+# Requires `brew install exa`.
+alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
+ll() {
+  ls -ghlmu --time-style=long-iso $@ | $PAGER
+}
+alias tree='ll -T -L=3'
+compdef _ls ll ll=ls
 
-source $ZSH/oh-my-zsh.sh
+# Colors for 'ls' and completions
+# Requires `brew install coreutils`.
+zinit light-mode for atclone'gdircolors -b LS_COLORS > clrs.zsh' atpull'%atclone' pick'clrs.zsh' \
+  nocompile'!' atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS
 
-# User configuration
+# Color `grep`
+alias grep='grep --color=always'
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# Syntax highlighting in `less`
+# Requires `brew install bat`.
+alias less='bat --pager "$PAGER $LESS" --style=snip,header --color=always'
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# Log file highlighting in `tail`
+# Requires `brew install multitail`.
+alias tail='multitail -Cs --follow-all'
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# zinit light-mode for zsh-users/zsh-autosuggestions
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Command-line syntax highlighting
+# Must be AFTER after all calls to `compdef`, `zle -N` or `zle -C`.
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
+# zinit light-mode for zdharma/fast-syntax-highlighting
+zinit light-mode for zsh-users/zsh-syntax-highlighting
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Lazy `pyenv init`
+# Requires `brew install pyenv`.
+zinit light-mode for davidparsson/zsh-pyenv-lazy
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
-export GCP_APPLICATION_CREDENTIALS=/Users/sethdoty/Documents/gcp-creds.json
-export GOOGLE_CREDENTIALS=/Users/sethdoty/Documents/gcp-creds.json
-eval $(thefuck --alias)
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-#eval "$(pyenv init -)"
+## autopair ###
+zinit light-mode for hlissner/zsh-autopair
+# Auto-suggest how to install missing commands.
+zinit light-mode for id-as'brew/command-not-found' \
+  https://github.com/Homebrew/homebrew-command-not-found/blob/master/handler.sh
 
-source /Users/sethdoty/Library/Preferences/org.dystroy.broot/launcher/bash/br
-  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# thefuck
+zplugin light laggardkernel/zsh-thefuck
 
-alias ls='exa --long --git'
-alias cat='bat -p'
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
