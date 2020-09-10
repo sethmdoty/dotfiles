@@ -45,7 +45,8 @@ zinit snippet PZT::modules/helper/init.zsh
 # Advanced auto-completion
 # zstyle ':autocomplete:*' groups always
 zinit light-mode for marlonrichert/zsh-autocomplete
-zinit snippet PZT::modules/docker
+zinit ice as"completion"
+zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 # source ~/.zinit/plugins/marlonrichert---zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Automatic `pipenv shell`
