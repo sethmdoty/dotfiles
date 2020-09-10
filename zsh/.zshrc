@@ -40,11 +40,12 @@ zinit light-mode for id-as'brew/shellenv' atclone'brew shellenv > brew-shellenv.
 
 ### OMZ #######
 zinit snippet OMZ::plugins/git/git.plugin.zsh
-
+zinit snippet PZT::modules/helper/init.zsh
 #########
 # Advanced auto-completion
 # zstyle ':autocomplete:*' groups always
 zinit light-mode for marlonrichert/zsh-autocomplete
+zinit snippet PZT::modules/docker
 # source ~/.zinit/plugins/marlonrichert---zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Automatic `pipenv shell`
@@ -70,7 +71,7 @@ SAVEHIST=100000
 # Environment variables
 export LANG='en_US.UTF-8'
 export WORDCHARS='*?~&|;!#$%^'
-export VISUAL='code'
+export VISUAL='emacs -c'
 export EDITOR='emacsclient'
 export PAGER='less'
 export LESS='-g -i -M -R -S -w -z-4'

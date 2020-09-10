@@ -25,7 +25,7 @@ dotfiles: ## Installs the dotfiles.
 	stow git
 	stow mail
 	stow zsh
-	cp -f ${PWD}/pgp/gpg.conf ${HOME}/.gnupg/gpg.conf;
+	cp -f ${PWD}/gpg/gpg.conf ${HOME}/.gnupg/gpg.conf;
 	cp -f ${PWD}/gpg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf;
 	cp -f ${PWD}/DefaultKeyBinding.dict ${HOME}/Library/KeyBindings/
 	cp -f ${PWD}/homebrew.gpg.gpg-agent.plist ${HOME}/Library/LaunchAgents/}
