@@ -1,0 +1,4 @@
+weechat/.weechat/logs/*
+*.log
+sec.conf
+irc.conf
