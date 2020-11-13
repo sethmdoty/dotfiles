@@ -42,6 +42,10 @@ zinit light-mode for id-as'brew/shellenv' atclone'brew shellenv > brew-shellenv.
 zinit snippet OMZ::plugins/git/git.plugin.zsh
 zinit snippet PZT::modules/helper/init.zsh
 #########
+#####DIRENV######
+zinit as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
+    atpull'%atclone' pick"direnv" src"zhook.zsh" for \
+        direnv/direnv
 # Advanced auto-completion
 # zstyle ':autocomplete:*' groups always
 zinit light-mode for marlonrichert/zsh-autocomplete
