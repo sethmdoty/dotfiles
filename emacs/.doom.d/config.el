@@ -1,413 +1,418 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
-;; Place your private configuration here! Remember, you do not need to run 'doom
-;; sync' after modifying this file!
-
-
-;; Some functionality uses this to identify you, e.g. GPG configuration, email
-;; clients, file templates and snippets.
 (setq user-full-name "Seth Doty"
-      user-mail-address "sethmdoty@icloud.com")
-;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
-;; are the three important ones:
-;;
-;; + `doom-font'
-;; + `doom-variable-pitch-font'
-;; + `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;;
-;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
-;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "JetBrains Mono" :size 12 :weight 'semi-light)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 24)
-      doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 13)
-      doom-serif-font (font-spec :family "Source Sans Pro" :weight 'light))
+      user-mail-address "sethmdoty@posteo.net"
+      doom-scratch-intial-major-mode 'lisp-interaction-mode
+      doom-font (font-spec :family "JetBrains Mono" :size 12)
+      doom-variable-pitch-font (font-spec :family "JetBrains Mono")
+      doom-serif-font (font-spec :family "Source Sans Pro")
+      doom-theme 'doom-nord
+      display-line-numbers-type t
+      delete-by-moving-to-trash t
+      tab-width 4
+      uniquify-buffer-name-style 'forward
+      window-combination-resize t
+      x-stretch-cursor t
+      load-prefer-newer t
 
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-nord)
+      company-idle-delay 0
+      lsp-ui-sideline-enable t
+      lsp-enable-symbol-highlighting nil)
 
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq projectile-project-search-path '("~/workspace/"))
 
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(after! ivy
+  (add-to-list 'ivy-re-builders-alist '(counsel-projectile-find-file . ivy--regex-plus)))
 
-;;General improvements
+(setq org-directory "~/Sync/org/"
+      org-adapt-indentation nil
+      org-habit-show-habits-only-for-today t)
 
-(setq-default
- delete-by-moving-to-trash t                      ; Delete files to trash
- tab-width 4                                      ; Set width for tabs
- uniquify-buffer-name-style 'forward              ; Uniquify buffer names
- window-combination-resize t                      ; take new window space from all other windows (not just current)
- x-stretch-cursor t)                              ; Stretch cursor to the glyph width
+(setq search-highlight t
+      search-whitespace-regexp ".*?"
+      isearch-lax-whitespace t
+      isearch-regexp-lax-whitespace nil
+      isearch-lazy-highlight t
+      isearch-lazy-count t
+      lazy-count-prefix-format " (%s/%s) "
+      lazy-count-suffix-format nil
+      isearch-yank-on-move 'shift
+      isearch-allow-scroll 'unlimited)
 
-(delete-selection-mode 1)                         ; Replace selection when inserting text
-(global-subword-mode 1)                           ; Iterate through CamelCase words
-
-;; Here are some additional functions/macros that could help you configure Doom:
-;;
-;; - `load!' for loading external *.el files relative to this one
-;; - `use-package!' for configuring packages
-;; - `after!' for running code after a package has loaded
-;; - `add-load-path!' for adding directories to the `load-path', relative to
-;;   this file. Emacs searches the `load-path' when you load packages with
-;;   `require' or `use-package'.
-;; - `map!' for binding new keys
-;;
-;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
-;; This will open documentation for it, including demos of how they are used.
-;;
-;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
-;; they are implemented.
-;;
-;;Python Stuff
-(after! lsp-python-ms
-  (set-lsp-priority! 'mspyls 1))
-(setq org-babel-python-command "python3")
+(setq direnv-always-show-summary nil)
 
 (after! dired
-  (setq dired-listing-switches "-aBhl  --group-directories-first"
+  (setq dired-listing-switches "-aBhl"
         dired-dwim-target t
         dired-recursive-copies (quote always)
         dired-recursive-deletes (quote top)))
 
-;; ORG
-(setq org-agenda-files (list "~/org/org-files/")
-      org-use-property-inheritance t
-      org-log-done 'time
-      org-list-allow-alphabetical t
-      org-export-in-backgroup t
-      org-catch-invisible-edits 'smart)
-;;Org task keywords
+(use-package! dired-narrow
+  :commands (dired-narrow-fuzzy)
+  :init
+  (map! :map dired-mode-map
+        :desc "narrow" "/" #'dired-narrow-fuzzy))
+
+(use-package! smerge-mode
+  :bind (("C-c h s" . my/hydra-smerge/body))
+  :init
+  (defun my/enable-smerge-maybe ()
+    "Auto-enable `smerge-mode' when merge conflict is detected."
+    (save-excursion
+      (goto-char (point-min))
+      (when (re-search-forward "^<<<<<<< " nil :noerror)
+        (smerge-mode 1))))
+  (add-hook 'find-file-hook #'my/enable-smerge-maybe :append)
+  :config
+  (defhydra my/hydra-smerge (:color pink
+                                        :hint nil
+                                        :pre (smerge-mode 1)
+                                        ;; Disable `smerge-mode' when quitting hydra if
+                                        ;; no merge conflicts remain.
+                                        :post (smerge-auto-leave))
+    "
+   ^Move^       ^Keep^               ^Diff^                 ^Other^
+   ^^-----------^^-------------------^^---------------------^^-------
+   _n_ext       _b_ase               _<_: upper/base        _C_ombine
+   _p_rev       _u_pper           g   _=_: upper/lower       _r_esolve
+   ^^           _l_ower              _>_: base/lower        _k_ill current
+   ^^           _a_ll                _R_efine
+   ^^           _RET_: current       _E_diff
+   "
+    ("n" smerge-next)
+    ("p" smerge-prev)
+    ("b" smerge-keep-base)
+    ("u" smerge-keep-upper)
+    ("l" smerge-keep-lower)
+    ("a" smerge-keep-all)
+    ("RET" smerge-keep-current)
+    ("\C-m" smerge-keep-current)
+    ("<" smerge-diff-base-upper)
+    ("=" smerge-diff-upper-lower)
+    (">" smerge-diff-base-lower)
+    ("R" smerge-refine)
+    ("E" smerge-ediff)
+    ("C" smerge-combine-with-next)
+    ("r" smerge-resolve)
+    ("k" smerge-kill-current)
+    ("q" nil "cancel" :color blue)))
+
+(use-package! magit
+  :init
+  (map! "s-g" #'magit-status
+        "C-c g" #'magit-status
+        "s-G" #'magit-blame-addition
+        "C-c G" #'magit-blame-addition)
+  :config
+  (transient-append-suffix 'magit-log "a"
+    '("w" "Wip" magit-wip-log-current))
+  (magit-define-popup-switch 'magit-log-popup
+                             ?m "Omit merge commits" "--no-merges")
+  (transient-append-suffix 'magit-log "-A"
+    '("-m" "Omit merge commits" "--no-merges")))
+
+(use-package! git-link
+  :commands
+  (git-link git-link-commit git-link-homepage)
+  :custom
+  (git-link-use-commit t))
+
+(after! org
+  (require 'org-habit)
+
+  (with-eval-after-load 'flycheck
+    (flycheck-add-mode 'proselint 'org-mode))
+
+  (map! :leader
+        :prefix "n"
+        "c" #'org-capture)
+  (map! :map org-mode-map
+        "M-n" #'outline-next-visible-heading
+        "M-p" #'outline-previous-visible-heading)
+  (setq org-src-window-setup 'current-window
+        org-return-follows-link t
+        org-babel-load-languages '((emacs-lisp . t)
+                                   (python . t)
+                                   (sh . t)
+                                   (R . t))
+        org-confirm-babel-evaluate nil
+        org-catch-invisible-edits 'show
+        org-startup-folded 'overview
+        org-ellipsis " [...] "
+        org-preview-latex-image-directory "/tmp/ltximg/"
+        org-structure-template-alist '(("a" . "export ascii")
+                                       ("c" . "center")
+                                       ("C" . "comment")
+                                       ("e" . "example")
+                                       ("E" . "export")
+                                       ("h" . "export html")
+                                       ("l" . "export latex")
+                                       ("q" . "quote")
+                                       ("s" . "src")
+                                       ("v" . "verse")
+                                       ("el" . "src emacs-lisp")
+                                       ("d" . "definition")
+                                       ("t" . "theorem")))
+
+  (defun my/org-archive-done-tasks ()
+    "Archive all done tasks."
+    (interactive)
+    (org-map-entries 'org-archive-subtree "/DONE" 'file))
+  (require 'find-lisp)
+  (setq my/org-agenda-directory (file-truename "~/Sync/org/org-files/"))
+  (setq org-agenda-files
+        (find-lisp-find-files my/org-agenda-directory "\.org$")))
+
+(setq org-capture-templates
+        `(("i" "Inbox" entry (file ,(expand-file-name "todo.org" my/org-agenda-directory))
+           ,(concat "* TODO %?\n"
+                    "/Entered on/ %u"))))
+
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "NEXT(n)" "IN PROGRESS(I)" "|" "DONE(d)")
+      '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
         (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)")))
-;; Org clocking config
+
 (setq org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil)
-;;Org mode tag listing
+
 (setq org-tag-alist '(("@errand" . ?e)
                       ("@office" . ?o)
                       ("@home" . ?h)
+                      ("@school" . ?s)
                       (:newline)
                       ("CANCELLED" . ?c)))
-;;Org Roam Configuration
-(use-package! org-roam
+
+(setq org-agenda-prefix-format
+      '((agenda . " %i %-12:c%?-12t% s")
+        (todo   . " ")
+        (tags   . " %i %-12:c")
+        (search . " %i %-12:c")))
+
+(setq org-fast-tag-selection-single-key nil)
+(setq org-refile-use-outline-path 'file
+      org-outline-path-complete-in-steps nil)
+(setq org-refile-allow-creating-parent-nodes 'confirm
+      org-refile-targets '((org-agenda-files . (:level . 1))))
+
+(defvar my/org-current-effort "1:00"
+  "Current effort for agenda items.")
+
+(map! :map org-agenda-mode-map
+      "i" #'org-agenda-clock-in
+      "I" #'my/clock-in-and-advance
+      "R" #'org-agenda-refile)
+
+(defun my/advance-todo ()
+  (org-todo 'right)
+  (remove-hook 'org-clock-in-hook #'my/advance-todo))
+
+(defun my/clock-in-and-advance ()
+  (interactive)
+  (add-hook 'org-clock-in-hook 'my/advance-todo)
+  (org-agenda-clock-in))
+
+(use-package! org-journal
   :after org
+  :custom
+  (org-journal-date-prefix "#+title: ")
+  (org-journal-enable-agenda-integration t)
+  (org-journal-dir (format "~/Sync/org/roam/" (format-time-string "%Y")))
+  (org-journal-file-format "%Y-%m-%d.org")
+  (org-journal-date-format "%A, %d %B %Y"))
+
+(use-package! org-clock-convenience
+  :bind (:map org-agenda-mode-map
+              ("<S-up>" . org-clock-convenience-timestamp-up)
+              ("<S-down>" . org-clock-convenience-timestamp-down)
+              ("o" . org-clock-convenience-fill-gap)
+              ("e" . org-clock-convenience-fill-gap-both)))
+
+(use-package! org-agenda
+  :init
+  (map! "<f1>" #'my/switch-to-agenda)
+  (setq org-agenda-block-separator nil
+        org-agenda-start-with-log-mode t
+        org-agenda-skip-scheduled-if-done t
+        org-agenda-skip-deadline-if-done t)
+  (defun my/switch-to-agenda ()
+    (interactive)
+    (org-agenda nil " "))
+  :config
+  (defun my/is-project-p ()
+  "Any task with a todo keyword subtask"
+  (save-restriction
+    (widen)
+    (let ((has-subtask)
+          (subtree-end (save-excursion (org-end-of-subtree t)))
+          (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+      (save-excursion
+        (forward-line 1)
+        (while (and (not has-subtask)
+                    (< (point) subtree-end)
+                    (re-search-forward "^\*+ " subtree-end t))
+          (when (member (org-get-todo-state) org-todo-keywords-1)
+            (setq has-subtask t))))
+      (and is-a-task has-subtask))))
+
+  (setq org-columns-default-format "%40ITEM(Task) %Effort(EE){:} %CLOCKSUM(Time Spent) %SCHEDULED(Scheduled) %DEADLINE(Deadline)")
+  (setq org-agenda-custom-commands `((" " "Agenda"
+                                      ((agenda ""
+                                               ((org-agenda-span 'week)
+                                                (org-deadline-warning-days 365)))
+                                       (todo "TODO"
+                                             ((org-agenda-overriding-header "Inbox")
+                                              (org-agenda-files '(,(expand-file-name "todo.org" my/org-agenda-directory)))))
+                                       (todo "NEXT"
+                                             ((org-agenda-overriding-header "In Progress")
+                                              (org-agenda-files '(,(expand-file-name "projects.org" my/org-agenda-directory)))))
+                                       (todo "TODO"
+                                             ((org-agenda-overriding-header "Active Projects")
+                                              (org-agenda-skip-function #'my/skip-projects)
+                                              (org-agenda-files '(,(expand-file-name "projects.org" my/org-agenda-directory))))))))))
+
+(use-package! org-roam
   :commands (org-roam-insert org-roam-find-file org-roam-switch-to-buffer org-roam)
   :hook
   (after-init . org-roam-mode)
   :init
-  (setq org-roam-directory "/Users/sethdoty/org/roam/"
-        org-roam-db-location "/Users/sethdoty/org/roam/org-roam.db"
+  (map! :leader
+        :prefix "n"
+        :desc "org-roam" "l" #'org-roam
+        :desc "org-roam-insert" "i" #'org-roam-insert
+        :desc "org-roam-switch-to-buffer" "b" #'org-roam-switch-to-buffer
+        :desc "org-roam-find-file" "f" #'org-roam-find-file
+        :desc "org-roam-show-graph" "g" #'org-roam-show-graph
+        :desc "org-roam-insert" "i" #'org-roam-insert
+        :desc "org-roam-capture" "c" #'org-roam-capture
+        :desc "org-roam-dailies-capture-today" "j" #'org-roam-dailies-capture-today)
+  (setq org-roam-directory (file-truename "~/Sync/org/roam/")
         org-roam-db-gc-threshold most-positive-fixnum
         org-roam-graph-exclude-matcher "private"
         org-roam-tag-sources '(prop last-directory)
         org-id-link-to-org-use-id t)
   :config
   (setq org-roam-capture-templates
-             '(("d" "default" plain (function org-roam--capture-get-point)
-     "\n-tags::\n%?"
-     :file-name "%<%Y%m%d%H%M%S>-${slug}"
-     :head "#+TITLE: ${title}"
-     :unnarrowed t))))
-;; Org Journal Setup
-(use-package! org-journal
-  :after org
-  :custom
-  (org-journal-date-prefix "#+title: ")
-  (org-journal-enable-agenda-integration t)
-  (org-journal-dir (format "/Users/sethdoty/org/roam/" (format-time-string "%Y")))
-  (org-journal-file-format "%Y-%m-%d.org")
-  (org-journal-date-format "%A, %d %B %Y"))
-;;
-;; Gotta get that sweet org-chef auto insert
-;;
-(use-package! org-chef
-  :after org
-  :commands (org-chef-insert-recipe org-chef-get-recipe-from-url))
-;;
-;;Org cite
-;;
-;; (use-package! org-ref
-;;    :after org
-;;    :config
-;;    (setq org-ref-completion-library 'org-ref-ivy-cite))
-;;
-;;Org SuperAgenda
-;;
-(use-package! org-super-agenda
-  :commands (org-super-agenda-mode))
-(after! org-agenda
-  (org-super-agenda-mode))
+        '(("d" "default" plain (function org-roam--capture-get-point)
+           ":tags::\n%?"
+           :file-name "%<%Y%m%d%H%M%S>-${slug}"
+           :head "#+title: ${title}\n"
+           :unnarrowed t)
+          ("p" "private" plain (function org-roam-capture--get-point)
+           ":tags::\n%?"
+           :file-name "private/%<%Y%m%d%H%M%S>-${slug}"
+           :head "#+title: ${title}\n"
+           :unnarrowed t)))
+  (setq org-roam-dailies-directory "daily/")
+  (setq org-roam-dailies-capture-templates
+      '(("d" "default" entry
+         #'org-roam-capture--get-point
+         "* %?"
+         :file-name "daily/%<%Y-%m-%d>"
+         :head "#+title: %<%Y-%m-%d>\n\n")))
+  (set-company-backend! 'org-mode '(company-capf)))
 
-(setq org-agenda-skip-scheduled-if-done t
-      org-agenda-skip-deadline-if-done t
-      org-agenda-include-deadlines t
-      org-agenda-block-separator nil
-      org-agenda-tags-column 100 ;; from testing this seems to be a good value
-      org-agenda-compact-blocks t)
+(after! company
+  (map! "M-/" #'company-complete))
 
-(setq org-agenda-custom-commands
-      '(("o" "Overview"
-         ((agenda "" ((org-agenda-span 'day)
-                      (org-super-agenda-groups
-                       '((:name "Today"
-                                :time-grid t
-                                :date today
-                                :todo "TODAY"
-                                :scheduled today
-                                :order 1)))))
-          (alltodo "" ((org-agenda-overriding-header "")
-                       (org-super-agenda-groups
-                        '((:name "Next to do"
-                                 :todo "NEXT"
-                                 :order 1)
-                          (:name "Important"
-                                 :tag "Important"
-                                 :priority "A"
-                                 :order 6)
-                          (:name "Due Today"
-                                 :deadline today
-                                 :order 2)
-                          (:name "Due Soon"
-                                 :deadline future
-                                 :order 8)
-                          (:name "Overdue"
-                                 :deadline past
-                                 :face error
-                                 :order 7)
-                          (:name "Assignments"
-                                 :tag "Assignment"
-                                 :order 10)
-                          (:name "Issues"
-                                 :tag "Issue"
-                                 :order 12)
-                          (:name "Emacs"
-                                 :tag "Emacs"
-                                 :order 13)
-                          (:name "Projects"
-                                 :tag "Project"
-                                 :order 14)
-                          (:name "Research"
-                                 :tag "Research"
-                                 :order 15)
-                          (:name "To read"
-                                 :tag "Read"
-                                 :order 30)
-                          (:name "Waiting"
-                                 :todo "WAITING"
-                                 :order 20)
-                          (:name "Trivial"
-                                 :priority<= "E"
-                                 :tag ("Trivial" "Unimportant")
-                                 :todo ("SOMEDAY" )
-                                 :order 90)
-                          (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
-;;
-;; Org Capture
-;;
-;; Doct allows an easy to use org-capture template setup so I can actually read this stuff
-;; 
-(use-package! doct
-  :after org
-  :commands (doct))
+(after! (org-roam)
+  (winner-mode +1)
+  (map! :map winner-mode-map
+        "<M-right>" #'winner-redo
+        "<M-left>" #'winner-undo))
 
-(after! org-capture
-  (defun org-capture-select-template-prettier (&optional keys)
-    "Select a capture template, in a prettier way than default
-  Lisp programs can force the template by setting KEYS to a string."
-    (let ((org-capture-templates
-           (or (org-contextualize-keys
-                (org-capture-upgrade-templates org-capture-templates)
-                org-capture-templates-contexts)
-               '(("t" "Task" entry (file+headline "" "Tasks")
-                  "* TODO %?\n  %u\n  %a")))))
-      (if keys
-          (or (assoc keys org-capture-templates)
-              (error "No capture template referred to by \"%s\" keys" keys))
-        (org-mks org-capture-templates
-                 "Select a capture template\n━━━━━━━━━━━━━━━━━━━━━━━━━"
-                 "Template key: "
-                 `(("q" ,(concat (all-the-icons-octicon "stop" :face 'all-the-icons-red :v-adjust 0.01) "\tAbort")))))))
-  (advice-add 'org-capture-select-template :override #'org-capture-select-template-prettier)
+(use-package! org-download
+  :commands
+  org-download-dnd
+  org-download-yank
+  org-download-screenshot
+  org-download-dnd-base64
+  :init
+  (map! :map org-mode-map
+        "s-Y" #'org-download-screenshot
+        "s-y" #'org-download-yank)
+  (pushnew! dnd-protocol-alist
+            '("^\\(?:https?\\|ftp\\|file\\|nfs\\):" . +org-dragndrop-download-dnd-fn)
+            '("^data:" . org-download-dnd-base64))
+  (advice-add #'org-download-enable :override #'ignore)
+  :config
+  (defun +org/org-download-method (link)
+    (let* ((filename
+            (file-name-nondirectory
+             (car (url-path-and-query
+                   (url-generic-parse-url link)))))
+           ;; Create folder name with current buffer name, and place in root dir
+           (dirname (concat "./images/"
+                            (replace-regexp-in-string " " "_"
+                                                      (downcase (file-name-base buffer-file-name)))))
+           (filename-with-timestamp (format "%s%s.%s"
+                                            (file-name-sans-extension filename)
+                                            (format-time-string org-download-timestamp)
+                                            (file-name-extension filename))))
+      (make-directory dirname t)
+      (expand-file-name filename-with-timestamp dirname)))
+  :config
+  (setq org-download-screenshot-method
+        (cond (IS-MAC "screencapture -i %s")
+              (IS-LINUX
+               (cond ((executable-find "maim")  "maim -u -s %s")
+                     ((executable-find "scrot") "scrot -s %s")))))
+  (setq org-download-method '+org/org-download-method))
 
-  (defun org-mks-pretty (table title &optional prompt specials)
-    (save-window-excursion
-      (let ((inhibit-quit t)
-      (buffer (org-switch-to-buffer-other-window "*Org Select*"))
-      (prompt (or prompt "Select: "))
-      case-fold-search
-      current)
-        (unwind-protect
-      (catch 'exit
-        (while t
-          (erase-buffer)
-          (insert title "\n\n")
-          (let ((des-keys nil)
-          (allowed-keys '("\C-g"))
-          (tab-alternatives '("\s" "\t" "\r"))
-          (cursor-type nil))
-      ;; Populate allowed keys and descriptions keys
-      ;; available with CURRENT selector.
-      (let ((re (format "\\`%s\\(.\\)\\'"
-            (if current (regexp-quote current) "")))
-            (prefix (if current (concat current " ") "")))
-        (dolist (entry table)
-          (pcase entry
-            ;; Description.
-            (`(,(and key (pred (string-match re))) ,desc)
-             (let ((k (match-string 1 key)))
-         (push k des-keys)
-         ;; Keys ending in tab, space or RET are equivalent.
-         (if (member k tab-alternatives)
-             (push "\t" allowed-keys)
-           (push k allowed-keys))
-         (insert (propertize prefix 'face 'font-lock-comment-face) (propertize k 'face 'bold) (propertize "›" 'face 'font-lock-comment-face) "  " desc "…" "\n")))
-            ;; Usable entry.
-            (`(,(and key (pred (string-match re))) ,desc . ,_)
-             (let ((k (match-string 1 key)))
-         (insert (propertize prefix 'face 'font-lock-comment-face) (propertize k 'face 'bold) "   " desc "\n")
-         (push k allowed-keys)))
-            (_ nil))))
-      ;; Insert special entries, if any.
-      (when specials
-        (insert "─────────────────────────\n")
-        (pcase-dolist (`(,key ,description) specials)
-          (insert (format "%s   %s\n" (propertize key 'face '(bold all-the-icons-red)) description))
-          (push key allowed-keys)))
-      ;; Display UI and let user select an entry or
-      ;; a sub-level prefix.
-      (goto-char (point-min))
-      (unless (pos-visible-in-window-p (point-max))
-        (org-fit-window-to-buffer))
-      (let ((pressed (org--mks-read-key allowed-keys prompt)))
-        (setq current (concat current pressed))
-        (cond
-         ((equal pressed "\C-g") (user-error "Abort"))
-         ;; Selection is a prefix: open a new menu.
-         ((member pressed des-keys))
-         ;; Selection matches an association: return it.
-         ((let ((entry (assoc current table)))
-            (and entry (throw 'exit entry))))
-         ;; Selection matches a special entry: return the
-         ;; selection prefix.
-         ((assoc current specials) (throw 'exit current))
-         (t (error "No entry available")))))))
-    (when buffer (kill-buffer buffer))))))
-  (advice-add 'org-mks :override #'org-mks-pretty)
-  ;;
-  ;; Set my org file paths
-  ;; 
-  (setq +org-capture-recipies  "~/org/org-files/cookbook.org")
-  (setq +org-capture-todo-file "~/org/org-files/todo.org")
-  (setq +org-capture-central-project-notes-file "~/org/org-files/projects.org")
-  (setq +org-capture-central-project-todo-file "~/org/org-files/projects.org")
-  (setq +org-capture-links-file "~/org/org-files/links.org")
+(defun insert-date ()
+  "Insert a timestamp according to locale's date and time format."
+  (interactive)
+  (insert (format-time-string "%c" (current-time))))
 
-  (defun +doct-icon-declaration-to-icon (declaration)
-    "Convert :icon declaration to icon"
-    (let ((name (pop declaration))
-          (set  (intern (concat "all-the-icons-" (plist-get declaration :set))))
-          (face (intern (concat "all-the-icons-" (plist-get declaration :color))))
-          (v-adjust (or (plist-get declaration :v-adjust) 0.01)))
-      (apply set `(,name :face ,face :v-adjust ,v-adjust))))
+(after! mixed-pitch
+  (dolist (f (-filter (lambda (sym)
+                        (s-prefix? "company-" (symbol-name sym)))
+                      (face-list)))
+    (pushnew! mixed-pitch-fixed-pitch-faces f)))
 
-  (defun +doct-iconify-capture-templates (groups)
-    "Add declaration's :icon to each template group in GROUPS."
-    (let ((templates (doct-flatten-lists-in groups)))
-      (setq doct-templates (mapcar (lambda (template)
-                                     (when-let* ((props (nthcdr (if (= (length template) 4) 2 5) template))
-                                                 (spec (plist-get (plist-get props :doct) :icon)))
-                                       (setf (nth 1 template) (concat (+doct-icon-declaration-to-icon spec)
-                                                                      "\t"
-                                                                      (nth 1 template))))
-                                     template)
-                                   templates))))
+(defun my/open-with (arg)
+  "Open visited file in default external program.
+When in dired mode, open file under the cursor.
+With a prefix ARG always prompt for command to use."
+  (interactive "P")
+  (let* ((current-file-name
+          (if (eq major-mode 'dired-mode)
+              (dired-get-file-for-visit)
+            buffer-file-name))
+         (open (pcase system-type
+                 (`darwin "open")
+                 ((or `gnu `gnu/linux `gnu/kfreebsd) "xdg-open")))
+         (program (if (or arg (not open))
+                      (read-shell-command "Open current file with: ")
+                    open)))
+    (call-process program nil 0 nil current-file-name)))
 
-  (setq doct-after-conversion-functions '(+doct-iconify-capture-templates))
-;;
-;; We have just been making things pretty.  I should probably make some actual templates
-;; 
-  (add-transient-hook! 'org-capture-select-template
-    (setq org-capture-templates
-          (doct `(("Tasks" :keys "t"
-                   :icon ("inbox" :set "octicon" :color "yellow")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Tasks"
-                   :type entry
-                   :template ("* TODO %? %^G%{extra}"
-                              "%i %a")
-                   :children (("General Task" :keys "k"
-                               :icon ("inbox" :set "octicon" :color "yellow")
-                               :extra ""
-                               )
-                              ("Task with deadline" :keys "d"
-                               :icon ("timer" :set "material" :color "orange" :v-adjust -0.1)
-                               :extra "\nDEADLINE: %^{Deadline:}t"
-                               )
-                              ("Scheduled Task" :keys "s"
-                               :icon ("calendar" :set "octicon" :color "orange")
-                               :extra "\nSCHEDULED: %^{Start time:}t"
-                               )
+(map! "C-c o o" 'my/open-with)
+
+(use-package prog-mode
+  :config
+  (add-hook 'prog-mode-hook 'outline-minor-mode)
+  (add-hook 'prog-mode-hook 'hs-minor-mode))
+
+(use-package! company-tabnine
+  :when (featurep! :completion company)
+  :config
+  ;; Number the candidates (use M-1, M-2 etc to select completions).
+  (setq company-show-numbers t)
+
+  ;; Use the tab-and-go frontend.
+  ;; Allows TAB to select and complete at the same time.
+  (company-tng-configure-default)
+  (setq company-frontends
+        '(company-tng-frontend
+          company-pseudo-tooltip-frontend
+          company-echo-metadata-frontend))
+  )
+(add-to-list 'company-backends #'company-tabnine)
+
+(setq +lsp-company-backends '(
+                              company-files
+                              company-yasnippet
+                              :separate
+                              company-tabnine
                               ))
-                  ("Personal note" :keys "n"
-                   :icon ("sticky-note-o" :set "faicon" :color "green")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Inbox"
-                   :type entry
-                   :template ("* %?"
-                              "%i %a")
-                   )
-                  ("Cliplink" :keys "l"
-                   :icon ("sticky-note-o" :set "faicon" :color "blue")
-                   :file +org-capture-links-file
-                   :prepend t
-                   :headline "Links"
-                   :type entry
-                   :template ("* TODO %(org-cliplink-capture) \n
-                              %i %a")
-                   )
-                  ("Cookbook" :keys "b"
-                   :icon ("checklist" :set "octicon" :color "blue")
-                   :file +org-capture-recipies
-                   :prepend t
-                   :type entry
-                   :template ("%(org-chef-get-recipe-from-url)")
-                   )
-                  ("Email" :keys "f"
-                   :icon ("checklist" :set "octicon" :color "yellow")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :type entry
-                   :template ("* TODO %a by [[mailto:%:fromaddress][%:fromname]]\n%U\n\n%i%?\n"))
-                ("Project" :keys "p"
-                 :icon ("repo" :set "octicon" :color "silver")
-                   :prepend t
-                   :type entry
-                   :headline "Inbox"
-                   :template ("* %{time-or-todo} %?"
-                              "%i"
-                              "%a")
-                   :file ""
-                   :custom (:time-or-todo "")
-                   :children (("Project-local todo" :keys "t"
-                               :icon ("checklist" :set "octicon" :color "green")
-                               :time-or-todo "TODO"
-                               :file +org-capture-project-todo-file)
-                              ("Project-local note" :keys "n"
-                               :icon ("sticky-note" :set "faicon" :color "yellow")
-                               :time-or-todo "%U"
-                               :file +org-capture-project-notes-file))
-                   ))))))
-;;
-;; Projectile Project Path Because Searching is Hard
-(setq projectile-project-search-path '("~/workspace/"))

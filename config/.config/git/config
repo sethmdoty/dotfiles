@@ -1,0 +1,16 @@
+[commit]
+	gpgSign = true
+
+[core]
+	autocrlf = "input"
+
+[gpg]
+	program = "/usr/local/bin/gpg"
+
+[pull]
+	rebase = false
+
+[user]
+	email = "sdoty@fpcomplete.com"
+	name = "Seth Doty"
+	signingKey = "187148A9EE3AD80F"

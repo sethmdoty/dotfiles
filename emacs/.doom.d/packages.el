@@ -49,8 +49,8 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 ;
-(package! org-super-agenda)
-
-(package! org-chef)
-
-(package! doct)
+(package! dhall-mode)
+(package! dired-narrow)
+(package! org-clock-convenience)
+(package! git-link)
+(package! company-tabnine)

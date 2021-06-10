@@ -1,6 +1,0 @@
-.DS_store
-.terraform/*
-.terragrunt-cache
-*.sublime-project
-*.sublime-workspace
-.idea/*

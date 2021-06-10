@@ -1,106 +1,56 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# Path to your oh-my-zsh installation.
+export ZSH="/usr/local/opt/zplug/repos/robbyrussell/oh-my-zsh"
 
-### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
 
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
 
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zinit-zsh/z-a-rust \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git docker osx brew direnv kubectl)
 
-### End of Zinit's installer chunk
-## Themes #####
-#zinit light denysdovhan/spaceship-prompt
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-## Path
-typeset -gU PATH path=(
-  $path
-  .
-)
-zinit light-mode for id-as'brew/shellenv' atclone'brew shellenv > brew-shellenv.zsh' \
-  atpull'!%atclone' run-atpull src'brew-shellenv.zsh' zdharma/null
+source $ZSH/oh-my-zsh.sh
 
-### OMZ #######
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-zinit snippet PZT::modules/helper/init.zsh
-#########
-#####DIRENV######
-zinit as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
-    atpull'%atclone' pick"direnv" src"zhook.zsh" for \
-        direnv/direnv
-# Advanced auto-completion
-# zstyle ':autocomplete:*' groups always
-zinit light-mode for marlonrichert/zsh-autocomplete
-zinit ice as"completion"
-zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
-# source ~/.zinit/plugins/marlonrichert---zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
-# Automatic `pipenv shell`
-# Must come AFTER initializing the prompt.
-# Requires `brew install pipenv`.
-zinit light-mode for MichaelAquilina/zsh-autoswitch-virtualenv
-zinit light-mode for id-as'pipenv/completion' \
-  atclone'pipenv --completion > pipenv-completion.zsh' atpull'!%atclone' run-atpull \
-  src'pipenv-completion.zsh' zdharma/null
-
-# Sensible defaults
-zstyle ':prezto:*:*' color 'yes'
-zinit light-mode for \
-  id-as'prezto/environment' \
-    https://github.com/sorin-ionescu/prezto/blob/master/modules/environment/init.zsh \
-  id-as'prezto/history' \
-    https://github.com/sorin-ionescu/prezto/blob/master/modules/history/init.zsh \
-  id-as'prezto/directory' \
-    https://github.com/sorin-ionescu/prezto/blob/master/modules/directory/init.zsh
-HISTSIZE=200000
-SAVEHIST=100000
-
+# User configuration
 # Environment variables
-export LANG='en_US.UTF-8'
-export WORDCHARS='*?~&|;!#$%^'
-export VISUAL='emacs -c'
-export EDITOR='emacsclient'
-export PAGER='less'
-export LESS='-g -i -M -R -S -w -z-4'
+export EDITOR="emacsclient -nw"
+export GOPATH="$HOME/go/"
+export PATH="/opt/miniconda3/bin:$HOME/.local/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$PATH:/Users/sethdoty/Library/Application Support/Coursier/bin"
+export VISUAL="emacsclient -nw"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=9"
 
-# History settings
-setopt histfcntllock histreduceblanks NO_histignorespace
+if [ -z "$INSIDE_EMACS" ]; then
+  eval "$(starship init zsh)"
+fi
 
-# History editing tools
-local key_codes=( '^Q' '^[Q' '^[q' )
-eval 'bindkey '${(b)^key_codes}' push-line-or-edit; '
-zinit light-mode for marlonrichert/zsh-hist
+eval $(starship init zsh)
 
-# Bash/Readline compatibility
-# Zsh's default kills the whole line.
-bindkey '^U' backward-kill-line
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# search
+export FZF_DEFAULT_COMMAND='fd -HI --color=always'
+alias find='fd -HI -E=".git" --color=always'
+alias fzf='fzf --ansi --exact --multi --no-sort'
+alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --no-heading --sort=path'
 
-# Prezto/Emacs-undo-tree compatibility
-# Zsh does not have a default keybinding for this.
-bindkey '^[_' redo
+# ls
+alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
 
-# Enable alt-h help function.
-unalias run-help
-autoload -Uz  run-help    run-help-git  run-help-ip   run-help-openssl \
-              run-help-p4 run-help-sudo run-help-svk  run-help-svn
+alias tree='ll -T -L=3'
+compdef _ls ll ll=ls
 
 # Pattern matching support for `cp`, `ln` and `mv`
 # See http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#index-zmv
@@ -109,62 +59,15 @@ alias zcp='zmv -Civ'
 alias zln='zmv -Liv'
 alias zmv='zmv -Miv'
 
-# Fuzzy search
-# Requires `brew install fd`, `brew install fzf` and `brew install ripgrep`
-export FZF_DEFAULT_COMMAND='fd -HI --color=always'
-zinit light-mode for \
-  id-as'fzf/completion' https://github.com/junegunn/fzf/blob/master/shell/completion.zsh \
-  id-as'fzf/key-bindings' https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
-alias find='fd -HI -E=".git" --color=always'
-alias fzf='fzf --ansi --exact --multi --no-sort'
-alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --no-heading --sort=path'
-
-##########
-# Better `ls`
-# Requires `brew install exa`.
-alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
-ll() {
-  ls -ghlmu --time-style=long-iso $@ | $PAGER
-}
-alias tree='ll -T -L=3'
-compdef _ls ll ll=ls
-
-# Colors for 'ls' and completions
-# Requires `brew install coreutils`.
-zinit light-mode for atclone'gdircolors -b LS_COLORS > clrs.zsh' atpull'%atclone' pick'clrs.zsh' \
-  nocompile'!' atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS
-
 # Color `grep`
 alias grep='grep --color=always'
 
 # Syntax highlighting in `less`
-# Requires `brew install bat`.
+# Requires `bat`.
 alias less='bat --pager "$PAGER $LESS" --style=snip,header --color=always'
 
-# Log file highlighting in `tail`
-# Requires `brew install multitail`.
-alias tail='multitail -Cs --follow-all'
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# zinit light-mode for zsh-users/zsh-autosuggestions
-
-# Command-line syntax highlighting
-# Must be AFTER after all calls to `compdef`, `zle -N` or `zle -C`.
-export ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
-# zinit light-mode for zdharma/fast-syntax-highlighting
-zinit light-mode for zsh-users/zsh-syntax-highlighting
-
-# Lazy `pyenv init`
-# Requires `brew install pyenv`.
-zinit light-mode for davidparsson/zsh-pyenv-lazy
-
-## autopair ###
-zinit light-mode for hlissner/zsh-autopair
-# Auto-suggest how to install missing commands.
-zinit light-mode for id-as'brew/command-not-found' \
-  https://github.com/Homebrew/homebrew-command-not-found/blob/master/handler.sh
-
-# thefuck
-zplugin light laggardkernel/zsh-thefuck
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
