@@ -59,7 +59,9 @@ brew "watchman"
 brew "wget"
 brew "yamllint"
 brew "zoxide"
+brew "zplug"
 brew "zsh"
+brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "hashicorp/tap/terraform"
@@ -70,13 +72,16 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-material-icons"
 cask "font-source-sans-pro"
 cask "google-cloud-sdk"
+cask "gpg-suite"
 cask "kitty"
-mas "1Blocker", id: 1365531024
 mas "1Password 7", id: 1333542190
-mas "Dark Mode for Safari", id: 1397180934
+mas "Dark Reader for Safari", id: 1438243180
+mas "FANTASIAN", id: 1517339045
 mas "Keynote", id: 409183694
+mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PDF Expert", id: 1055273043
+mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "Yoink", id: 457622435
