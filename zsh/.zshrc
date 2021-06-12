@@ -1,3 +1,5 @@
+  export ZPLUG_HOME=/usr/local/opt/zplug
+  source $ZPLUG_HOME/init.zsh
 # Path to your oh-my-zsh installation.
 export ZSH="/usr/local/opt/zplug/repos/robbyrussell/oh-my-zsh"
 

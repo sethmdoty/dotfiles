@@ -76,12 +76,10 @@ cask "gpg-suite"
 cask "kitty"
 mas "1Password 7", id: 1333542190
 mas "Dark Reader for Safari", id: 1438243180
-mas "FANTASIAN", id: 1517339045
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "PDF Expert", id: 1055273043
 mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "Yoink", id: 457622435

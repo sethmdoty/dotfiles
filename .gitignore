@@ -3,3 +3,4 @@ weechat/.weechat/logs/*
 sec.conf
 irc.conf
 plugins.conf
+/config/.config/gcloud/
