@@ -1,0 +1,16 @@
+[commit]
+	gpgSign = true
+
+[core]
+	autocrlf = "input"
+
+[gpg]
+	program = "/usr/local/MacGPG2/bin/gpg"
+
+[pull]
+	rebase = false
+
+[user]
+	email = "sdoty@icloud.com"
+	name = "Seth Doty"
+	signingKey = "187148A9EE3AD80F"

@@ -1,0 +1,69 @@
+#!/bin/sh
+
+system_type=$(uname -s)
+
+if [ "$system_type" = "Darwin" ]; then
+  # install homebrew if it's missing
+    if ! command -v brew >/dev/null 2>&1; then
+        echo "Installing homebrew"
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
+    
+
+    if [ "`echo -n`" = "-n" ]; then
+        n=""
+        c="\c"
+    else
+        n="-n"
+        c=""
+    fi
+    
+    # I always forget this command....
+    # brew bundle dump && mv Brewfile ~/.config/brewfile
+    echo $n "Please enter if you would like to install ALL of programs (y/n)? "
+    read answer
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        if [ -f "$HOME/.config/brewfile" ]; then
+            echo "Updating homebrew bundle"
+            brew bundle --file=~/.config/brewfile
+        fi
+    else
+        brew install zsh-autosuggestions zsh-syntax-highlighting coreutils pinentry-mac 2>/dev/null
+    fi
+fi
+
+echo "changing shell to zsh"
+chsh -s `which zsh`
+echo "you might need to log out and back in for changes to take effect"
+
+echo "installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "install spaceship-prompt"
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+echo "Would you like to install conda"
+read ans
+
+if [ "$ans" != "${ans#[Yy]}" ] ;then
+    # user said yes
+    v=3; f=Miniconda${v}-latest-MacOSX-x86_64.sh; cd $TMPDIR; { curl -LfOsS https://repo.anaconda.com/miniconda/$f ; cd -; } && bash $TMPDIR/$f -b && . ~/miniconda${v}/bin/activate
+fi
+echo "Are you sethmdoty?"
+read ans
+
+if [ "$ans" != "${ans#[Yy]}" ] ;then
+    # user said yes
+
+    yadm decrypt || 
+    (
+        export GPG_TTY=$(tty) && 
+        yadm decrypt ||
+        echo unable to decrypt
+    )
+fi
+echo "Updating the yadm repo origin URL"
+yadm remote set-url origin "git@github.com:sethmdoty/dotfiles.git"
+
+zsh
