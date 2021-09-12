@@ -4,14 +4,11 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "railwaycat/emacsmacport"
-brew "sqlite"
 brew "ansible"
 brew "aspell"
 brew "autoconf"
 brew "automake"
 brew "awscli"
-brew "azure-cli"
 brew "bat"
 brew "black", restart_service: true
 brew "cmake"
@@ -30,6 +27,8 @@ brew "hadolint"
 brew "isort"
 brew "jq"
 brew "kubernetes-cli"
+brew "kubectx"
+brew "mas"
 brew "minikube"
 brew "multimarkdown"
 brew "node"
@@ -41,22 +40,22 @@ brew "poetry"
 brew "poppler"
 brew "pre-commit"
 brew "proselint"
+brew "r"
 brew "ripgrep"
 brew "sbt"
 brew "shellcheck"
 brew "starship"
-brew "stow"
 brew "subversion"
-brew "syncthing", restart_service: true
+brew "syncthing"
 brew "terraform-docs"
 brew "terraform-ls"
 brew "tflint"
 brew "thefuck"
-brew "tmux"
 brew "tree"
 brew "unzip"
 brew "watchman"
 brew "wget"
+brew "yadm"
 brew "yamllint"
 brew "zoxide"
 brew "zplug"
@@ -65,7 +64,6 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "hashicorp/tap/terraform"
-brew "railwaycat/emacsmacport/emacs-mac", args: ["with-modern-icon"]
 cask "font-fontawesome"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
@@ -77,9 +75,9 @@ cask "kitty"
 mas "1Password 7", id: 1333542190
 mas "Dark Reader for Safari", id: 1438243180
 mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "Yoink", id: 457622435

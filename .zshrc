@@ -23,11 +23,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # Environment variables
-export EDITOR="emacsclient -nw"
 export GOPATH="$HOME/go/"
 export PATH="/opt/miniconda3/bin:$HOME/.local/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:/Users/sethdoty/Library/Application Support/Coursier/bin"
-export VISUAL="emacsclient -nw"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=9"
 
 if [ -z "$INSIDE_EMACS" ]; then
@@ -96,3 +94,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+eval $(minikube docker-env)

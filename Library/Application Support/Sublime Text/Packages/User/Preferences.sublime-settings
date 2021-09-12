@@ -1,0 +1,8 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
+	"auto_complete": true,
+}

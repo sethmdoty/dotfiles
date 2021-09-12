@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoFileName",
+		"Conda",
+		"Dockerfile Syntax Highlighting",
+		"Emacs Pro Essentials",
+		"GitGutter",
+		"GitSavvy",
+		"LSP",
+		"LSP-bash",
+		"LSP-dockerfile",
+		"LSP-metals",
+		"LSP-pylsp",
+		"LSP-typescript",
+		"LSP-yaml",
+		"Markdown Extended",
+		"MarkdownPreview",
+		"Nord",
+		"Package Control",
+		"poetry",
+		"ProjectManager",
+		"R-IDE",
+		"SideBarEnhancements",
+		"SublimeLinter-contrib-proselint",
+		"SublimeLinter-json",
+		"SublimeLinter-pyflakes",
+		"Tabnine",
+		"Terminus",
+		"Terrafmt",
+		"Terraform",
+	],
+}
