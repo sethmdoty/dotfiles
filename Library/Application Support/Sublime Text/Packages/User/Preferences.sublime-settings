@@ -3,6 +3,7 @@
 	[
 		"Vintage",
 	],
-	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
+	"color_scheme": "Packages/Darcula_Pro/Dracula Pro.tmTheme",
 	"auto_complete": true,
+	"theme": "auto",
 }

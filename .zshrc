@@ -17,7 +17,7 @@ export ZSH="/usr/local/opt/zplug/repos/robbyrussell/oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker osx brew direnv kubectl)
+plugins=(git docker macos brew direnv kubectl aws terraform)
 
 source $ZSH/oh-my-zsh.sh
 
