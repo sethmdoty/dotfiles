@@ -48,9 +48,4 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
-;
-(package! dhall-mode)
-(package! dired-narrow)
-(package! org-clock-convenience)
-(package! git-link)
 (package! company-tabnine)
