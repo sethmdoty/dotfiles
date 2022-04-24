@@ -63,7 +63,6 @@ cask "rectangle"
 cask "rstudio"
 cask "schildichat"
 cask "skype"
-cask "sublime-text"
 cask "vorta"
 cask "whichspace"
 mas "1Password 7", id: 1333542190
