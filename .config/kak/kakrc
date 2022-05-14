@@ -1,0 +1,37 @@
+colorscheme dracula
+
+eval %sh{kak-lsp --kakoune -s $kak_session}  # Not needed if you load it with plug.kak.
+lsp-enable
+
+hook global InsertChar \t %{ try %{
+      execute-keys -draft "h<a-h><a-k>\A\h+\z<ret><a-;>;%opt{indentwidth}@"
+}}
+
+# Use ripgrep, and exclude json/csv files.  These tend to be very large and
+# uninteresting, but are non-binary, so rg searches them by default.
+set global grepcmd 'rg --column -Tjson -Tjsonl -Tcsv'
+
+# Browse directory on backspace
+map global goto 'G' '<esc>: edit-or-dir %sh{git rev-parse --show-cdup}<ret>'
+
+evaluate-commands %sh{
+        plugins="$kak_config/plugins"
+            mkdir -p "$plugins"
+                [ ! -e "$plugins/plug.kak" ] && \
+                        git clone -q https://github.com/andreyorst/plug.kak.git "$plugins/plug.kak"
+                            printf "%s\n" "source '$plugins/plug.kak/rc/plug.kak'"
+}
+plug "andreyorst/plug.kak" noload
+plug "andreyorst/fzf.kak"
+plug "andreyorst/kaktree" config %{
+        hook global WinSetOption filetype=kaktree %{
+                    remove-highlighter buffer/numbers
+                            remove-highlighter buffer/matching
+                                    remove-highlighter buffer/wrap
+                                            remove-highlighter buffer/show-whitespaces
+        }
+            kaktree-enable
+}
+plug "occivink/kakoune-sudo-write"
+plug "jjk96/kakoune-rainbow"
+plug "nkoehring/kakoune-todo.txt"
