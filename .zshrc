@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/miniconda3/bin:$HOME/go/bin:$HOME/.local/bin:$PATH
 
@@ -144,6 +142,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"

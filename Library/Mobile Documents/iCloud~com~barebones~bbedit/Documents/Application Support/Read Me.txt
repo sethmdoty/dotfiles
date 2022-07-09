@@ -1,4 +1,4 @@
-<!-- -*- coding: utf-8; mode: markdown; version: 6; -*- -->
+<!-- -*- coding: utf-8; mode: markdown; version: 7; -*- -->
 
 <style type="text/css">
 body {
@@ -90,6 +90,13 @@ from the "Markup" menu.)
 	
 	**Note**: Do not open the BBEdit application package to extract or
 	modify the language modules in there. That way lies madness.
+
+*	Language Servers
+
+	This folder contains (optional) executables, symlinks to executables,
+	and/or supporting materials for BBEdit's Language Server Protocol support.
+	To learn about this in detail, please visit the
+	[Language Server Protocol support page](https://www.barebones.com/support/bbedit/lsp-notes.html).
 	
 *	Menu Scripts
 

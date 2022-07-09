@@ -12,73 +12,51 @@
 	<true/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
-	<key>ApplicationDidStartClean</key>
-	<true/>
-	<key>ApplicationSleepState</key>
+	<key>ApplicationAutoSaveState</key>
 	<dict>
 		<key>ApplicationBuildNumber</key>
-		<integer>416152</integer>
+		<string>14C200</string>
 		<key>DisplayConfiguration</key>
 		<string>displays([(0, 0), (1728, 1117)])</string>
 		<key>OpenDocuments</key>
 		<dict>
-			<key>17299220-3F07-4AD3-86C4-829268658C7F</key>
+			<key>55A4E05F-1B78-4624-9422-FCA056393436</key>
 			<dict>
 				<key>DocumentProperties</key>
-				<dict/>
-				<key>Location</key>
 				<dict>
-					<key>FileBookmark</key>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>0</integer>
+						<key>SelectionStart</key>
+						<integer>0</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
 					<data>
-					Ym9vaygDAAAAAAQQMAAAAMq9EQPWPao744+j
-					VNaXlcIO0DRGeXi0u9k8VpwmFDeZDAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
-					c3BhY2UAAAAPAAAAAQEAAHNlc3Npb24tY29u
-					bmVjdAAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
-					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
-					zQMAAAAAAAgAAAAEAwAAnpwWAAAAAAAIAAAA
-					BAMAAMKfFgAAAAAAEAAAAAEGAAB0AAAAhAAA
-					AJQAAACkAAAACAAAAAAEAABBw/dELataQRgA
-					AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAA
-					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
-					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
-					AAAIAAAAAAQAAEHD93s0gAAAJAAAAAEBAABE
-					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
-					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
-					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
-					AAABBQAAGgAAAAEBAABOU1VSTFBhcmVudERp
-					cmVjdG9yeVVSTEtleQAAIQAAAAEJAABmaWxl
-					Oi8vL1VzZXJzL3NldGhkb3R5L3dvcmtzcGFj
-					ZS8AAADkAAAA/v///wEAAAAAAAAAEgAAAAQQ
-					AABcAAAAAAAAAAUQAAC0AAAAAAAAABAQAADc
-					AAAAAAAAACAQAABEAAAAAAAAAEAQAADMAAAA
-					AAAAAAIgAACoAQAAAAAAAAUgAAAYAQAAAAAA
-					ABAgAAAoAQAAAAAAABEgAABcAQAAAAAAABIg
-					AAA8AQAAAAAAABMgAABMAQAAAAAAACAgAACI
-					AQAAAAAAADAgAAC0AQAAAAAAAAHAAAD8AAAA
-					AAAAABHAAAAgAAAAAAAAABLAAAAMAQAAAAAA
-					ABDQAAAEAAAAAAAAALwBAIDgAQAAAAAAAA==
+					UipjaAAAAAEAAAAA
 					</data>
-					<key>FileBookmarkHasSecurityScope</key>
-					<true/>
-					<key>FileName</key>
-					<string>session-connect</string>
-					<key>FileURLString</key>
-					<string>file:///Users/sethdoty/workspace/session-connect/</string>
-					<key>ParentDirID</key>
-					<integer>1481886</integer>
 				</dict>
+				<key>Location</key>
+				<string>-unsaved-</string>
 				<key>UntitledName</key>
-				<string>session-connect</string>
+				<string>untitled text 7</string>
 				<key>com.barebones.DocumentType</key>
-				<string>Project</string>
+				<string>Text</string>
 			</dict>
 		</dict>
 		<key>OpenWindows</key>
 		<array>
 			<dict>
+				<key>ActiveDocument</key>
+				<string>55A4E05F-1B78-4624-9422-FCA056393436</string>
 				<key>AdditionalProperties</key>
 				<dict>
 					<key>EmbeddedEditorVisible</key>
@@ -88,24 +66,24 @@
 					<key>IsFullScreen</key>
 					<false/>
 					<key>OpenDocumentSplitProportion</key>
-					<real>0.75</real>
+					<real>0.0</real>
 					<key>ProjectListWidthAsFraction</key>
-					<real>0.12</real>
+					<real>0.25</real>
 				</dict>
 				<key>Documents</key>
 				<array>
-					<string>17299220-3F07-4AD3-86C4-829268658C7F</string>
+					<string>55A4E05F-1B78-4624-9422-FCA056393436</string>
 				</array>
 				<key>IsFullScreen</key>
 				<false/>
 				<key>IsMinimized</key>
 				<false/>
 				<key>SavedPosition</key>
-				<string>rect(66,0,1036,1728)</string>
+				<string>rect(66,0,1036,849)</string>
 				<key>SavedPosition_v3</key>
-				<string>{{-0, 81}, {1728, 998}}</string>
+				<string>{{0, 81}, {849, 998}}</string>
 				<key>WindowName</key>
-				<string>session-connect</string>
+				<string>untitled text 7</string>
 				<key>WindowType</key>
 				<string>ProjectWindow</string>
 			</dict>
@@ -113,13 +91,17 @@
 		<key>UntitledWindowsState</key>
 		<dict>
 			<key>GrpD</key>
-			<integer>16</integer>
+			<integer>7</integer>
+			<key>TxtD</key>
+			<integer>7</integer>
 		</dict>
 		<key>com.barebones.DocumentFormatVersion</key>
 		<integer>2</integer>
 		<key>com.barebones.DocumentType</key>
 		<string>ApplicationState</string>
 	</dict>
+	<key>ApplicationDidStartClean</key>
+	<true/>
 	<key>AutoShowFileList</key>
 	<false/>
 	<key>BBEditRegisteredOwner:14.0</key>
@@ -140,10 +122,14 @@
 	AAAAAAAAAAAAAAAAAWc=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBMenusAndShortcutsPreferences</string>
+	<string>BBEditorDefaultsPreferences</string>
 	<key>BrowserWindowSavedBounds:0516D002DA4CEF565F3A1F2269109E8A81FA0A0E</key>
 	<string>rect(66,865,1032,1939)</string>
+	<key>BrowserWindowSavedBounds:8BD7EED8FA355EE26CCBC0B66A7FC576D7E68C40</key>
+	<string>rect(66,0,1036,1074)</string>
 	<key>BrowserWindowSavedSplitPosition:0516D002DA4CEF565F3A1F2269109E8A81FA0A0E</key>
+	<integer>58</integer>
+	<key>BrowserWindowSavedSplitPosition:8BD7EED8FA355EE26CCBC0B66A7FC576D7E68C40</key>
 	<integer>58</integer>
 	<key>ColorSchemeFormatVersion</key>
 	<integer>4</integer>
@@ -156,15 +142,137 @@
 	<key>CopiedPreferencesToNewKeys_v4</key>
 	<true/>
 	<key>DefaultPosition:PatternTester:displays([(0, 0), (1728, 1117)])</key>
-	<string>rect(94,28,1036,877)</string>
+	<string>rect(268,802,1036,1651)</string>
 	<key>DidMigrateTextWranglerIconSetting</key>
 	<true/>
 	<key>EditorShowInvisibleCharacters</key>
 	<false/>
 	<key>Editor_AutoWordCountSizeThreshold</key>
 	<integer>4194304</integer>
+	<key>EnableAutoSave_v2</key>
+	<true/>
+	<key>FindDialog_SearchReplaceHistory</key>
+	<array>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>SearchDate</key>
+			<date>2022-06-13T19:20:59Z</date>
+			<key>SearchString</key>
+			<string>uplink</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>SearchDate</key>
+			<date>2022-06-13T19:19:32Z</date>
+			<key>SearchString</key>
+			<string>anamo</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>SearchDate</key>
+			<date>2022-06-13T19:19:28Z</date>
+			<key>SearchString</key>
+			<string>anamolies</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>ReplaceString</key>
+			<string></string>
+			<key>SearchDate</key>
+			<date>2022-05-07T02:37:11Z</date>
+			<key>SearchString</key>
+			<string>\s</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>ReplaceString</key>
+			<string>,</string>
+			<key>SearchDate</key>
+			<date>2022-05-07T02:34:53Z</date>
+			<key>SearchString</key>
+			<string>,,,,,,</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<false/>
+			<key>IsExtract</key>
+			<false/>
+			<key>SearchDate</key>
+			<date>2022-04-12T03:15:28Z</date>
+			<key>SearchString</key>
+			<string>scholars</string>
+			<key>WrapAround</key>
+			<false/>
+		</dict>
+	</array>
+	<key>FindDialog_SelectedSourceNodes</key>
+	<array>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/</string>
+			<key>SourceNodeParentType</key>
+			<string>Project</string>
+			<key>SourceNodeType</key>
+			<string>Project</string>
+		</dict>
+	</array>
+	<key>FindDialog_SelectionOnly</key>
+	<false/>
+	<key>FindDialog_ShowLiveMatches</key>
+	<true/>
 	<key>ForceQuitLSPServerAfterExit_terraform-ls</key>
 	<integer>2</integer>
+	<key>Frontmost Project</key>
+	<false/>
 	<key>HTMLFormat_EncodeEntitiesInAttributes</key>
 	<true/>
 	<key>HTMLFormat_FormatModeName</key>
@@ -175,6 +283,14 @@
 	<true/>
 	<key>HiddenLanguageCodes</key>
 	<array/>
+	<key>ImageDisplayGrayLevel_file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</key>
+	<real>0.54643756151199341</real>
+	<key>ImageDisplayGrayLevel_file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.webp</key>
+	<real>0.54609185457229614</real>
+	<key>ImageDisplayGrayLevel_file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</key>
+	<real>0.43928143382072449</real>
+	<key>ImageDisplayGrayLevel_file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</key>
+	<real>0.59336638450622559</real>
 	<key>IncludeTextReplacementsInCompletionList</key>
 	<false/>
 	<key>InfoPanelSelectedTab</key>
@@ -219,7 +335,7 @@
 		<string></string>
 	</dict>
 	<key>LastLaunchOSVersion</key>
-	<string>Version 12.3.1 (Build 21E258)</string>
+	<string>Version 12.4 (Build 21F79)</string>
 	<key>ListDisplayFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -229,6 +345,8 @@
 	<key>ListDisplayFontSize</key>
 	<real>11</real>
 	<key>MakeBackup</key>
+	<false/>
+	<key>My Files &amp; Folders</key>
 	<false/>
 	<key>NSAutomaticCapitalizationEnabled</key>
 	<false/>
@@ -243,7 +361,7 @@
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/workspace/session-connect</string>
+	<string>~/Library/Mobile Documents/iCloud~com~barebones~bbedit/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{800, 448}</string>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
@@ -254,7 +372,7 @@
 	<key>NSSplitView Subview Frames PatternPlaygroundPatternSplitSize</key>
 	<array>
 		<string>0.000000, 0.000000, 849.000000, 150.000000, NO, NO</string>
-		<string>0.000000, 151.000000, 849.000000, 791.000000, NO, NO</string>
+		<string>0.000000, 151.000000, 849.000000, 617.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v3 CustomLanguageExtensionMappingsList</key>
 	<data>
@@ -308,6 +426,17 @@
 	<true/>
 	<key>NSTableView Supports v2 CustomLanguageSettingsList</key>
 	<true/>
+	<key>NSToolbar Configuration BBSetupConfigurationPanelToolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -315,20 +444,36 @@
 	</dict>
 	<key>NSWindow Frame BBPreferences</key>
 	<string>211 361 682 607 0 0 1728 1079 </string>
+	<key>NSWindow Frame BBSetupEditorWindow</key>
+	<string>1131 643 350 426 0 0 1728 1079 </string>
 	<key>NSWindow Frame GitBranchPicker</key>
 	<string>704 523 320 408 0 0 1728 1079 </string>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>0 162 224 278 0 0 1920 1055 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>944 515 445 232 0 0 1728 1079 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>464 493 800 333 0 0 1728 1079 </string>
 	<key>NSWindow Frame ProgressPanelSheet</key>
 	<string>661 480 407 137 0 0 1728 1079 </string>
+	<key>NSWindow Frame WindowPosition_v2_Find</key>
+	<string>841 693 626 298 0 0 1728 1079 </string>
+	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
+	<string>690 549 626 434 0 0 1728 1079 </string>
 	<key>NSWindow Frame WindowPosition_v2_OpenFileByName</key>
 	<string>118 166 480 328 0 0 1728 1079 </string>
+	<key>NextAutoSaveCheckTime</key>
+	<integer>1910656156</integer>
+	<key>Open Editing Windows</key>
+	<false/>
+	<key>Open Text Documents</key>
+	<false/>
 	<key>PalettesAreHidden</key>
 	<false/>
+	<key>Paths Files</key>
+	<false/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2022-04-11T02:20:40Z</date>
+	<date>2022-07-04T13:58:49Z</date>
 	<key>PreviewBrowserList</key>
 	<array>
 		<dict>
@@ -412,16 +557,175 @@
 			<string>3.2.2</string>
 		</dict>
 	</array>
+	<key>Projects</key>
+	<true/>
 	<key>PropertyWindowsToReopen</key>
-	<array/>
+	<array>
+		<string>FNDW</string>
+	</array>
 	<key>ReadTextEncodingFallbacks</key>
 	<array>
 		<integer>0</integer>
 	</array>
+	<key>Recent Folders</key>
+	<false/>
 	<key>RecentItemsData</key>
 	<dict>
 		<key>Folder</key>
 		<array>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-24T18:10:18Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va9QCAAAAAAQQMAAAAALTdNJyxJi8/vTS
+					cLrK/i45ppPmKI8P3hZE6OHgR+LI9AEAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAgAAAAB
+					AQAAaG9tZWJyZXcGAAAAAQEAAENlbGxhcgAA
+					CQAAAAEBAABlbWFjcy1tYWMAAAASAAAAAQEA
+					AGVtYWNzLTI4LjEtbWFjLTkuMAAACQAAAAEB
+					AABFbWFjcy5hcHAAAAAYAAAAAQYAABAAAAAc
+					AAAALAAAADwAAABQAAAAbAAAAAgAAAAEAwAA
+					GmYAAAAAAAAIAAAABAMAAJkdDgAAAAAACAAA
+					AAQDAACnHQ4AAAAAAAgAAAAEAwAAy2SHAAAA
+					AAAIAAAABAMAAMxkhwAAAAAACAAAAAQDAAA0
+					mYcAAAAAABgAAAABBgAAoAAAALAAAADAAAAA
+					0AAAAOAAAADwAAAACAAAAAAEAABBw/6i5wAA
+					ABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAA
+					AAAAAAAACAAAAAEJAABmaWxlOi8vLwwAAAAB
+					AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
+					5wAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEA
+					AERBMzI2QzIzLUQ2RTEtNDUwMi04Nzk4LUJG
+					MjBDMzk4OUIxQhgAAAABAgAAgQAAAAEAAADv
+					EwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
+					AAAAAAEFAACoAAAA/v///wEAAAAAAAAADQAA
+					AAQQAACAAAAAAAAAAAUQAAAAAQAAAAAAABAQ
+					AAAwAQAAAAAAAEAQAAAgAQAAAAAAAAIgAADg
+					AQAAAAAAAAUgAABQAQAAAAAAABAgAABgAQAA
+					AAAAABEgAACUAQAAAAAAABIgAAB0AQAAAAAA
+					ABMgAACEAQAAAAAAACAgAADAAQAAAAAAADAg
+					AADsAQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///opt/homebrew/Cellar/emacs-mac/emacs-28.1-mac-9.0/Emacs.app/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>Emacs.app</string>
+				<key>URL</key>
+				<string>file:///opt/homebrew/Cellar/emacs-mac/emacs-28.1-mac-9.0/Emacs.app/</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-12T03:41:04Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8QCAAAAAAQQMAAAABjp6w8HQGUfTGIE
+					1j8XpdBgHvKF//VD97daE0bCJHb2wAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
+					c3BhY2UAAAASAAAAAQEAAGJlYXJkZWRfYnJp
+					bGxpYW5jZQAAEAAAAAEGAAAQAAAAIAAAADAA
+					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
+					AwAAEs0DAAAAAAAIAAAABAMAAJ6cFgAAAAAA
+					CAAAAAQDAAAwBmQAAAAAABAAAAABBgAAeAAA
+					AIgAAACYAAAAqAAAAAgAAAAABAAAQcO9D3KA
+					AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAA
+					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
+					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
+					gpbnAAAACAAAAAAEAABBw/d7NIAAACQAAAAB
+					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
+					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
+					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQ
+					AAAABBAAAGAAAAAAAAAABRAAALgAAAAAAAAA
+					EBAAAOAAAAAAAAAAQBAAANAAAAAAAAAAAiAA
+					AKwBAAAAAAAABSAAABwBAAAAAAAAECAAACwB
+					AAAAAAAAESAAAGABAAAAAAAAEiAAAEABAAAA
+					AAAAEyAAAFABAAAAAAAAICAAAIwBAAAAAAAA
+					MCAAALgBAAAAAAAAAcAAAAABAAAAAAAAEcAA
+					ACAAAAAAAAAAEsAAABABAAAAAAAAENAAAAQA
+					AAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/workspace/bearded_brilliance/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>bearded_brilliance</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/workspace/bearded_brilliance/</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-12T02:30:43Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8QCAAAAAAQQMAAAAH6TZQ4bg1NXSIFq
+					x84AA/N031LlpsMym4OulCGzApNswAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4AEAAAAAEGAAAQAAAAIAAAADAA
+					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
+					AwAAEs0DAAAAAAAIAAAABAMAAEXNAwAAAAAA
+					CAAAAAQDAAAFbGMAAAAAABAAAAABBgAAeAAA
+					AIgAAACYAAAAqAAAAAgAAAAABAAAQcO9D3KA
+					AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAA
+					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
+					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
+					gpbnAAAACAAAAAAEAABBw/d7NIAAACQAAAAB
+					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
+					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
+					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQ
+					AAAABBAAAGAAAAAAAAAABRAAALgAAAAAAAAA
+					EBAAAOAAAAAAAAAAQBAAANAAAAAAAAAAAiAA
+					AKwBAAAAAAAABSAAABwBAAAAAAAAECAAACwB
+					AAAAAAAAESAAAGABAAAAAAAAEiAAAEABAAAA
+					AAAAEyAAAFABAAAAAAAAICAAAIwBAAAAAAAA
+					MCAAALgBAAAAAAAAAcAAAAABAAAAAAAAEcAA
+					ACAAAAAAAAAAEsAAABABAAAAAAAAENAAAAQA
+					AAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>fs-eu-homepage-main</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/</string>
+			</dict>
 			<dict>
 				<key>Date</key>
 				<date>2022-04-11T02:07:57Z</date>
@@ -529,15 +833,15 @@
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-03-28T01:39:34Z</date>
+				<date>2022-04-26T04:06:16Z</date>
 				<key>DocumentClass</key>
 				<string>Notebook</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va8gDAAAAAAQQMAAAAEhfKv5LecIfURpd
-					ZURtu3IVb9UtzWKtHTsO4UYylR+5uAIAAAQA
+					Ym9va8gDAAAAAAQQMAAAAOAxcFNEYFd/hh33
+					WIvMMIWdSELHoYfCuoxvCQHGDdobuAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
 					YXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50
@@ -558,7 +862,7 @@
 					AAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAA
 					ZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBI
 					RAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHD
-					5QRRgAAAJAAAAAEBAABEQTMyNkMyMy1ENkUx
+					93s0gAAAJAAAAAEBAABEQTMyNkMyMy1ENkUx
 					LTQ1MDItODc5OC1CRjIwQzM5ODlCMUIYAAAA
 					AQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
 					AAEAAAABAQAALwAAAAAAAAABBQAAGgAAAAEB
@@ -588,34 +892,34 @@
 				<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Notes.bbnotebookd/</string>
 			</dict>
 		</array>
-		<key>Text</key>
+		<key>Project</key>
 		<array>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-11T02:13:11Z</date>
+				<date>2022-05-17T03:05:25Z</date>
 				<key>DocumentClass</key>
-				<string>Text</string>
+				<string>Project</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/ACAAAAAAQQMAAAAB7R/NGY7CCEYl5g
-					CLB5aBZADixVaozt6F0WsZFiTiTP7AEAAAQA
+					Ym9va/ACAAAAAAQQMAAAAHk8yQFn8OenvWHA
+					Wj0mpEs1G8UZ/J9YBueMiOK76YrT7AEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
-					c3BhY2UAAAAPAAAAAQEAAHNlc3Npb24tY29u
-					bmVjdAAOAAAAAQEAAGV4cG9ydC1rZXlzLmdv
-					AAAUAAAAAQYAABAAAAAgAAAAMAAAAEQAAABc
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAALAAAAAQEAAENvbXBvc2l0aW9u
+					ABIAAAABAQAAYmJlZGl0cC5iYnByb2plY3Rk
+					AAAUAAAAAQYAABAAAAAgAAAAMAAAAEQAAABY
 					AAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
-					Es0DAAAAAAAIAAAABAMAAJ6cFgAAAAAACAAA
-					AAQDAADCnxYAAAAAAAgAAAAEAwAABaAWAAAA
+					Es0DAAAAAAAIAAAABAMAAEXNAwAAAAAACAAA
+					AAQDAADu9L4AAAAAAAgAAAAEAwAA+/S+AAAA
 					AAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQ
-					AAAACAAAAAAEAABBwwk1Y4AAABgAAAABAgAA
-					AQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+					AAAACAAAAAAEAABBw8pwVAAAABgAAAABAgAA
+					AgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
 					AAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgA
 					AAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
 					dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
-					AAQAAEHD93s0gAAAJAAAAAEBAABEQTMyNkMy
+					AAQAAEHEFN/EAAAAJAAAAAEBAABEQTMyNkMy
 					My1ENkUxLTQ1MDItODc5OC1CRjIwQzM5ODlC
 					MUIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
 					AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -629,7 +933,7 @@
 					wAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/workspace/session-connect/export-keys.go</string>
+					<string>file:///Users/sethdoty/Downloads/Composition/bbeditp.bbprojectd/</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -638,60 +942,58 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>export-keys.go</string>
+				<string>bbeditp.bbprojectd</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/workspace/session-connect/export-keys.go</string>
+				<string>file:///Users/sethdoty/Downloads/Composition/bbeditp.bbprojectd/</string>
 			</dict>
+		</array>
+		<key>QuickTimeImporter</key>
+		<array>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-10T05:17:17Z</date>
+				<date>2022-04-12T03:39:30Z</date>
 				<key>DocumentClass</key>
-				<string>Text</string>
+				<string>QuickTimeImporter</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/ADAAAAAAQQMAAAAIRT7DbkX35th7XM
-					rLeqN36XSMHehw0i9GANf0W0FOEu4AIAAAQA
+					Ym9va2QDAAAAAAQQMAAAAMeB26/7MBYds7nE
+					13MaPGd4LZ23LN8zBAHlXKcPGhxQYAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
-					YXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50
-					cxsAAAABAQAAaUNsb3VkfmNvbX5iYXJlYm9u
-					ZXN+YmJlZGl0AAkAAAABAQAARG9jdW1lbnRz
-					AAAAEwAAAAEBAABBcHBsaWNhdGlvbiBTdXBw
-					b3J0AAUAAAABAQAAU2V0dXAAAAAUAAAAAQEA
-					AE1lbnUgU2hvcnRjdXRzLnBsaXN0JAAAAAEG
-					AAAQAAAAIAAAADAAAABAAAAAWAAAAHwAAACQ
-					AAAArAAAALwAAAAIAAAABAMAAIRcAAAAAAAA
-					CAAAAAQDAAASzQMAAAAAAAgAAAAEAwAAGc0D
-					AAAAAAAIAAAABAMAACzkAwAAAAAACAAAAAQD
-					AADYGgQAAAAAAAgAAAAEAwAA2RoEAAAAAAAI
-					AAAABAMAAHgwNgAAAAAACAAAAAQDAADdMDYA
-					AAAAAAgAAAAEAwAA7uZgAAAAAAAkAAAAAQYA
-					AAQBAAAUAQAAJAEAADQBAABEAQAAVAEAAGQB
-					AAB0AQAAhAEAAAgAAAAABAAAQcPSLzMAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAgAAAAEAwAABwAAAAAAAAAEAAAAAwMA
-					APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-					AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-					AAAACAAAAAAEAABBw/d7NIAAACQAAAABAQAA
-					REEzMjZDMjMtRDZFMS00NTAyLTg3OTgtQkYy
-					MEMzOTg5QjFCGAAAAAECAACBAAAAAQAAAO8T
-					AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-					AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
-					dElkZW50aWZpZXJLZXkAAAQAAAADAwAATikA
-					ANgAAAD+////AQAAAAAAAAARAAAABBAAANgA
-					AAAAAAAABRAAAJQBAAAAAAAAEBAAANABAAAA
-					AAAAQBAAAMABAAAAAAAAAiAAAJwCAAAAAAAA
-					BSAAAAwCAAAAAAAAECAAABwCAAAAAAAAESAA
-					AFACAAAAAAAAEiAAADACAAAAAAAAEyAAAEAC
-					AAAAAAAAICAAAHwCAAAAAAAAMCAAAKgCAAAA
-					AAAAAcAAAPABAAAAAAAAEcAAACAAAAAAAAAA
-					EsAAAAACAAAAAAAAENAAAAQAAAAAAAAAsAIA
-					gNQCAAAAAAAA
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
+					AAABAQAAaW1hZ2VzAAAEAAAAAQEAAHRlYW0K
+					AAAAAQEAAGF2YXRhci5qcGcAACAAAAABBgAA
+					EAAAACAAAAAwAAAARAAAAGAAAABwAAAAgAAA
+					AIwAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQD
+					AAASzQMAAAAAAAgAAAAEAwAARc0DAAAAAAAI
+					AAAABAMAAAVsYwAAAAAACAAAAAQDAAAdbGMA
+					AAAAAAgAAAAEAwAAHmxjAAAAAAAIAAAABAMA
+					ACxsYwAAAAAACAAAAAQDAACe62MAAAAAACAA
+					AAABBgAAyAAAANgAAADoAAAA+AAAAAgBAAAY
+					AQAAKAEAADgBAAAIAAAAAAQAAEHDquLXGcKw
+					GAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAA
+					AAAAAAAIAAAABAMAAAYAAAAAAAAABAAAAAMD
+					AAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAAB
+					AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
+					5wAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEA
+					AERBMzI2QzIzLUQ2RTEtNDUwMi04Nzk4LUJG
+					MjBDMzk4OUIxQhgAAAABAgAAgQAAAAEAAADv
+					EwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
+					AAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAA
+					AAQQAACgAAAAAAAAAAUQAABIAQAAAAAAABAQ
+					AACAAQAAAAAAAEAQAABwAQAAAAAAAAIgAABM
+					AgAAAAAAAAUgAAC8AQAAAAAAABAgAADMAQAA
+					AAAAABEgAAAAAgAAAAAAABIgAADgAQAAAAAA
+					ABMgAADwAQAAAAAAACAgAAAsAgAAAAAAADAg
+					AABYAgAAAAAAAAHAAACgAQAAAAAAABHAAAAg
+					AAAAAAAAABLAAACwAQAAAAAAABDQAAAEAAAA
+					AAAAAA==
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Setup/Menu%20Shortcuts.plist</string>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -700,40 +1002,788 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>Menu Shortcuts.plist</string>
+				<string>avatar.jpg</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Setup/Menu%20Shortcuts.plist</string>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-10T05:17:17Z</date>
+				<date>2022-04-12T03:39:30Z</date>
+				<key>DocumentClass</key>
+				<string>QuickTimeImporter</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vazwDAAAAAAQQMAAAAGqJYGuHkzi5wele
+					zgDVYCtd8fODPO4S+QB0M4igLIEWOAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
+					AAABAQAAaW1hZ2VzAAAIAAAAAQEAAGxvZ28u
+					cG5nHAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
+					YAAAAHAAAACAAAAACAAAAAQDAACEXAAAAAAA
+					AAgAAAAEAwAAEs0DAAAAAAAIAAAABAMAAEXN
+					AwAAAAAACAAAAAQDAAAFbGMAAAAAAAgAAAAE
+					AwAAHWxjAAAAAAAIAAAABAMAAB5sYwAAAAAA
+					CAAAAAQDAAB56mMAAAAAABwAAAABBgAAtAAA
+					AMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAAAgA
+					AAAABAAAQcQCkVUNlXQYAAAAAQIAAAEAAAAA
+					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
+					BQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
+					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
+					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
+					w/d7NIAAACQAAAABAQAAREEzMjZDMjMtRDZF
+					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
+					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
+					AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+
+					////AQAAAAAAAAAQAAAABBAAAJAAAAAAAAAA
+					BRAAACQBAAAAAAAAEBAAAFgBAAAAAAAAQBAA
+					AEgBAAAAAAAAAiAAACQCAAAAAAAABSAAAJQB
+					AAAAAAAAECAAAKQBAAAAAAAAESAAANgBAAAA
+					AAAAEiAAALgBAAAAAAAAEyAAAMgBAAAAAAAA
+					ICAAAAQCAAAAAAAAMCAAADACAAAAAAAAAcAA
+					AHgBAAAAAAAAEcAAACAAAAAAAAAAEsAAAIgB
+					AAAAAAAAENAAAAQAAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>logo.png</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-12T03:39:30Z</date>
+				<key>DocumentClass</key>
+				<string>QuickTimeImporter</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va3QDAAAAAAQQMAAAAGP82zM8+BdsTPw9
+					ViJHyQA2/3zUH8ivCmw+bsAzZwsHcAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
+					AAABAQAAaW1hZ2VzAAALAAAAAQEAAGJhY2tn
+					cm91bmRzABMAAAABAQAAYmctdGVzdGltb25p
+					YWwud2VicAAgAAAAAQYAABAAAAAgAAAAMAAA
+					AEQAAABgAAAAcAAAAIAAAACUAAAACAAAAAQD
+					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
+					AAAABAMAAEXNAwAAAAAACAAAAAQDAAAFbGMA
+					AAAAAAgAAAAEAwAAHWxjAAAAAAAIAAAABAMA
+					AB5sYwAAAAAACAAAAAQDAAAfbGMAAAAAAAgA
+					AAAEAwAAIWxjAAAAAAAgAAAAAQYAANgAAADo
+					AAAA+AAAAAgBAAAYAQAAKAEAADgBAABIAQAA
+					CAAAAAAEAABBw70PcoAAABgAAAABAgAAAQAA
+					AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
+					AAAGAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHD93s0gAAAJAAAAAEBAABEQTMyNkMyMy1E
+					NkUxLTQ1MDItODc5OC1CRjIwQzM5ODlCMUIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAA
+					AP7///8BAAAAAAAAABAAAAAEEAAAsAAAAAAA
+					AAAFEAAAWAEAAAAAAAAQEAAAkAEAAAAAAABA
+					EAAAgAEAAAAAAAACIAAAXAIAAAAAAAAFIAAA
+					zAEAAAAAAAAQIAAA3AEAAAAAAAARIAAAEAIA
+					AAAAAAASIAAA8AEAAAAAAAATIAAAAAIAAAAA
+					AAAgIAAAPAIAAAAAAAAwIAAAaAIAAAAAAAAB
+					wAAAsAEAAAAAAAARwAAAIAAAAAAAAAASwAAA
+					wAEAAAAAAAAQ0AAABAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.webp</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>bg-testimonial.webp</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.webp</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-12T03:39:30Z</date>
+				<key>DocumentClass</key>
+				<string>QuickTimeImporter</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va3QDAAAAAAQQMAAAAPhDAG3f9zQ6DYuC
+					wOlTPG0tQ4Oay/3BDPU26aOgNyaIcAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
+					AAABAQAAaW1hZ2VzAAALAAAAAQEAAGJhY2tn
+					cm91bmRzABIAAAABAQAAYmctdGVzdGltb25p
+					YWwuanBnAAAgAAAAAQYAABAAAAAgAAAAMAAA
+					AEQAAABgAAAAcAAAAIAAAACUAAAACAAAAAQD
+					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
+					AAAABAMAAEXNAwAAAAAACAAAAAQDAAAFbGMA
+					AAAAAAgAAAAEAwAAHWxjAAAAAAAIAAAABAMA
+					AB5sYwAAAAAACAAAAAQDAAAfbGMAAAAAAAgA
+					AAAEAwAAIGxjAAAAAAAgAAAAAQYAANgAAADo
+					AAAA+AAAAAgBAAAYAQAAKAEAADgBAABIAQAA
+					CAAAAAAEAABBw70PcoAAABgAAAABAgAAAQAA
+					AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
+					AAAGAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHD93s0gAAAJAAAAAEBAABEQTMyNkMyMy1E
+					NkUxLTQ1MDItODc5OC1CRjIwQzM5ODlCMUIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAA
+					AP7///8BAAAAAAAAABAAAAAEEAAAsAAAAAAA
+					AAAFEAAAWAEAAAAAAAAQEAAAkAEAAAAAAABA
+					EAAAgAEAAAAAAAACIAAAXAIAAAAAAAAFIAAA
+					zAEAAAAAAAAQIAAA3AEAAAAAAAARIAAAEAIA
+					AAAAAAASIAAA8AEAAAAAAAATIAAAAAIAAAAA
+					AAAgIAAAPAIAAAAAAAAwIAAAaAIAAAAAAAAB
+					wAAAsAEAAAAAAAARwAAAIAAAAAAAAAASwAAA
+					wAEAAAAAAAAQ0AAABAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>bg-testimonial.jpg</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
+			</dict>
+		</array>
+		<key>Text</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2022-06-18T20:26:35Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/wDAAAAAAQQMAAAAEtTy0fg9zVqeICE
-					m+6m7aGegZAOLcpxei/7nEfp4vXP7AIAAAQA
+					Ym9va8gCAAAAAAQQMAAAAB95KV76LVo7PSsF
+					/VQDkgwtMI4ofLnIRLzzNeTTkFlXxAEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
-					YXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50
-					cxsAAAABAQAAaUNsb3VkfmNvbX5iYXJlYm9u
-					ZXN+YmJlZGl0AAkAAAABAQAARG9jdW1lbnRz
-					AAAAEwAAAAEBAABBcHBsaWNhdGlvbiBTdXBw
-					b3J0AAUAAAABAQAAU2V0dXAAAAAeAAAAAQEA
-					AE1lbnUgU2hvcnRjdXRzLnBsaXN0Lk9MRC5w
-					bGlzdAAAJAAAAAEGAAAQAAAAIAAAADAAAABA
-					AAAAWAAAAHwAAACQAAAArAAAALwAAAAIAAAA
-					BAMAAIRcAAAAAAAACAAAAAQDAAASzQMAAAAA
-					AAgAAAAEAwAAGc0DAAAAAAAIAAAABAMAACzk
-					AwAAAAAACAAAAAQDAADYGgQAAAAAAAgAAAAE
-					AwAA2RoEAAAAAAAIAAAABAMAAHgwNgAAAAAA
-					CAAAAAQDAADdMDYAAAAAAAgAAAAEAwAAOTE2
-					AAAAAAAkAAAAAQYAABABAAAgAQAAMAEAAEAB
-					AABQAQAAYAEAAHABAACAAQAAkAEAAAgAAAAA
-					BAAAQcP39Ymg5K0YAAAAAQIAAAEAAAAAAAAA
-					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAABwAA
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAWAAAAAQEAAG1lZXRpbmdfc2F2
+					ZWRfY2hhdC50eHQAABAAAAABBgAAEAAAACAA
+					AAAwAAAARAAAAAgAAAAEAwAAhFwAAAAAAAAI
+					AAAABAMAABLNAwAAAAAACAAAAAQDAABFzQMA
+					AAAAAAgAAAAEAwAAlSPmAAAAAAAQAAAAAQYA
+					AHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEHE
+					LyH5AAAAGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAA
+					BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+					LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAkIKW5wAAAAgAAAAABAAAQcQU38QAAAAk
+					AAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUwMi04
+					Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAAgQAA
+					AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAA
+					AAAAEAAAAAQQAABkAAAAAAAAAAUQAAC8AAAA
+					AAAAABAQAADkAAAAAAAAAEAQAADUAAAAAAAA
+					AAIgAACwAQAAAAAAAAUgAAAgAQAAAAAAABAg
+					AAAwAQAAAAAAABEgAABkAQAAAAAAABIgAABE
+					AQAAAAAAABMgAABUAQAAAAAAACAgAACQAQAA
+					AAAAADAgAAC8AQAAAAAAAAHAAAAEAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAAUAQAAAAAAABDQ
+					AAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/meeting_saved_chat.txt</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>meeting_saved_chat.txt</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/meeting_saved_chat.txt</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-06-13T19:20:47Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8gCAAAAAAQQMAAAAMkideAFxzxxyswS
+					aEoUMNHKYX/cUXeTGxhZSzEz+OoDxAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAWAAAAAQEAAGQwLTIxLWY5LTQw
+					LTcyLTQyLmpzb24AABAAAAABBgAAEAAAACAA
+					AAAwAAAARAAAAAgAAAAEAwAAhFwAAAAAAAAI
+					AAAABAMAABLNAwAAAAAACAAAAAQDAABFzQMA
+					AAAAAAgAAAAEAwAAx5LiAAAAAAAQAAAAAQYA
+					AHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEHE
+					K+LDnYUjGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAA
+					BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+					LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAkIKW5wAAAAgAAAAABAAAQcQU38QAAAAk
+					AAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUwMi04
+					Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAAgQAA
+					AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAA
+					AAAAEAAAAAQQAABkAAAAAAAAAAUQAAC8AAAA
+					AAAAABAQAADkAAAAAAAAAEAQAADUAAAAAAAA
+					AAIgAACwAQAAAAAAAAUgAAAgAQAAAAAAABAg
+					AAAwAQAAAAAAABEgAABkAQAAAAAAABIgAABE
+					AQAAAAAAABMgAABUAQAAAAAAACAgAACQAQAA
+					AAAAADAgAAC8AQAAAAAAAAHAAAAEAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAAUAQAAAAAAABDQ
+					AAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/d0-21-f9-40-72-42.json</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>d0-21-f9-40-72-42.json</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/d0-21-f9-40-72-42.json</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-06-13T19:19:11Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8gCAAAAAAQQMAAAAK00ejrCziTxVhkg
+					YOmXjKrepHLhI+3SZaafjTNirgnRxAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAWAAAAAQEAADI0LTVhLTRjLThl
+					LTgyLWM4Lmpzb24AABAAAAABBgAAEAAAACAA
+					AAAwAAAARAAAAAgAAAAEAwAAhFwAAAAAAAAI
+					AAAABAMAABLNAwAAAAAACAAAAAQDAABFzQMA
+					AAAAAAgAAAAEAwAAVZLiAAAAAAAQAAAAAQYA
+					AHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEHE
+					K+KSEScmGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAA
+					BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+					LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAkIKW5wAAAAgAAAAABAAAQcQU38QAAAAk
+					AAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUwMi04
+					Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAAgQAA
+					AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAA
+					AAAAEAAAAAQQAABkAAAAAAAAAAUQAAC8AAAA
+					AAAAABAQAADkAAAAAAAAAEAQAADUAAAAAAAA
+					AAIgAACwAQAAAAAAAAUgAAAgAQAAAAAAABAg
+					AAAwAQAAAAAAABEgAABkAQAAAAAAABIgAABE
+					AQAAAAAAABMgAABUAQAAAAAAACAgAACQAQAA
+					AAAAADAgAAC8AQAAAAAAAAHAAAAEAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAAUAQAAAAAAABDQ
+					AAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/24-5a-4c-8e-82-c8.json</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>24-5a-4c-8e-82-c8.json</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/24-5a-4c-8e-82-c8.json</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-17T03:04:14Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va5wDAAAAAAQQMAAAAFV0JL1KSxWe1ASv
+					nfhBWrEw77pzR9eOZDO/9yB+WU7cjAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
+					bWVudHMAAAAEAAAAAQEAAEhvb2sFAAAAAQEA
+					AG5vdGVzAAAAYQAAAAEBAABCQkVkaXQ6IEEg
+					cG93ZXJmdWwsIGhpZ2hseSBsaW5rYWJsZSwg
+					dGV4dCBlZGl0b3IgZm9yIGNyZWF0aXZlIHdv
+					cmsgYW5kIG5vdGUtdGFraW5nIOKAkyBIb29r
+					IDEudHh0AAAAGAAAAAEGAAAQAAAAIAAAADAA
+					AABEAAAAUAAAAGAAAAAIAAAABAMAAIRcAAAA
+					AAAACAAAAAQDAAASzQMAAAAAAAgAAAAEAwAA
+					PzYFAAAAAAAIAAAABAMAAEg5BQAAAAAACAAA
+					AAQDAAB5RAUAAAAAAAgAAAAEAwAAp/O+AAAA
+					AAAYAAAAAQYAAOwAAAD8AAAADAEAABwBAAAs
+					AQAAPAEAAAgAAAAABAAAQcQZpBcQEZAYAAAA
+					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
+					AAgAAAAEAwAABAAAAAAAAAAEAAAAAwMAAPUB
+					AAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABN
+					YWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAA
+					CAAAAAAEAABBxBTfxAAAACQAAAABAQAAREEz
+					MjZDMjMtRDZFMS00NTAyLTg3OTgtQkYyMEMz
+					OTg5QjFCGAAAAAECAACBAAAAAQAAAO8TAAAB
+					AAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+					AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElk
+					ZW50aWZpZXJLZXkAAAQAAAADAwAAoioAANgA
+					AAD+////AQAAAAAAAAARAAAABBAAAMwAAAAA
+					AAAABRAAAEwBAAAAAAAAEBAAAHwBAAAAAAAA
+					QBAAAGwBAAAAAAAAAiAAAEgCAAAAAAAABSAA
+					ALgBAAAAAAAAECAAAMgBAAAAAAAAESAAAPwB
+					AAAAAAAAEiAAANwBAAAAAAAAEyAAAOwBAAAA
+					AAAAICAAACgCAAAAAAAAMCAAAFQCAAAAAAAA
+					AcAAAJwBAAAAAAAAEcAAACAAAAAAAAAAEsAA
+					AKwBAAAAAAAAENAAAAQAAAAAAAAAXAIAgIAC
+					AAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Documents/Hook/notes/BBEdit:%20A%20powerful,%20highly%20linkable,%20text%20editor%20for%20creative%20work%20and%20note-taking%20%E2%80%93%20Hook%201.txt</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>BBEdit: A powerful, highly linkable, text editor for creative work and note-taking – Hook 1.txt</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Documents/Hook/notes/BBEdit:%20A%20powerful,%20highly%20linkable,%20text%20editor%20for%20creative%20work%20and%20note-taking%20%E2%80%93%20Hook%201.txt</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-17T03:02:33Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va5gDAAAAAAQQMAAAANkfvR+veqMsQa8V
+					EmbVFH1ipMWiW/xaUFNdcabBiO10iAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
+					bWVudHMAAAAEAAAAAQEAAEhvb2sFAAAAAQEA
+					AG5vdGVzAAAAXwAAAAEBAABCQkVkaXQ6IEEg
+					cG93ZXJmdWwsIGhpZ2hseSBsaW5rYWJsZSwg
+					dGV4dCBlZGl0b3IgZm9yIGNyZWF0aXZlIHdv
+					cmsgYW5kIG5vdGUtdGFraW5nIOKAkyBIb29r
+					LnR4dAAYAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AABQAAAAYAAAAAgAAAAEAwAAhFwAAAAAAAAI
+					AAAABAMAABLNAwAAAAAACAAAAAQDAAA/NgUA
+					AAAAAAgAAAAEAwAASDkFAAAAAAAIAAAABAMA
+					AHlEBQAAAAAACAAAAAQDAADH5r4AAAAAABgA
+					AAABBgAA6AAAAPgAAAAIAQAAGAEAACgBAAA4
+					AQAACAAAAAAEAABBxBmj4bPBBRgAAAABAgAA
+					AQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+					AAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgA
+					AAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
+					AAQAAEHEFN/EAAAAJAAAAAEBAABEQTMyNkMy
+					My1ENkUxLTQ1MDItODc5OC1CRjIwQzM5ODlC
+					MUIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
+					GgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRp
+					ZmllcktleQAABAAAAAMDAAChKgAA2AAAAP7/
+					//8BAAAAAAAAABEAAAAEEAAAyAAAAAAAAAAF
+					EAAASAEAAAAAAAAQEAAAeAEAAAAAAABAEAAA
+					aAEAAAAAAAACIAAARAIAAAAAAAAFIAAAtAEA
+					AAAAAAAQIAAAxAEAAAAAAAARIAAA+AEAAAAA
+					AAASIAAA2AEAAAAAAAATIAAA6AEAAAAAAAAg
+					IAAAJAIAAAAAAAAwIAAAUAIAAAAAAAABwAAA
+					mAEAAAAAAAARwAAAIAAAAAAAAAASwAAAqAEA
+					AAAAAAAQ0AAABAAAAAAAAABYAgCAfAIAAAAA
+					AAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Documents/Hook/notes/BBEdit:%20A%20powerful,%20highly%20linkable,%20text%20editor%20for%20creative%20work%20and%20note-taking%20%E2%80%93%20Hook.txt</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>BBEdit: A powerful, highly linkable, text editor for creative work and note-taking – Hook.txt</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Documents/Hook/notes/BBEdit:%20A%20powerful,%20highly%20linkable,%20text%20editor%20for%20creative%20work%20and%20note-taking%20%E2%80%93%20Hook.txt</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-13T13:44:11Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va/gCAAAAAAQQMAAAAP+kyXRQVQgP/mel
+					Dk+7xVlke8gNi9nC+zDbsujb9RBz6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAJAAAAAQEAAHNhZmV0eS5tZAAA
+					ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
+					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
+					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
+					H5iwAAAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
+					AKAAAAAIAAAAAAQAAEHEF0vzgo1ZGAAAAAEC
+					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
+					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
+					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
+					AAAABAAAQcP3ezSAAAAkAAAAAQEAAERBMzI2
+					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
+					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
+					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
+					dGlmaWVyS2V5AAAEAAAAAwMAAJ4qAADYAAAA
+					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
+					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
+					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
+					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
+					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
+					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
+					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
+					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
+					AAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/safety.md</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>safety.md</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/safety.md</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-12T13:35:43Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8gCAAAAAAQQMAAAAKxYWjkYsQ47RWoy
+					IfZhyq8Sr7yaIJQot0qEb0n8EO23xAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAYAAAAAQEAAENTSURfZGV2aWNl
+					X0FQSS55YW1sLnR4dBAAAAABBgAAEAAAACAA
+					AAAwAAAARAAAAAgAAAAEAwAAhFwAAAAAAAAI
+					AAAABAMAABLNAwAAAAAACAAAAAQDAABFzQMA
+					AAAAAAgAAAAEAwAATtCtAAAAAAAQAAAAAQYA
+					AHwAAACMAAAAnAAAAKwAAAAIAAAAAAQAAEHE
+					FqIzjkOGGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAABAMAAAIAAAAAAAAA
+					BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+					LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAkIKW5wAAAAgAAAAABAAAQcP3ezSAAAAk
+					AAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUwMi04
+					Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAAgQAA
+					AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAA
+					AAAAEAAAAAQQAABkAAAAAAAAAAUQAAC8AAAA
+					AAAAABAQAADkAAAAAAAAAEAQAADUAAAAAAAA
+					AAIgAACwAQAAAAAAAAUgAAAgAQAAAAAAABAg
+					AAAwAQAAAAAAABEgAABkAQAAAAAAABIgAABE
+					AQAAAAAAABMgAABUAQAAAAAAACAgAACQAQAA
+					AAAAADAgAAC8AQAAAAAAAAHAAAAEAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAAUAQAAAAAAABDQ
+					AAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/CSID_device_API.yaml.txt</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>CSID_device_API.yaml.txt</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/CSID_device_API.yaml.txt</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-10T03:25:44Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va/wCAAAAAAQQMAAAAGmZI//lTvnCNRfq
+					43OpXjPAjrTqR45HbKY2ixMLKKjd7AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAPAAAAAQEAAHRlc3RDb2RlTm90
+					ZS5tZAAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
+					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
+					BAMAAJjKqwAAAAAAEAAAAAEGAAB0AAAAhAAA
+					AJQAAACkAAAACAAAAAAEAABBxBUJShQSOhgA
+					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHD93s0gAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
+					SWRlbnRpZmllcktleQAABAAAAAMDAACTKgAA
+					2AAAAP7///8BAAAAAAAAABEAAAAEEAAAXAAA
+					AAAAAAAFEAAAtAAAAAAAAAAQEAAA3AAAAAAA
+					AABAEAAAzAAAAAAAAAACIAAAqAEAAAAAAAAF
+					IAAAGAEAAAAAAAAQIAAAKAEAAAAAAAARIAAA
+					XAEAAAAAAAASIAAAPAEAAAAAAAATIAAATAEA
+					AAAAAAAgIAAAiAEAAAAAAAAwIAAAtAEAAAAA
+					AAABwAAA/AAAAAAAAAARwAAAIAAAAAAAAAAS
+					wAAADAEAAAAAAAAQ0AAABAAAAAAAAAC8AQCA
+					4AEAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/testCodeNote.md</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>testCodeNote.md</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/testCodeNote.md</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-10T03:23:32Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8wCAAAAAAQQMAAAAOS6Ns3o4T/qn7Hd
+					Bat+b9uUO/YH8V8yZ+j3PpUVsAs3yAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAbAAAAAQEAAEFtYXpvbl9NU0tf
+					Q2VydGlmaWNhdGVfQS5tZAAQAAAAAQYAABAA
+					AAAgAAAAMAAAAEQAAAAIAAAABAMAAIRcAAAA
+					AAAACAAAAAQDAAASzQMAAAAAAAgAAAAEAwAA
+					Rc0DAAAAAAAIAAAABAMAALfIqwAAAAAAEAAA
+					AAEGAACAAAAAkAAAAKAAAACwAAAACAAAAAAE
+					AABBxBUJGOyuMBgAAAABAgAAAQAAAAAAAAAP
+					AAAAAAAAAAAAAAAAAAAACAAAAAQDAAACAAAA
+					AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
+					ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
+					AAAEAwAAAJCClucAAAAIAAAAAAQAAEHD93s0
+					gAAAJAAAAAEBAABEQTMyNkMyMy1ENkUxLTQ1
+					MDItODc5OC1CRjIwQzM5ODlCMUIYAAAAAQIA
+					AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
+					AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8B
+					AAAAAAAAABAAAAAEEAAAaAAAAAAAAAAFEAAA
+					wAAAAAAAAAAQEAAA6AAAAAAAAABAEAAA2AAA
+					AAAAAAACIAAAtAEAAAAAAAAFIAAAJAEAAAAA
+					AAAQIAAANAEAAAAAAAARIAAAaAEAAAAAAAAS
+					IAAASAEAAAAAAAATIAAAWAEAAAAAAAAgIAAA
+					lAEAAAAAAAAwIAAAwAEAAAAAAAABwAAACAEA
+					AAAAAAARwAAAIAAAAAAAAAASwAAAGAEAAAAA
+					AAAQ0AAABAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/Amazon_MSK_Certificate_A.md</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>Amazon_MSK_Certificate_A.md</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/Amazon_MSK_Certificate_A.md</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-07T02:38:40Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va/gCAAAAAAQQMAAAAF2uC+m6JAMVrIuC
+					yRvsLBF7UMuhT7cGEORFX768r/zl6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAKAAAAAQEAAGFkbGlzdC5jc3YA
+					ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
+					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
+					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
+					QfamAAAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
+					AKAAAAAIAAAAAAQAAEHEEwP+C8E+GAAAAAEC
+					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
+					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
+					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
+					AAAABAAAQcP3ezSAAAAkAAAAAQEAAERBMzI2
+					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
+					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
+					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
+					dGlmaWVyS2V5AAAEAAAAAwMAAF4qAADYAAAA
+					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
+					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
+					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
+					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
+					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
+					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
+					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
+					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
+					AAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/adlist.csv</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>adlist.csv</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/adlist.csv</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-05T13:38:20Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+wCAAAAAAQQMAAAANFc6gnZt+fiiAhl
+					tzVMGcXkFp6fayznsxugUw/q+lIo6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
+					c3BhY2UAAAAGAAAAAQEAAHJlc3VtZQAAEQAA
+					AAEBAAByZXN1bWUtc3BoaW54LnJzdAAAABQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFQAAAAI
+					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
+					AAAAAAgAAAAEAwAAnpwWAAAAAAAIAAAABAMA
+					AJUVnwAAAAAACAAAAAQDAAAjy6QAAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEEchwIB2SGAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcP3ezSAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+					/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAA
+					AAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
+					AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABE
+					AQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAA
+					AAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAA
+					ACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHA
+					AAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4
+					AQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/workspace/resume/resume-sphinx.rst</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>resume-sphinx.rst</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/workspace/resume/resume-sphinx.rst</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-05-05T04:54:28Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vayQDAAAAAAQQMAAAAO3I9ylHjKY+qJ/6
+					idV4gtB+1CAKZstRYn/tVcAkfZdmFAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
+					c3BhY2UAAAAGAAAAAQEAAHJlc3VtZQAADQAA
+					AAEBAAByZXN1bWUtd2ViLm1kAAAAFAAAAAEG
+					AAAQAAAAIAAAADAAAABEAAAAVAAAAAgAAAAE
+					AwAAhFwAAAAAAAAIAAAABAMAABLNAwAAAAAA
+					CAAAAAQDAACenBYAAAAAAAgAAAAEAwAAlRWf
+					AAAAAAAIAAAABAMAAEFspAAAAAAAFAAAAAEG
+					AACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+					BAAAQcQRuwHdb+UYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
 					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
 					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
 					AAAABAMAAACQgpbnAAAACAAAAAAEAABBw/d7
@@ -742,18 +1792,18 @@
 					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
 					AAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAA
 					TlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkA
-					AAQAAAADAwAA3CAAANgAAAD+////AQAAAAAA
-					AAARAAAABBAAAOQAAAAAAAAABRAAAKABAAAA
-					AAAAEBAAANwBAAAAAAAAQBAAAMwBAAAAAAAA
-					AiAAAKgCAAAAAAAABSAAABgCAAAAAAAAECAA
-					ACgCAAAAAAAAESAAAFwCAAAAAAAAEiAAADwC
-					AAAAAAAAEyAAAEwCAAAAAAAAICAAAIgCAAAA
-					AAAAMCAAALQCAAAAAAAAAcAAAPwBAAAAAAAA
-					EcAAACAAAAAAAAAAEsAAAAwCAAAAAAAAENAA
-					AAQAAAAAAAAAvAIAgOACAAAAAAAA
+					AAQAAAADAwAAWioAANgAAAD+////AQAAAAAA
+					AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAA
+					AAAAEBAAAAQBAAAAAAAAQBAAAPQAAAAAAAAA
+					AiAAANABAAAAAAAABSAAAEABAAAAAAAAECAA
+					AFABAAAAAAAAESAAAIQBAAAAAAAAEiAAAGQB
+					AAAAAAAAEyAAAHQBAAAAAAAAICAAALABAAAA
+					AAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAA
+					EcAAACAAAAAAAAAAEsAAADQBAAAAAAAAENAA
+					AAQAAAAAAAAA5AEAgAgCAAAAAAAA
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Setup/Menu%20Shortcuts.plist.OLD.plist</string>
+					<string>file:///Users/sethdoty/workspace/resume/resume-web.md</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -762,113 +1812,51 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>Menu Shortcuts.plist.OLD.plist</string>
+				<string>resume-web.md</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Setup/Menu%20Shortcuts.plist.OLD.plist</string>
+				<string>file:///Users/sethdoty/workspace/resume/resume-web.md</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-10T05:00:43Z</date>
+				<date>2022-05-03T00:56:29Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9vaxgEAAAAAAQQMAAAAAct5EYG2yVbyX5t
-					4JeuRcPM+HfI8lLPULTOgq2dvrG3CAMAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
-					YXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50
-					cxsAAAABAQAAaUNsb3VkfmNvbX5iYXJlYm9u
-					ZXN+YmJlZGl0AAkAAAABAQAARG9jdW1lbnRz
-					AAAAEwAAAAEBAABBcHBsaWNhdGlvbiBTdXBw
-					b3J0AAkAAAABAQAAQ2xpcHBpbmdzAAAABAAA
-					AAEBAABZYXJhEgAAAAEBAABSdWxlIFRlbXBs
-					YXRlLnlhcmEAACgAAAABBgAAEAAAACAAAAAw
-					AAAAQAAAAFgAAAB8AAAAkAAAAKwAAADAAAAA
-					zAAAAAgAAAAEAwAAhFwAAAAAAAAIAAAABAMA
-					ABLNAwAAAAAACAAAAAQDAAAZzQMAAAAAAAgA
-					AAAEAwAALOQDAAAAAAAIAAAABAMAANgaBAAA
-					AAAACAAAAAQDAADZGgQAAAAAAAgAAAAEAwAA
-					eDA2AAAAAAAIAAAABAMAAMMwNgAAAAAACAAA
-					AAQDAAD+5GAAAAAAAAgAAAAEAwAA/+RgAAAA
-					AAAoAAAAAQYAABgBAAAoAQAAOAEAAEgBAABY
-					AQAAaAEAAHgBAACIAQAAmAEAAKgBAAAIAAAA
-					AAQAAEHD0i8zAAAAGAAAAAECAAABAAAAAAAA
-					AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAgA
-					AAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
-					aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcP3
-					ezSAAAAkAAAAAQEAAERBMzI2QzIzLUQ2RTEt
-					NDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgAAAAB
-					AgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEA
-					AE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
-					AAAEAAAAAwMAAJkkAADYAAAA/v///wEAAAAA
-					AAAAEQAAAAQQAADoAAAAAAAAAAUQAAC4AQAA
-					AAAAABAQAAD4AQAAAAAAAEAQAADoAQAAAAAA
-					AAIgAADEAgAAAAAAAAUgAAA0AgAAAAAAABAg
-					AABEAgAAAAAAABEgAAB4AgAAAAAAABIgAABY
-					AgAAAAAAABMgAABoAgAAAAAAACAgAACkAgAA
-					AAAAADAgAADQAgAAAAAAAAHAAAAYAgAAAAAA
-					ABHAAAAgAAAAAAAAABLAAAAoAgAAAAAAABDQ
-					AAAEAAAAAAAAANgCAID8AgAAAAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Clippings/Yara/Rule%20Template.yara</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Rule Template.yara</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Clippings/Yara/Rule%20Template.yara</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-10T04:30:33Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va/QCAAAAAAQQMAAAALSOARrA8YwuaD8H
-					Ibq0Cx5rVB+OG9GFnpO46hCiUOK25AEAAAQA
+					Ym9vawADAAAAAAQQMAAAALmbHWy2vyUjU62C
+					35omtQFVUbkY7/VMeWc+QuKwJE3v8AEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAHAAAAAQEAAHRlc3Quc2gAEAAA
-					AAEGAAAQAAAAIAAAADAAAABEAAAACAAAAAQD
-					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
-					AAAABAMAAEXNAwAAAAAACAAAAAQDAAAN12AA
-					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
-					AAgAAAAABAAAQcQBSmovbNIYAAAAAQIAAAEA
-					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAE
-					AwAAAgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAA
-					AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRv
-					c2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
-					AABBw/d7NIAAACQAAAABAQAAREEzMjZDMjMt
-					RDZFMS00NTAyLTg3OTgtQkYyMEMzOTg5QjFC
-					GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
-					AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoA
-					AAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
-					ZXJLZXkAAAQAAAADAwAAziIAANgAAAD+////
-					AQAAAAAAAAARAAAABBAAAFQAAAAAAAAABRAA
-					AKwAAAAAAAAAEBAAANQAAAAAAAAAQBAAAMQA
-					AAAAAAAAAiAAAKABAAAAAAAABSAAABABAAAA
-					AAAAECAAACABAAAAAAAAESAAAFQBAAAAAAAA
-					EiAAADQBAAAAAAAAEyAAAEQBAAAAAAAAICAA
-					AIABAAAAAAAAMCAAAKwBAAAAAAAAAcAAAPQA
-					AAAAAAAAEcAAACAAAAAAAAAAEsAAAAQBAAAA
-					AAAAENAAAAQAAAAAAAAAtAEAgNgBAAAAAAAA
+					bG9hZHMAAAARAAAAAQEAAFVudGl0bGVkLm1h
+					cmtkb3duAAAAEAAAAAEGAAAQAAAAIAAAADAA
+					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
+					AwAAEs0DAAAAAAAIAAAABAMAAEXNAwAAAAAA
+					CAAAAAQDAACx6JkAAAAAABAAAAABBgAAeAAA
+					AIgAAACYAAAAqAAAAAgAAAAABAAAQcQQWpJD
+					4acYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
+					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
+					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
+					gpbnAAAACAAAAAAEAABBw/d7NIAAACQAAAAB
+					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
+					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
+					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
+					bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAA
+					WCoAANgAAAD+////AQAAAAAAAAARAAAABBAA
+					AGAAAAAAAAAABRAAALgAAAAAAAAAEBAAAOAA
+					AAAAAAAAQBAAANAAAAAAAAAAAiAAAKwBAAAA
+					AAAABSAAABwBAAAAAAAAECAAACwBAAAAAAAA
+					ESAAAGABAAAAAAAAEiAAAEABAAAAAAAAEyAA
+					AFABAAAAAAAAICAAAIwBAAAAAAAAMCAAALgB
+					AAAAAAAAAcAAAAABAAAAAAAAEcAAACAAAAAA
+					AAAAEsAAABABAAAAAAAAENAAAAQAAAAAAAAA
+					wAEAgOQBAAAAAAAA
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/test.sh</string>
+					<string>file:///Users/sethdoty/Downloads/Untitled.markdown</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -877,63 +1865,53 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>test.sh</string>
+				<string>Untitled.markdown</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/test.sh</string>
+				<string>file:///Users/sethdoty/Downloads/Untitled.markdown</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-10T04:20:04Z</date>
+				<date>2022-04-12T03:54:43Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va1AEAAAAAAQQMAAAAF2lwPNH8rJW5XT6
-					FeqfPohCEjID5LJmUTX8cQGWiL+dTAMAAAQA
+					Ym9vazQDAAAAAAQQMAAAAKQOOHSU+yvww5qe
+					CLLb5PbMHPK0kRg12FC8icx3OCWJMAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CgAAAAEBAABtaW5p
-					Y29uZGEzAAAEAAAAAQEAAHBrZ3MlAAAAAQEA
-					AGp1cHl0ZXJsYWJfd2lkZ2V0cy0xLjAuMC1w
-					eWhkM2ViMWIwXzEAAAAFAAAAAQEAAHNoYXJl
-					AAAABwAAAAEBAABqdXB5dGVyAA0AAAABAQAA
-					bGFiZXh0ZW5zaW9ucwAAABAAAAABAQAAQGp1
-					cHl0ZXItd2lkZ2V0cxIAAAABAQAAanVweXRl
-					cmxhYi1tYW5hZ2VyAAAGAAAAAQEAAHN0YXRp
-					YwAAJgAAAAEBAAA5NS5iNWE1ZmYxMDAwMGE2
-					MDUxZmE5OS5qcy5MSUNFTlNFLnR4dAAAMAAA
-					AAEGAAAQAAAAIAAAADAAAABEAAAAUAAAAIAA
-					AACQAAAAoAAAALgAAADQAAAA7AAAAPwAAAAI
-					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
-					AAAAAAgAAAAEAwAAO+UPAAAAAAAIAAAABAMA
-					AKblDwAAAAAACAAAAAQDAADykhsAAAAAAAgA
-					AAAEAwAAEJMbAAAAAAAIAAAABAMAABGTGwAA
-					AAAACAAAAAQDAAASkxsAAAAAAAgAAAAEAwAA
-					E5MbAAAAAAAIAAAABAMAABSTGwAAAAAACAAA
-					AAQDAAAtkxsAAAAAAAgAAAAEAwAASpMbAAAA
-					AAAwAAAAAQYAAGQBAAB0AQAAhAEAAJQBAACk
-					AQAAtAEAAMQBAADUAQAA5AEAAPQBAAAEAgAA
-					FAIAAAgAAAAABAAAQcLSjSsAAAAYAAAAAQIA
-					AAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgA
-					AAAEAwAACgAAAAAAAAAEAAAAAwMAAPUBAAAI
-					AAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
-					bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAA
-					AAAEAABBw/d7NIAAACQAAAABAQAAREEzMjZD
-					MjMtRDZFMS00NTAyLTg3OTgtQkYyMEMzOTg5
-					QjFCGAAAAAECAACBAAAAAQAAAO8TAAABAAAA
-					AAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUA
-					AMwAAAD+////AQAAAAAAAAAQAAAABBAAACwB
-					AAAAAAAABRAAACQCAAAAAAAAEBAAAGwCAAAA
-					AAAAQBAAAFwCAAAAAAAAAiAAADgDAAAAAAAA
-					BSAAAKgCAAAAAAAAECAAALgCAAAAAAAAESAA
-					AOwCAAAAAAAAEiAAAMwCAAAAAAAAEyAAANwC
-					AAAAAAAAICAAABgDAAAAAAAAMCAAAEQDAAAA
-					AAAAAcAAAIwCAAAAAAAAEcAAACAAAAAAAAAA
-					EsAAAJwCAAAAAAAAENAAAAQAAAAAAAAA
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
+					c3BhY2UAAAASAAAAAQEAAGJlYXJkZWRfYnJp
+					bGxpYW5jZQAABAAAAAEBAABkYXRhAgAAAAEB
+					AABlbgAACAAAAAEBAAB0ZWFtLnltbBwAAAAB
+					BgAAEAAAACAAAAAwAAAARAAAAGAAAABsAAAA
+					eAAAAAgAAAAEAwAAhFwAAAAAAAAIAAAABAMA
+					ABLNAwAAAAAACAAAAAQDAACenBYAAAAAAAgA
+					AAAEAwAAMAZkAAAAAAAIAAAABAMAAPYHZAAA
+					AAAACAAAAAQDAAD4B2QAAAAAAAgAAAAEAwAA
+					/QdkAAAAAAAcAAAAAQYAAKwAAAC8AAAAzAAA
+					ANwAAADsAAAA/AAAAAwBAAAIAAAAAAQAAEHD
+					vQ9ygAAAGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAABAMAAAUAAAAAAAAA
+					BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+					LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAkIKW5wAAAAgAAAAABAAAQcP3ezSAAAAk
+					AAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUwMi04
+					Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAAgQAA
+					AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAA
+					AAAAEAAAAAQQAACIAAAAAAAAAAUQAAAcAQAA
+					AAAAABAQAABQAQAAAAAAAEAQAABAAQAAAAAA
+					AAIgAAAcAgAAAAAAAAUgAACMAQAAAAAAABAg
+					AACcAQAAAAAAABEgAADQAQAAAAAAABIgAACw
+					AQAAAAAAABMgAADAAQAAAAAAACAgAAD8AQAA
+					AAAAADAgAAAoAgAAAAAAAAHAAABwAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAACAAQAAAAAAABDQ
+					AAAEAAAAAAAAAA==
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/miniconda3/pkgs/jupyterlab_widgets-1.0.0-pyhd3eb1b0_1/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/95.b5a5ff10000a6051fa99.js.LICENSE.txt</string>
+					<string>file:///Users/sethdoty/workspace/bearded_brilliance/data/en/team.yml</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -942,92 +1920,34 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>95.b5a5ff10000a6051fa99.js.LICENSE.txt</string>
+				<string>team.yml</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/miniconda3/pkgs/jupyterlab_widgets-1.0.0-pyhd3eb1b0_1/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/95.b5a5ff10000a6051fa99.js.LICENSE.txt</string>
+				<string>file:///Users/sethdoty/workspace/bearded_brilliance/data/en/team.yml</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-04-09T02:37:41Z</date>
+				<date>2022-04-12T03:54:36Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va4QDAAAAAAQQMAAAAPWUlsylc45hv5J4
-					icE/f02ANWqcctdxwKgXO+J2zOWhdAIAAAQA
+					Ym9vazgDAAAAAAQQMAAAACCA5F+Kpc8N2oLb
+					NoPH+x7TxGBoyVwEaEdLObHvAYV6NAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
-					YXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50
-					cxMAAAABAQAAY29tfmFwcGxlfkNsb3VkRG9j
-					cwAGAAAAAQEAAC5UcmFzaAAAEAAAAAEBAABm
-					dWxsX2RhdGFzZXQuY3N2HAAAAAEGAAAQAAAA
-					IAAAADAAAABAAAAAWAAAAHQAAACEAAAACAAA
-					AAQDAACEXAAAAAAAAAgAAAAEAwAAEs0DAAAA
-					AAAIAAAABAMAABnNAwAAAAAACAAAAAQDAAAs
-					5AMAAAAAAAgAAAAEAwAApvIDAAAAAAAIAAAA
-					BAMAADw2BQAAAAAACAAAAAQDAABaX1gAAAAA
-					ABwAAAABBgAAwAAAANAAAADgAAAA8AAAAAAB
-					AAAQAQAAIAEAAAgAAAAABAAAQcQAk4CTGFQY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAgAAAAEAwAABQAAAAAAAAAEAAAAAwMA
-					APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-					AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-					AAAACAAAAAAEAABBw/d7NIAAACQAAAABAQAA
-					REEzMjZDMjMtRDZFMS00NTAyLTg3OTgtQkYy
-					MEMzOTg5QjFCGAAAAAECAACBAAAAAQAAAO8T
-					AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-					AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
-					dElkZW50aWZpZXJLZXkAAAQAAAADAwAAWSIA
-					ANgAAAD+////AQAAAAAAAAARAAAABBAAAJwA
-					AAAAAAAABRAAADABAAAAAAAAEBAAAGQBAAAA
-					AAAAQBAAAFQBAAAAAAAAAiAAADACAAAAAAAA
-					BSAAAKABAAAAAAAAECAAALABAAAAAAAAESAA
-					AOQBAAAAAAAAEiAAAMQBAAAAAAAAEyAAANQB
-					AAAAAAAAICAAABACAAAAAAAAMCAAADwCAAAA
-					AAAAAcAAAIQBAAAAAAAAEcAAACAAAAAAAAAA
-					EsAAAJQBAAAAAAAAENAAAAQAAAAAAAAARAIA
-					gGgCAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Library/Mobile%20Documents/com~apple~CloudDocs/.Trash/full_dataset.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>full_dataset.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Library/Mobile%20Documents/com~apple~CloudDocs/.Trash/full_dataset.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-09T02:37:39Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va3QDAAAAAAQQMAAAAJI9F9+61+A25KbK
-					Dz9trzaT/5abdRLZeag6dC3lGS58ZAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rCQAAAAEBAABjbGVhbi5jc3YAAAAc
-					AAAAAQYAABAAAAAgAAAAMAAAAEQAAABcAAAA
-					aAAAAHgAAAAIAAAABAMAAIRcAAAAAAAACAAA
-					AAQDAAASzQMAAAAAAAgAAAAEAwAAPzYFAAAA
-					AAAIAAAABAMAAEc+BQAAAAAACAAAAAQDAABT
-					TAUAAAAAAAgAAAAEAwAAICtGAAAAAAAIAAAA
-					BAMAABD1SQAAAAAAHAAAAAEGAACwAAAAwAAA
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAAB3b3Jr
+					c3BhY2UAAAASAAAAAQEAAGJlYXJkZWRfYnJp
+					bGxpYW5jZQAABAAAAAEBAABkYXRhAgAAAAEB
+					AABlbgAACwAAAAEBAABzZXJ2aWNlLnltbAAc
+					AAAAAQYAABAAAAAgAAAAMAAAAEQAAABgAAAA
+					bAAAAHgAAAAIAAAABAMAAIRcAAAAAAAACAAA
+					AAQDAAASzQMAAAAAAAgAAAAEAwAAnpwWAAAA
+					AAAIAAAABAMAADAGZAAAAAAACAAAAAQDAAD2
+					B2QAAAAAAAgAAAAEAwAA+AdkAAAAAAAIAAAA
+					BAMAAPsHZAAAAAAAHAAAAAEGAACwAAAAwAAA
 					ANAAAADgAAAA8AAAAAABAAAQAQAACAAAAAAE
-					AABBw/xZ4195ZBgAAAABAgAAAQAAAAAAAAAP
+					AABBw70PcoAAABgAAAABAgAAAQAAAAAAAAAP
 					AAAAAAAAAAAAAAAAAAAACAAAAAQDAAAFAAAA
 					AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
 					ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
@@ -1035,20 +1955,18 @@
 					gAAAJAAAAAEBAABEQTMyNkMyMy1ENkUxLTQ1
 					MDItODc5OC1CRjIwQzM5ODlCMUIYAAAAAQIA
 					AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
-					AAABAQAALwAAAAAAAAABBQAAGgAAAAEBAABO
-					U1VSTERvY3VtZW50SWRlbnRpZmllcktleQAA
-					BAAAAAMDAAAwIQAA2AAAAP7///8BAAAAAAAA
-					ABEAAAAEEAAAjAAAAAAAAAAFEAAAIAEAAAAA
-					AAAQEAAAVAEAAAAAAABAEAAARAEAAAAAAAAC
-					IAAAIAIAAAAAAAAFIAAAkAEAAAAAAAAQIAAA
-					oAEAAAAAAAARIAAA1AEAAAAAAAASIAAAtAEA
-					AAAAAAATIAAAxAEAAAAAAAAgIAAAAAIAAAAA
-					AAAwIAAALAIAAAAAAAABwAAAdAEAAAAAAAAR
-					wAAAIAAAAAAAAAASwAAAhAEAAAAAAAAQ0AAA
-					BAAAAAAAAAA0AgCAWAIAAAAAAAA=
+					AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8B
+					AAAAAAAAABAAAAAEEAAAjAAAAAAAAAAFEAAA
+					IAEAAAAAAAAQEAAAVAEAAAAAAABAEAAARAEA
+					AAAAAAACIAAAIAIAAAAAAAAFIAAAkAEAAAAA
+					AAAQIAAAoAEAAAAAAAARIAAA1AEAAAAAAAAS
+					IAAAtAEAAAAAAAATIAAAxAEAAAAAAAAgIAAA
+					AAIAAAAAAAAwIAAALAIAAAAAAAABwAAAdAEA
+					AAAAAAARwAAAIAAAAAAAAAASwAAAhAEAAAAA
+					AAAQ0AAABAAAAAAAAAA=
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/clean.csv</string>
+					<string>file:///Users/sethdoty/workspace/bearded_brilliance/data/en/service.yml</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1057,427 +1975,22 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>clean.csv</string>
+				<string>service.yml</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/clean.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-09T02:37:39Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va3wDAAAAAAQQMAAAACTgmUlqIuvnM6Fg
-					5ah6O6x1KNQSmFe4TtGr34wsz/vabAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rEQAAAAEBAABjbGVhbl9sZXhpY2Fs
-					LmNzdgAAABwAAAABBgAAEAAAACAAAAAwAAAA
-					RAAAAFwAAABoAAAAeAAAAAgAAAAEAwAAhFwA
-					AAAAAAAIAAAABAMAABLNAwAAAAAACAAAAAQD
-					AAA/NgUAAAAAAAgAAAAEAwAARz4FAAAAAAAI
-					AAAABAMAAFNMBQAAAAAACAAAAAQDAAAgK0YA
-					AAAAAAgAAAAEAwAAV1xYAAAAAAAcAAAAAQYA
-					ALgAAADIAAAA2AAAAOgAAAD4AAAACAEAABgB
-					AAAIAAAAAAQAAEHEAJMU8TYiGAAAAAECAAAB
-					AAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
-					BAMAAAUAAAAAAAAABAAAAAMDAAD1AQAACAAA
-					AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50
-					b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAA
-					BAAAQcP3ezSAAAAkAAAAAQEAAERBMzI2QzIz
-					LUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIx
-					QhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAA
-					AAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAa
-					AAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVudGlm
-					aWVyS2V5AAAEAAAAAwMAAFQiAADYAAAA/v//
-					/wEAAAAAAAAAEQAAAAQQAACUAAAAAAAAAAUQ
-					AAAoAQAAAAAAABAQAABcAQAAAAAAAEAQAABM
-					AQAAAAAAAAIgAAAoAgAAAAAAAAUgAACYAQAA
-					AAAAABAgAACoAQAAAAAAABEgAADcAQAAAAAA
-					ABIgAAC8AQAAAAAAABMgAADMAQAAAAAAACAg
-					AAAIAgAAAAAAADAgAAA0AgAAAAAAAAHAAAB8
-					AQAAAAAAABHAAAAgAAAAAAAAABLAAACMAQAA
-					AAAAABDQAAAEAAAAAAAAADwCAIBgAgAAAAAA
-					AA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/clean_lexical.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>clean_lexical.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/clean_lexical.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-09T02:32:21Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va3gDAAAAAAQQMAAAABVc1DruDBCfb95A
-					cyXUrcOPbbGDtIdH9B0r6EbQ+SmfaAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rEAAAAAEBAABmdWxsX2RhdGFzZXQu
-					Y3N2HAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
-					XAAAAGgAAAB4AAAACAAAAAQDAACEXAAAAAAA
-					AAgAAAAEAwAAEs0DAAAAAAAIAAAABAMAAD82
-					BQAAAAAACAAAAAQDAABHPgUAAAAAAAgAAAAE
-					AwAAU0wFAAAAAAAIAAAABAMAACArRgAAAAAA
-					CAAAAAQDAABaX1gAAAAAABwAAAABBgAAtAAA
-					AMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAAAgA
-					AAAABAAAQcQAk4CTGFQYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
-					BQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
-					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
-					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
-					w/d7NIAAACQAAAABAQAAREEzMjZDMjMtRDZF
-					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
-					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
-					AAABAAAAAQEAAC8AAAAAAAAAAQUAABoAAAAB
-					AQAATlNVUkxEb2N1bWVudElkZW50aWZpZXJL
-					ZXkAAAQAAAADAwAAWSIAANgAAAD+////AQAA
-					AAAAAAARAAAABBAAAJAAAAAAAAAABRAAACQB
-					AAAAAAAAEBAAAFgBAAAAAAAAQBAAAEgBAAAA
-					AAAAAiAAACQCAAAAAAAABSAAAJQBAAAAAAAA
-					ECAAAKQBAAAAAAAAESAAANgBAAAAAAAAEiAA
-					ALgBAAAAAAAAEyAAAMgBAAAAAAAAICAAAAQC
-					AAAAAAAAMCAAADACAAAAAAAAAcAAAHgBAAAA
-					AAAAEcAAACAAAAAAAAAAEsAAAIgBAAAAAAAA
-					ENAAAAQAAAAAAAAAOAIAgFwCAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/full_dataset.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>full_dataset.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/full_dataset.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-08T03:30:30Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va/ADAAAAAAQQMAAAAE+UNEi8PRR8Bq6b
-					ffUKA+G7jbbrIrk85lS8eRX7C1ot4AIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rBAAAAAEBAABkYXRhDAAAAAEBAABG
-					aW5hbERhdGFzZXQDAAAAAQEAAFVSTAATAAAA
-					AQEAAE1hbHdhcmVfZGF0YXNldC5jc3YAKAAA
-					AAEGAAAQAAAAIAAAADAAAABEAAAAXAAAAGgA
-					AAB4AAAAhAAAAJgAAACkAAAACAAAAAQDAACE
-					XAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAIAAAA
-					BAMAAD82BQAAAAAACAAAAAQDAABHPgUAAAAA
-					AAgAAAAEAwAAU0wFAAAAAAAIAAAABAMAACAr
-					RgAAAAAACAAAAAQDAACzLEYAAAAAAAgAAAAE
-					AwAAckBVAAAAAAAIAAAABAMAAH9AVQAAAAAA
-					CAAAAAQDAACCQFUAAAAAACgAAAABBgAA8AAA
-					AAABAAAQAQAAIAEAADABAABAAQAAUAEAAGAB
-					AABwAQAAgAEAAAgAAAAABAAAQb0z3CAAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAgAAAAEAwAACAAAAAAAAAAEAAAAAwMA
-					APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-					AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-					AAAACAAAAAAEAABBw/d7NIAAACQAAAABAQAA
-					REEzMjZDMjMtRDZFMS00NTAyLTg3OTgtQkYy
-					MEMzOTg5QjFCGAAAAAECAACBAAAAAQAAAO8T
-					AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-					AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
-					dElkZW50aWZpZXJLZXkAAAQAAAADAwAAQCIA
-					ANgAAAD+////AQAAAAAAAAARAAAABBAAAMAA
-					AAAAAAAABRAAAJABAAAAAAAAEBAAANABAAAA
-					AAAAQBAAAMABAAAAAAAAAiAAAJwCAAAAAAAA
-					BSAAAAwCAAAAAAAAECAAABwCAAAAAAAAESAA
-					AFACAAAAAAAAEiAAADACAAAAAAAAEyAAAEAC
-					AAAAAAAAICAAAHwCAAAAAAAAMCAAAKgCAAAA
-					AAAAAcAAAPABAAAAAAAAEcAAACAAAAAAAAAA
-					EsAAAAACAAAAAAAAENAAAAQAAAAAAAAAsAIA
-					gNQCAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/URL/Malware_dataset.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Malware_dataset.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/URL/Malware_dataset.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-08T03:30:06Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va8QDAAAAAAQQMAAAADfupy02/PJl3Frm
-					uQUt6R4ziaw9rbrov1Ckn/rLXNPZtAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rBAAAAAEBAABkYXRhDAAAAAEBAABG
-					aW5hbERhdGFzZXQLAAAAAQEAAE1hbHdhcmUu
-					Y3N2ACQAAAABBgAAEAAAACAAAAAwAAAARAAA
-					AFwAAABoAAAAeAAAAIQAAACYAAAACAAAAAQD
-					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
-					AAAABAMAAD82BQAAAAAACAAAAAQDAABHPgUA
-					AAAAAAgAAAAEAwAAU0wFAAAAAAAIAAAABAMA
-					ACArRgAAAAAACAAAAAQDAACzLEYAAAAAAAgA
-					AAAEAwAAckBVAAAAAAAIAAAABAMAAIxAVQAA
-					AAAAJAAAAAEGAADYAAAA6AAAAPgAAAAIAQAA
-					GAEAACgBAAA4AQAASAEAAFgBAAAIAAAAAAQA
-					AEG8zoVQAAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAIAAAABAMAAAcAAAAA
-					AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxl
-					Oi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
-					AAQDAAAAkIKW5wAAAAgAAAAABAAAQcP3ezSA
-					AAAkAAAAAQEAAERBMzI2QzIzLUQ2RTEtNDUw
-					Mi04Nzk4LUJGMjBDMzk4OUIxQhgAAAABAgAA
-					gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
-					AAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5T
-					VVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5AAAE
-					AAAAAwMAADkiAADYAAAA/v///wEAAAAAAAAA
-					EQAAAAQQAACsAAAAAAAAAAUQAABoAQAAAAAA
-					ABAQAACkAQAAAAAAAEAQAACUAQAAAAAAAAIg
-					AABwAgAAAAAAAAUgAADgAQAAAAAAABAgAADw
-					AQAAAAAAABEgAAAkAgAAAAAAABIgAAAEAgAA
-					AAAAABMgAAAUAgAAAAAAACAgAABQAgAAAAAA
-					ADAgAAB8AgAAAAAAAAHAAADEAQAAAAAAABHA
-					AAAgAAAAAAAAABLAAADUAQAAAAAAABDQAAAE
-					AAAAAAAAAIQCAICoAgAAAAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/Malware.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Malware.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/Malware.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-08T02:39:17Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va8ADAAAAAAQQMAAAAJhJVczNCbacCAzX
-					dyRSsryd2g0H4n5D7ZJg3M5CtLXDsAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQIAAAAAQEAAE5v
-					dGVib29rBAAAAAEBAABkYXRhDAAAAAEBAABG
-					aW5hbERhdGFzZXQHAAAAAQEAAEFsbC5jc3YA
-					JAAAAAEGAAAQAAAAIAAAADAAAABEAAAAXAAA
-					AGgAAAB4AAAAhAAAAJgAAAAIAAAABAMAAIRc
-					AAAAAAAACAAAAAQDAAASzQMAAAAAAAgAAAAE
-					AwAAPzYFAAAAAAAIAAAABAMAAEc+BQAAAAAA
-					CAAAAAQDAABTTAUAAAAAAAgAAAAEAwAAICtG
-					AAAAAAAIAAAABAMAALMsRgAAAAAACAAAAAQD
-					AAByQFUAAAAAAAgAAAAEAwAAiUBVAAAAAAAk
-					AAAAAQYAANQAAADkAAAA9AAAAAQBAAAUAQAA
-					JAEAADQBAABEAQAAVAEAAAgAAAAABAAAQbzO
-					hUoAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
-					AAAAAAAAAAAAAAgAAAAEAwAABwAAAAAAAAAE
-					AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-					DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
-					AACQgpbnAAAACAAAAAAEAABBw/d7NIAAACQA
-					AAABAQAAREEzMjZDMjMtRDZFMS00NTAyLTg3
-					OTgtQkYyMEMzOTg5QjFCGAAAAAECAACBAAAA
-					AQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEA
-					AC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxE
-					b2N1bWVudElkZW50aWZpZXJLZXkAAAQAAAAD
-					AwAANiIAANgAAAD+////AQAAAAAAAAARAAAA
-					BBAAAKgAAAAAAAAABRAAAGQBAAAAAAAAEBAA
-					AKABAAAAAAAAQBAAAJABAAAAAAAAAiAAAGwC
-					AAAAAAAABSAAANwBAAAAAAAAECAAAOwBAAAA
-					AAAAESAAACACAAAAAAAAEiAAAAACAAAAAAAA
-					EyAAABACAAAAAAAAICAAAEwCAAAAAAAAMCAA
-					AHgCAAAAAAAAAcAAAMABAAAAAAAAEcAAACAA
-					AAAAAAAAEsAAANABAAAAAAAAENAAAAQAAAAA
-					AAAAgAIAgKQCAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/All.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>All.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Notebook/data/FinalDataset/All.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-03-30T02:12:15Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va7wDAAAAAAQQMAAAAGJdD0xncdtSq2tw
-					rlRQwWQhrl7jUM2UQ6Y2bJD9UM0TrAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb2N1
-					bWVudHMAAAAPAAAAAQEAAE1hc3RlcnNfUHJv
-					Z3JhbQAEAAAAAQEAAEQyMTQVAAAAAQEAAFRh
-					c2sgMSAtIENob29zZSBUb3BpYwAAAA8AAAAB
-					AQAARGF0YXNldCBPcHRpb25zABIAAAABAQAA
-					TWFsaWNpb3VzIFVSTHMuY3N2AAAgAAAAAQYA
-					ABAAAAAgAAAAMAAAAEQAAABcAAAAaAAAAIgA
-					AACgAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
-					AwAAEs0DAAAAAAAIAAAABAMAAD82BQAAAAAA
-					CAAAAAQDAABHPgUAAAAAAAgAAAAEAwAAU0wF
-					AAAAAAAIAAAABAMAAPluBQAAAAAACAAAAAQD
-					AABfkzkAAAAAAAgAAAAEAwAAHII5AAAAAAAg
-					AAAAAQYAAOQAAAD0AAAABAEAABQBAAAkAQAA
-					NAEAAEQBAABUAQAACAAAAAAEAABBw/FbJgAA
-					ABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAA
-					AAAAAAAACAAAAAQDAAAGAAAAAAAAAAQAAAAD
-					AwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAA
-					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCC
-					lucAAAAIAAAAAAQAAEHD5QRRgAAAJAAAAAEB
-					AABEQTMyNkMyMy1ENkUxLTQ1MDItODc5OC1C
-					RjIwQzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA
-					7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAA
-					AAAAAAABBQAAGgAAAAEBAABOU1VSTERvY3Vt
-					ZW50SWRlbnRpZmllcktleQAABAAAAAMDAAAA
-					IQAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
-					vAAAAAAAAAAFEAAAZAEAAAAAAAAQEAAAnAEA
-					AAAAAABAEAAAjAEAAAAAAAACIAAAaAIAAAAA
-					AAAFIAAA2AEAAAAAAAAQIAAA6AEAAAAAAAAR
-					IAAAHAIAAAAAAAASIAAA/AEAAAAAAAATIAAA
-					DAIAAAAAAAAgIAAASAIAAAAAAAAwIAAAdAIA
-					AAAAAAABwAAAvAEAAAAAAAARwAAAIAAAAAAA
-					AAASwAAAzAEAAAAAAAAQ0AAABAAAAAAAAAB8
-					AgCAoAIAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Task%201%20-%20Choose%20Topic/Dataset%20Options/Malicious%20URLs.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Malicious URLs.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Documents/Masters_Program/D214/Task%201%20-%20Choose%20Topic/Dataset%20Options/Malicious%20URLs.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-03-29T00:29:06Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9vaxQDAAAAAAQQMAAAABqBoHu4D93REa/z
-					c3uQkiu3OdFA6JpsO7/p6BXGjt3eEAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAMAAAAAQEAAEZpbmFsRGF0YXNl
-					dAMAAAABAQAAVVJMABMAAAABAQAATWFsd2Fy
-					ZV9kYXRhc2V0LmNzdgAYAAAAAQYAABAAAAAg
-					AAAAMAAAAEQAAABYAAAAZAAAAAgAAAAEAwAA
-					hFwAAAAAAAAIAAAABAMAABLNAwAAAAAACAAA
-					AAQDAABFzQMAAAAAAAgAAAAEAwAARYQ5AAAA
-					AAAIAAAABAMAAFyEOQAAAAAACAAAAAQDAABf
-					hDkAAAAAABgAAAABBgAAoAAAALAAAADAAAAA
-					0AAAAOAAAADwAAAACAAAAAAEAABBvTPcIAAA
-					ABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAA
-					AAAAAAAACAAAAAQDAAAEAAAAAAAAAAQAAAAD
-					AwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAA
-					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCC
-					lucAAAAIAAAAAAQAAEHD5QRRgAAAJAAAAAEB
-					AABEQTMyNkMyMy1ENkUxLTQ1MDItODc5OC1C
-					RjIwQzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA
-					7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAA
-					AAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAA
-					AAAEEAAAgAAAAAAAAAAFEAAAAAEAAAAAAAAQ
-					EAAAMAEAAAAAAABAEAAAIAEAAAAAAAACIAAA
-					/AEAAAAAAAAFIAAAbAEAAAAAAAAQIAAAfAEA
-					AAAAAAARIAAAsAEAAAAAAAASIAAAkAEAAAAA
-					AAATIAAAoAEAAAAAAAAgIAAA3AEAAAAAAAAw
-					IAAACAIAAAAAAAABwAAAUAEAAAAAAAARwAAA
-					IAAAAAAAAAASwAAAYAEAAAAAAAAQ0AAABAAA
-					AAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/FinalDataset/URL/Malware_dataset.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Malware_dataset.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/FinalDataset/URL/Malware_dataset.csv</string>
+				<string>file:///Users/sethdoty/workspace/bearded_brilliance/data/en/service.yml</string>
 			</dict>
 		</array>
 	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
+	<key>Results Browsers</key>
+	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2022-04-10T04:09:43Z</date>
+	<date>2022-07-04T03:50:27Z</date>
+	<key>Saved Search Sets</key>
+	<false/>
+	<key>Search_mode</key>
+	<string>Grep</string>
 	<key>SelectedColorSchemeName</key>
 	<string>BBEdit Light</string>
 	<key>SelectedColorSchemeNameDarkMode</key>
@@ -1488,6 +2001,20 @@
 	<true/>
 	<key>UserDeclinedSandboxAccess</key>
 	<true/>
+	<key>ZapGremlins_Action</key>
+	<string>Zdel</string>
+	<key>ZapGremlins_ConvertToASCII</key>
+	<true/>
+	<key>ZapGremlins_EightBitCharacters</key>
+	<true/>
+	<key>ZapGremlins_NullCharacters</key>
+	<true/>
+	<key>ZapGremlins_UseNamedEntities</key>
+	<true/>
+	<key>ZapGremlins_ZapControlCharacters</key>
+	<true/>
+	<key>ZapGremlins_ZappedCharacterReplacement</key>
+	<string></string>
 	<key>~169C3D340FB9F617D073FC38B85E0815BB699D64</key>
 	<data>
 	0iNDqWlfMwggTHJP2CMR9JZ2rrIdVHXiOH4pyzFTji10w/txNPLTI+UjA57Joi9DSPX6
