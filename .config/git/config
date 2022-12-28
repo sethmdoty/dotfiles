@@ -5,7 +5,7 @@
 	rebase = false
 
 [user]
-	email = "sdoty@icloud.com"
+	email = "sethmdoty@icloud.com"
 	name = "Seth Doty"
 	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDAK9MtfE7IK4DZTqPwDh6rbq4+RBRqq2U4zAqW3cWuBDeWyFXGyqnM+X8ZRn49Dy8gD1i/2qagVRmgToMVS5oBWB+IomzEO0A+N2NBeTghWEam9XKGl0Oslj/n4Fmcznx5Bgyuwmlescvizaya9RysgavmvKzLkqLXHg1W2M7vHHZgBAxhslE4nbwNNF9IBVvjukGpYLyL6V7kmSgJ6lu1v4PhgbGMiRNiLN0bZAN094BBSXfgXRmfm2mzxdsV4fdo1zOZ++EBlfZBHpdcMatVPQ7kf+1smQaDHjh6nWmI1ybUlH7jpcUwyAnc3K3B0czY6FrcSj7HBnZJ3d9h1kniWwUZMB2QItEmHbsFfhQdh/hWELeFsilmERszxLNjvfl5uZd42DbrfA/3FVUtNPlqbSZdxuQuRTsiK8JLNwxt+UDz93UxgLCkVdw1mrXbNKEj7OB/R71ns7dv4wBYhIpC1BLvVBiQbrP9ks83BFBEzaRZz7evs8RZ+q9VvqAw0nU= 
 

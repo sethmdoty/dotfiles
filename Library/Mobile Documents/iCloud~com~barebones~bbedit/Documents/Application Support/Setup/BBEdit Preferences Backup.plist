@@ -12,17 +12,15 @@
 	<true/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
-	<key>ApplicationDidStartClean</key>
-	<true/>
-	<key>ApplicationSleepState</key>
+	<key>ApplicationAutoSaveState</key>
 	<dict>
 		<key>ApplicationBuildNumber</key>
-		<string>14C220</string>
+		<string>14D24</string>
 		<key>DisplayConfiguration</key>
 		<string>displays([(0, 0), (1728, 1117)])</string>
 		<key>OpenDocuments</key>
 		<dict>
-			<key>05CD55EF-E7E2-40D8-AB10-0043DBB40C1E</key>
+			<key>4146EE0C-DCC1-4278-BC9F-8980A596757E</key>
 			<dict>
 				<key>DocumentProperties</key>
 				<dict/>
@@ -30,47 +28,48 @@
 				<dict>
 					<key>FileBookmark</key>
 					<data>
-					Ym9va1gDAAAAAAQQMAAAAEoxsdU4KwTAVDCu
-					7aiByKzAf9X9vEpl6Jvpln39BczJMAIAAAQA
+					Ym9va2QDAAAAAAQQMAAAAMLuUYsVEOuYjrP8
+					rpxQXHdZoZCys22XDm3GJns8UxriPAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5BgAAAAEBAAAuVHJh
-					c2gAAAwAAAABAQAAY2l0YXRpb24uYmliEAAA
-					AAEGAAAQAAAAIAAAADAAAABAAAAACAAAAAQD
-					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
-					AAAABAMAANYRBAAAAAAACAAAAAQDAAANnmUB
-					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
-					AAgAAAAABAAAQcRkwaUKybQYAAAAAQIAAAEA
-					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAE
-					AwAAAgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAA
-					AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRv
-					c2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
-					AABBxFJuawAAACQAAAABAQAAREEzMjZDMjMt
-					RDZFMS00NTAyLTg3OTgtQkYyMEMzOTg5QjFC
-					GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
-					AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoA
-					AAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
-					ZXJLZXkAAAQAAAADAwAANiwAABoAAAABAQAA
-					TlNVUkxQYXJlbnREaXJlY3RvcnlVUkxLZXkA
-					AB4AAAABCQAAZmlsZTovLy9Vc2Vycy9zZXRo
-					ZG90eS8uVHJhc2gvAADwAAAA/v///wEAAAAA
-					AAAAEwAAAAQQAABUAAAAAAAAAAUQAACsAAAA
-					AAAAABAQAADUAAAAAAAAACAQAABAAAAAAAAA
-					AEAQAADEAAAAAAAAAAIgAACgAQAAAAAAAAUg
-					AAAQAQAAAAAAABAgAAAgAQAAAAAAABEgAABU
-					AQAAAAAAABIgAAA0AQAAAAAAABMgAABEAQAA
-					AAAAACAgAACAAQAAAAAAADAgAACsAQAAAAAA
-					AAHAAAD0AAAAAAAAABHAAAAgAAAAAAAAABLA
-					AAAEAQAAAAAAABDQAAAEAAAAAAAAALQBAIDY
-					AQAAAAAAAOQBAIAIAgAAAAAAAA==
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAPAAAAAQEAAGhlbHZpdGljYW4u
+					bGVzcwAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
+					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
+					BAMAAEP4BwIAAAAAEAAAAAEGAAB0AAAAhAAA
+					AJQAAACkAAAACAAAAAAEAABBxKnh+m0PjhgA
+					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHEnQ18AAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
+					SWRlbnRpZmllcktleQAABAAAAAMDAAAtLgAA
+					GgAAAAEBAABOU1VSTFBhcmVudERpcmVjdG9y
+					eVVSTEtleQAAIQAAAAEJAABmaWxlOi8vL1Vz
+					ZXJzL3NldGhkb3R5L0Rvd25sb2Fkcy8AAADw
+					AAAA/v///wEAAAAAAAAAEwAAAAQQAABcAAAA
+					AAAAAAUQAAC0AAAAAAAAABAQAADcAAAAAAAA
+					ACAQAABEAAAAAAAAAEAQAADMAAAAAAAAAAIg
+					AACoAQAAAAAAAAUgAAAYAQAAAAAAABAgAAAo
+					AQAAAAAAABEgAABcAQAAAAAAABIgAAA8AQAA
+					AAAAABMgAABMAQAAAAAAACAgAACIAQAAAAAA
+					ADAgAAC0AQAAAAAAAAHAAAD8AAAAAAAAABHA
+					AAAgAAAAAAAAABLAAAAMAQAAAAAAABDQAAAE
+					AAAAAAAAALwBAIDgAQAAAAAAAOwBAIAQAgAA
+					AAAAAA==
 					</data>
 					<key>FileBookmarkHasSecurityScope</key>
 					<true/>
 					<key>FileName</key>
-					<string>citation.bib</string>
+					<string>helvitican.less</string>
 					<key>FileURLString</key>
-					<string>file:///Users/sethdoty/.Trash/citation.bib</string>
+					<string>file:///Users/sethdoty/Downloads/helvitican.less</string>
 					<key>ParentDirID</key>
-					<integer>266710</integer>
+					<integer>249157</integer>
 				</dict>
 				<key>com.barebones.DocumentType</key>
 				<string>Text</string>
@@ -80,7 +79,7 @@
 		<array>
 			<dict>
 				<key>ActiveDocument</key>
-				<string>05CD55EF-E7E2-40D8-AB10-0043DBB40C1E</string>
+				<string>4146EE0C-DCC1-4278-BC9F-8980A596757E</string>
 				<key>AdditionalProperties</key>
 				<dict>
 					<key>EmbeddedEditorVisible</key>
@@ -96,18 +95,18 @@
 				</dict>
 				<key>Documents</key>
 				<array>
-					<string>05CD55EF-E7E2-40D8-AB10-0043DBB40C1E</string>
+					<string>4146EE0C-DCC1-4278-BC9F-8980A596757E</string>
 				</array>
 				<key>IsFullScreen</key>
 				<false/>
 				<key>IsMinimized</key>
 				<false/>
 				<key>SavedPosition</key>
-				<string>rect(66,0,1036,849)</string>
+				<string>rect(66,179,1036,1028)</string>
 				<key>SavedPosition_v3</key>
-				<string>{{0, 81}, {849, 998}}</string>
+				<string>{{179, 81}, {849, 998}}</string>
 				<key>WindowName</key>
-				<string>citation.bib</string>
+				<string>helvitican.less</string>
 				<key>WindowType</key>
 				<string>ProjectWindow</string>
 			</dict>
@@ -115,7 +114,124 @@
 		<key>UntitledWindowsState</key>
 		<dict>
 			<key>GrpD</key>
-			<integer>1</integer>
+			<integer>6</integer>
+		</dict>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
+	<key>ApplicationDidStartClean</key>
+	<true/>
+	<key>ApplicationSleepState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>14D24</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (1728, 1117)])</string>
+		<key>OpenDocuments</key>
+		<dict>
+			<key>4146EE0C-DCC1-4278-BC9F-8980A596757E</key>
+			<dict>
+				<key>DocumentProperties</key>
+				<dict/>
+				<key>Location</key>
+				<dict>
+					<key>FileBookmark</key>
+					<data>
+					Ym9vaxQEAAAAAAQQMAAAAN/OGJgmSy0rpxwz
+					AAWo5sjYg3aQdD3JkOnCH8+2pA9O7AIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
+					YXJ5ABMAAAABAQAAQXBwbGljYXRpb24gU3Vw
+					cG9ydAAJAAAAAQEAAFRhc2tQYXBlcgAAAAsA
+					AAABAQAAU3R5bGVTaGVldHMADwAAAAEBAABo
+					ZWx2aXRpY2FuLmxlc3MAHAAAAAEGAAAQAAAA
+					IAAAADAAAABAAAAAXAAAAHAAAACEAAAACAAA
+					AAQDAACEXAAAAAAAAAgAAAAEAwAAEs0DAAAA
+					AAAIAAAABAMAABnNAwAAAAAACAAAAAQDAAAa
+					zQMAAAAAAAgAAAAEAwAA7s0HAgAAAAAIAAAA
+					BAMAAPvNBwIAAAAACAAAAAQDAABD+AcCAAAA
+					ABwAAAABBgAAwAAAANAAAADgAAAA8AAAAAAB
+					AAAQAQAAIAEAAAgAAAAABAAAQcSp4fptD44Y
+					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
+					AAAAAAgAAAAEAwAABQAAAAAAAAAEAAAAAwMA
+					APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
+					AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
+					AAAACAAAAAAEAABBxJ0NfAAAACQAAAABAQAA
+					REEzMjZDMjMtRDZFMS00NTAyLTg3OTgtQkYy
+					MEMzOTg5QjFCGAAAAAECAACBAAAAAQAAAO8T
+					AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
+					AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
+					dElkZW50aWZpZXJLZXkAAAQAAAADAwAALS4A
+					ABoAAAABAQAATlNVUkxQYXJlbnREaXJlY3Rv
+					cnlVUkxLZXkAAEsAAAABCQAAZmlsZTovLy9V
+					c2Vycy9zZXRoZG90eS9MaWJyYXJ5L0FwcGxp
+					Y2F0aW9uJTIwU3VwcG9ydC9UYXNrUGFwZXIv
+					U3R5bGVTaGVldHMvAPAAAAD+////AQAAAAAA
+					AAATAAAABBAAAJwAAAAAAAAABRAAADABAAAA
+					AAAAEBAAAGQBAAAAAAAAIBAAAIQAAAAAAAAA
+					QBAAAFQBAAAAAAAAAiAAADACAAAAAAAABSAA
+					AKABAAAAAAAAECAAALABAAAAAAAAESAAAOQB
+					AAAAAAAAEiAAAMQBAAAAAAAAEyAAANQBAAAA
+					AAAAICAAABACAAAAAAAAMCAAADwCAAAAAAAA
+					AcAAAIQBAAAAAAAAEcAAACAAAAAAAAAAEsAA
+					AJQBAAAAAAAAENAAAAQAAAAAAAAARAIAgGgC
+					AAAAAAAAdAIAgJgCAAAAAAAA
+					</data>
+					<key>FileBookmarkHasSecurityScope</key>
+					<true/>
+					<key>FileName</key>
+					<string>helvitican.less</string>
+					<key>FileURLString</key>
+					<string>file:///Users/sethdoty/Library/Application%20Support/TaskPaper/StyleSheets/helvitican.less</string>
+					<key>ParentDirID</key>
+					<integer>34065915</integer>
+				</dict>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+		</dict>
+		<key>OpenWindows</key>
+		<array>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>4146EE0C-DCC1-4278-BC9F-8980A596757E</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.0</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.25</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>4146EE0C-DCC1-4278-BC9F-8980A596757E</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(66,179,1036,1028)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{179, 81}, {849, 998}}</string>
+				<key>WindowName</key>
+				<string>helvitican.less</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+		</array>
+		<key>UntitledWindowsState</key>
+		<dict>
+			<key>GrpD</key>
+			<integer>6</integer>
 		</dict>
 		<key>com.barebones.DocumentFormatVersion</key>
 		<integer>2</integer>
@@ -142,7 +258,7 @@
 	AAAAAAAAAAAAAAAAAWc=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBEditorDefaultsPreferences</string>
+	<string>BBAppearancePreferences</string>
 	<key>BrowserWindowSavedBounds:0516D002DA4CEF565F3A1F2269109E8A81FA0A0E</key>
 	<string>rect(66,865,1032,1939)</string>
 	<key>BrowserWindowSavedBounds:8BD7EED8FA355EE26CCBC0B66A7FC576D7E68C40</key>
@@ -371,7 +487,7 @@
 		<string></string>
 	</dict>
 	<key>LastLaunchOSVersion</key>
-	<string>Version 12.5.1 (Build 21G83)</string>
+	<string>Version 13.1 (Build 22C65)</string>
 	<key>ListDisplayFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -400,6 +516,10 @@
 	<string>~/Downloads</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
@@ -479,7 +599,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame BBPreferences</key>
-	<string>211 361 682 607 0 0 1728 1079 </string>
+	<string>590 379 682 607 0 0 1728 1079 </string>
 	<key>NSWindow Frame BBSetupEditorWindow</key>
 	<string>1131 643 350 426 0 0 1728 1079 </string>
 	<key>NSWindow Frame ConfirmCloseMulti</key>
@@ -487,13 +607,19 @@
 	<key>NSWindow Frame GitBranchPicker</key>
 	<string>704 523 320 408 0 0 1728 1079 </string>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 162 224 278 0 0 1920 1055 </string>
+	<string>179 165 224 278 0 0 1728 1079 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>944 515 445 232 0 0 1728 1079 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>-14 -76 328 188 0 0 1728 1079 </string>
+	<string>204 356 800 360 0 0 1728 1079 </string>
 	<key>NSWindow Frame ProgressPanelSheet</key>
 	<string>661 480 407 137 0 0 1728 1079 </string>
+	<key>NSWindow Frame SoftwareUpdateDownloadProgress</key>
+	<string>681 629 426 167 0 0 1728 1079 </string>
+	<key>NSWindow Frame SoftwareUpdatePromptWindow</key>
+	<string>505 512 538 386 0 0 1728 1079 </string>
+	<key>NSWindow Frame StartupProgressPanel</key>
+	<string>680 493 369 109 0 0 1728 1079 </string>
 	<key>NSWindow Frame WindowPosition_v2_Find</key>
 	<string>841 693 626 298 0 0 1728 1079 </string>
 	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
@@ -511,7 +637,7 @@
 	<key>Paths Files</key>
 	<false/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2022-09-11T02:33:58Z</date>
+	<date>2022-12-21T22:45:45Z</date>
 	<key>PreviewBrowserList</key>
 	<array>
 		<dict>
@@ -609,6 +735,116 @@
 	<dict>
 		<key>Folder</key>
 		<array>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:27:54Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8ACAAAAAAQQMAAAADPLxV5vck1xlEK4
+					DYJPWXoSoYcoblc/yhPzcNvlvyUOvAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
+					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
+					BAMAAISwywEAAAAAEAAAAAEGAAB0AAAAhAAA
+					AJQAAACkAAAACAAAAAAEAABBxJDz/AAAABgA
+					AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHEhebagAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
+					EAAAXAAAAAAAAAAFEAAAtAAAAAAAAAAQEAAA
+					3AAAAAAAAABAEAAAzAAAAAAAAAACIAAAqAEA
+					AAAAAAAFIAAAGAEAAAAAAAAQIAAAKAEAAAAA
+					AAARIAAAXAEAAAAAAAASIAAAPAEAAAAAAAAT
+					IAAATAEAAAAAAAAgIAAAiAEAAAAAAAAwIAAA
+					tAEAAAAAAAABwAAA/AAAAAAAAAARwAAAIAAA
+					AAAAAAASwAAADAEAAAAAAAAQ0AAABAAAAAAA
+					AAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>casper-custom</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-10-13T03:46:19Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va5gDAAAAAAQQMAAAAFAYWiJBwnuwLRWR
+					omGo24OwLFTlnntCaaX+UU4oYXholAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5BwAAAAEBAABMaWJy
+					YXJ5ABMAAAABAQAAQXBwbGljYXRpb24gU3Vw
+					cG9ydAAMAAAAAQEAAERFVk9OdGhpbmsgMxEA
+					AAABAQAAVGVtcGxhdGVzLm5vaW5kZXgAAAAM
+					AAAAAQEAAFByb2R1Y3Rpdml0eSoAAAABAQAA
+					RGFpbHkgSm91cm5hbCDigJQgTWFya2Rvd24u
+					dGVtcGxhdGVzY3JpcHRkAAAgAAAAAQYAABAA
+					AAAgAAAAMAAAAEAAAABcAAAAcAAAAIwAAACg
+					AAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
+					Es0DAAAAAAAIAAAABAMAABnNAwAAAAAACAAA
+					AAQDAAAazQMAAAAAAAgAAAAEAwAAGMoXAAAA
+					AAAIAAAABAMAAG/RFwAAAAAACAAAAAQDAACi
+					2xcAAAAAAAgAAAAEAwAApdsXAAAAAAAgAAAA
+					AQYAAPwAAAAMAQAAHAEAACwBAAA8AQAATAEA
+					AFwBAABsAQAACAAAAAAEAABBw4dpDwAAABgA
+					AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAAGAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHEWw/9gAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
+					EAAA1AAAAAAAAAAFEAAAfAEAAAAAAAAQEAAA
+					tAEAAAAAAABAEAAApAEAAAAAAAACIAAAgAIA
+					AAAAAAAFIAAA8AEAAAAAAAAQIAAAAAIAAAAA
+					AAARIAAANAIAAAAAAAASIAAAFAIAAAAAAAAT
+					IAAAJAIAAAAAAAAgIAAAYAIAAAAAAAAwIAAA
+					jAIAAAAAAAABwAAA1AEAAAAAAAARwAAAIAAA
+					AAAAAAASwAAA5AEAAAAAAAAQ0AAABAAAAAAA
+					AAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Library/Application%20Support/DEVONthink%203/Templates.noindex/Productivity/Daily%20Journal%20%E2%80%94%20Markdown.templatescriptd/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>Daily Journal — Markdown.templatescriptd</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Library/Application%20Support/DEVONthink%203/Templates.noindex/Productivity/Daily%20Journal%20%E2%80%94%20Markdown.templatescriptd/</string>
+			</dict>
 			<dict>
 				<key>Date</key>
 				<date>2022-04-24T18:10:18Z</date>
@@ -818,57 +1054,6 @@
 		<array>
 			<dict>
 				<key>Date</key>
-				<date>2022-03-28T01:40:13Z</date>
-				<key>DocumentClass</key>
-				<string>Notebook</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va8wCAAAAAAQQMAAAAA/oiNWYSU5jnteb
-					ss/+6GiXx/XaLEUXgs4tg+6OPDVnyAEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAZAAAAAQEAAHRlc3Rfbm90ZWJv
-					b2suYmJub3RlYm9va2QAAAAQAAAAAQYAABAA
-					AAAgAAAAMAAAAEQAAAAIAAAABAMAAIRcAAAA
-					AAAACAAAAAQDAAASzQMAAAAAAAgAAAAEAwAA
-					Rc0DAAAAAAAIAAAABAMAAMlUOAAAAAAAEAAA
-					AAEGAACAAAAAkAAAAKAAAACwAAAACAAAAAAE
-					AABBw/iktKd0ZBgAAAABAgAAAgAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAACAAAAAQDAAACAAAA
-					AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
-					ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
-					AAAEAwAAAJCClucAAAAIAAAAAAQAAEHD5QRR
-					gAAAJAAAAAEBAABEQTMyNkMyMy1ENkUxLTQ1
-					MDItODc5OC1CRjIwQzM5ODlCMUIYAAAAAQIA
-					AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
-					AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8B
-					AAAAAAAAABAAAAAEEAAAaAAAAAAAAAAFEAAA
-					wAAAAAAAAAAQEAAA6AAAAAAAAABAEAAA2AAA
-					AAAAAAACIAAAtAEAAAAAAAAFIAAAJAEAAAAA
-					AAAQIAAANAEAAAAAAAARIAAAaAEAAAAAAAAS
-					IAAASAEAAAAAAAATIAAAWAEAAAAAAAAgIAAA
-					lAEAAAAAAAAwIAAAwAEAAAAAAAABwAAACAEA
-					AAAAAAARwAAAIAAAAAAAAAASwAAAGAEAAAAA
-					AAAQ0AAABAAAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/test_notebook.bbnotebookd/</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>test_notebook.bbnotebookd</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/test_notebook.bbnotebookd/</string>
-			</dict>
-			<dict>
-				<key>Date</key>
 				<date>2022-04-26T04:06:16Z</date>
 				<key>DocumentClass</key>
 				<string>Notebook</string>
@@ -926,6 +1111,57 @@
 				<string>Notes.bbnotebookd</string>
 				<key>URL</key>
 				<string>file:///Users/sethdoty/Library/Mobile%20Documents/iCloud~com~barebones~bbedit/Documents/Application%20Support/Notes.bbnotebookd/</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-03-28T01:40:13Z</date>
+				<key>DocumentClass</key>
+				<string>Notebook</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8wCAAAAAAQQMAAAAA/oiNWYSU5jnteb
+					ss/+6GiXx/XaLEUXgs4tg+6OPDVnyAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAZAAAAAQEAAHRlc3Rfbm90ZWJv
+					b2suYmJub3RlYm9va2QAAAAQAAAAAQYAABAA
+					AAAgAAAAMAAAAEQAAAAIAAAABAMAAIRcAAAA
+					AAAACAAAAAQDAAASzQMAAAAAAAgAAAAEAwAA
+					Rc0DAAAAAAAIAAAABAMAAMlUOAAAAAAAEAAA
+					AAEGAACAAAAAkAAAAKAAAACwAAAACAAAAAAE
+					AABBw/iktKd0ZBgAAAABAgAAAgAAAAAAAAAP
+					AAAAAAAAAAAAAAAAAAAACAAAAAQDAAACAAAA
+					AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
+					ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
+					AAAEAwAAAJCClucAAAAIAAAAAAQAAEHD5QRR
+					gAAAJAAAAAEBAABEQTMyNkMyMy1ENkUxLTQ1
+					MDItODc5OC1CRjIwQzM5ODlCMUIYAAAAAQIA
+					AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
+					AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8B
+					AAAAAAAAABAAAAAEEAAAaAAAAAAAAAAFEAAA
+					wAAAAAAAAAAQEAAA6AAAAAAAAABAEAAA2AAA
+					AAAAAAACIAAAtAEAAAAAAAAFIAAAJAEAAAAA
+					AAAQIAAANAEAAAAAAAARIAAAaAEAAAAAAAAS
+					IAAASAEAAAAAAAATIAAAWAEAAAAAAAAgIAAA
+					lAEAAAAAAAAwIAAAwAEAAAAAAAABwAAACAEA
+					AAAAAAARwAAAIAAAAAAAAAASwAAAGAEAAAAA
+					AAAQ0AAABAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/test_notebook.bbnotebookd/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>test_notebook.bbnotebookd</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/test_notebook.bbnotebookd/</string>
 			</dict>
 		</array>
 		<key>Project</key>
@@ -994,42 +1230,42 @@
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va2QDAAAAAAQQMAAAAMeB26/7MBYds7nE
-					13MaPGd4LZ23LN8zBAHlXKcPGhxQYAIAAAQA
+					Ym9va3QDAAAAAAQQMAAAAPhDAG3f9zQ6DYuC
+					wOlTPG0tQ4Oay/3BDPU26aOgNyaIcAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
 					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
 					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
-					AAABAQAAaW1hZ2VzAAAEAAAAAQEAAHRlYW0K
-					AAAAAQEAAGF2YXRhci5qcGcAACAAAAABBgAA
-					EAAAACAAAAAwAAAARAAAAGAAAABwAAAAgAAA
-					AIwAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQD
-					AAASzQMAAAAAAAgAAAAEAwAARc0DAAAAAAAI
-					AAAABAMAAAVsYwAAAAAACAAAAAQDAAAdbGMA
-					AAAAAAgAAAAEAwAAHmxjAAAAAAAIAAAABAMA
-					ACxsYwAAAAAACAAAAAQDAACe62MAAAAAACAA
-					AAABBgAAyAAAANgAAADoAAAA+AAAAAgBAAAY
-					AQAAKAEAADgBAAAIAAAAAAQAAEHDquLXGcKw
-					GAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAA
-					AAAAAAAIAAAABAMAAAYAAAAAAAAABAAAAAMD
-					AAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAAB
-					AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
-					5wAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEA
-					AERBMzI2QzIzLUQ2RTEtNDUwMi04Nzk4LUJG
-					MjBDMzk4OUIxQhgAAAABAgAAgQAAAAEAAADv
-					EwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
-					AAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAA
-					AAQQAACgAAAAAAAAAAUQAABIAQAAAAAAABAQ
-					AACAAQAAAAAAAEAQAABwAQAAAAAAAAIgAABM
-					AgAAAAAAAAUgAAC8AQAAAAAAABAgAADMAQAA
-					AAAAABEgAAAAAgAAAAAAABIgAADgAQAAAAAA
-					ABMgAADwAQAAAAAAACAgAAAsAgAAAAAAADAg
-					AABYAgAAAAAAAAHAAACgAQAAAAAAABHAAAAg
-					AAAAAAAAABLAAACwAQAAAAAAABDQAAAEAAAA
-					AAAAAA==
+					AAABAQAAaW1hZ2VzAAALAAAAAQEAAGJhY2tn
+					cm91bmRzABIAAAABAQAAYmctdGVzdGltb25p
+					YWwuanBnAAAgAAAAAQYAABAAAAAgAAAAMAAA
+					AEQAAABgAAAAcAAAAIAAAACUAAAACAAAAAQD
+					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
+					AAAABAMAAEXNAwAAAAAACAAAAAQDAAAFbGMA
+					AAAAAAgAAAAEAwAAHWxjAAAAAAAIAAAABAMA
+					AB5sYwAAAAAACAAAAAQDAAAfbGMAAAAAAAgA
+					AAAEAwAAIGxjAAAAAAAgAAAAAQYAANgAAADo
+					AAAA+AAAAAgBAAAYAQAAKAEAADgBAABIAQAA
+					CAAAAAAEAABBw70PcoAAABgAAAABAgAAAQAA
+					AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
+					AAAGAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHD93s0gAAAJAAAAAEBAABEQTMyNkMyMy1E
+					NkUxLTQ1MDItODc5OC1CRjIwQzM5ODlCMUIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAA
+					AP7///8BAAAAAAAAABAAAAAEEAAAsAAAAAAA
+					AAAFEAAAWAEAAAAAAAAQEAAAkAEAAAAAAABA
+					EAAAgAEAAAAAAAACIAAAXAIAAAAAAAAFIAAA
+					zAEAAAAAAAAQIAAA3AEAAAAAAAARIAAAEAIA
+					AAAAAAASIAAA8AEAAAAAAAATIAAAAAIAAAAA
+					AAAgIAAAPAIAAAAAAAAwIAAAaAIAAAAAAAAB
+					wAAAsAEAAAAAAAARwAAAIAAAAAAAAAASwAAA
+					wAEAAAAAAAAQ0AAABAAAAAAAAAA=
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1038,64 +1274,9 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>avatar.jpg</string>
+				<string>bg-testimonial.jpg</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-04-12T03:39:30Z</date>
-				<key>DocumentClass</key>
-				<string>QuickTimeImporter</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9vazwDAAAAAAQQMAAAAGqJYGuHkzi5wele
-					zgDVYCtd8fODPO4S+QB0M4igLIEWOAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
-					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
-					AAABAQAAaW1hZ2VzAAAIAAAAAQEAAGxvZ28u
-					cG5nHAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
-					YAAAAHAAAACAAAAACAAAAAQDAACEXAAAAAAA
-					AAgAAAAEAwAAEs0DAAAAAAAIAAAABAMAAEXN
-					AwAAAAAACAAAAAQDAAAFbGMAAAAAAAgAAAAE
-					AwAAHWxjAAAAAAAIAAAABAMAAB5sYwAAAAAA
-					CAAAAAQDAAB56mMAAAAAABwAAAABBgAAtAAA
-					AMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAAAgA
-					AAAABAAAQcQCkVUNlXQYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
-					BQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
-					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
-					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
-					w/d7NIAAACQAAAABAQAAREEzMjZDMjMtRDZF
-					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
-					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
-					AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+
-					////AQAAAAAAAAAQAAAABBAAAJAAAAAAAAAA
-					BRAAACQBAAAAAAAAEBAAAFgBAAAAAAAAQBAA
-					AEgBAAAAAAAAAiAAACQCAAAAAAAABSAAAJQB
-					AAAAAAAAECAAAKQBAAAAAAAAESAAANgBAAAA
-					AAAAEiAAALgBAAAAAAAAEyAAAMgBAAAAAAAA
-					ICAAAAQCAAAAAAAAMCAAADACAAAAAAAAAcAA
-					AHgBAAAAAAAAEcAAACAAAAAAAAAAEsAAAIgB
-					AAAAAAAAENAAAAQAAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>logo.png</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
 			</dict>
 			<dict>
 				<key>Date</key>
@@ -1163,42 +1344,40 @@
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va3QDAAAAAAQQMAAAAPhDAG3f9zQ6DYuC
-					wOlTPG0tQ4Oay/3BDPU26aOgNyaIcAIAAAQA
+					Ym9vazwDAAAAAAQQMAAAAGqJYGuHkzi5wele
+					zgDVYCtd8fODPO4S+QB0M4igLIEWOAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
 					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
 					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
-					AAABAQAAaW1hZ2VzAAALAAAAAQEAAGJhY2tn
-					cm91bmRzABIAAAABAQAAYmctdGVzdGltb25p
-					YWwuanBnAAAgAAAAAQYAABAAAAAgAAAAMAAA
-					AEQAAABgAAAAcAAAAIAAAACUAAAACAAAAAQD
-					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
-					AAAABAMAAEXNAwAAAAAACAAAAAQDAAAFbGMA
-					AAAAAAgAAAAEAwAAHWxjAAAAAAAIAAAABAMA
-					AB5sYwAAAAAACAAAAAQDAAAfbGMAAAAAAAgA
-					AAAEAwAAIGxjAAAAAAAgAAAAAQYAANgAAADo
-					AAAA+AAAAAgBAAAYAQAAKAEAADgBAABIAQAA
-					CAAAAAAEAABBw70PcoAAABgAAAABAgAAAQAA
-					AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
-					AAAGAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
-					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
-					AEHD93s0gAAAJAAAAAEBAABEQTMyNkMyMy1E
-					NkUxLTQ1MDItODc5OC1CRjIwQzM5ODlCMUIY
-					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
-					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAA
-					AP7///8BAAAAAAAAABAAAAAEEAAAsAAAAAAA
-					AAAFEAAAWAEAAAAAAAAQEAAAkAEAAAAAAABA
-					EAAAgAEAAAAAAAACIAAAXAIAAAAAAAAFIAAA
-					zAEAAAAAAAAQIAAA3AEAAAAAAAARIAAAEAIA
-					AAAAAAASIAAA8AEAAAAAAAATIAAAAAIAAAAA
-					AAAgIAAAPAIAAAAAAAAwIAAAaAIAAAAAAAAB
-					wAAAsAEAAAAAAAARwAAAIAAAAAAAAAASwAAA
-					wAEAAAAAAAAQ0AAABAAAAAAAAAA=
+					AAABAQAAaW1hZ2VzAAAIAAAAAQEAAGxvZ28u
+					cG5nHAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
+					YAAAAHAAAACAAAAACAAAAAQDAACEXAAAAAAA
+					AAgAAAAEAwAAEs0DAAAAAAAIAAAABAMAAEXN
+					AwAAAAAACAAAAAQDAAAFbGMAAAAAAAgAAAAE
+					AwAAHWxjAAAAAAAIAAAABAMAAB5sYwAAAAAA
+					CAAAAAQDAAB56mMAAAAAABwAAAABBgAAtAAA
+					AMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAAAgA
+					AAAABAAAQcQCkVUNlXQYAAAAAQIAAAEAAAAA
+					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
+					BQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
+					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
+					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
+					w/d7NIAAACQAAAABAQAAREEzMjZDMjMtRDZF
+					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
+					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
+					AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+
+					////AQAAAAAAAAAQAAAABBAAAJAAAAAAAAAA
+					BRAAACQBAAAAAAAAEBAAAFgBAAAAAAAAQBAA
+					AEgBAAAAAAAAAiAAACQCAAAAAAAABSAAAJQB
+					AAAAAAAAECAAAKQBAAAAAAAAESAAANgBAAAA
+					AAAAEiAAALgBAAAAAAAAEyAAAMgBAAAAAAAA
+					ICAAAAQCAAAAAAAAMCAAADACAAAAAAAAAcAA
+					AHgBAAAAAAAAEcAAACAAAAAAAAAAEsAAAIgB
+					AAAAAAAAENAAAAQAAAAAAAAA
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1207,54 +1386,111 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>bg-testimonial.jpg</string>
+				<string>logo.png</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/backgrounds/bg-testimonial.jpg</string>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/logo.png</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-04-12T03:39:30Z</date>
+				<key>DocumentClass</key>
+				<string>QuickTimeImporter</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va2QDAAAAAAQQMAAAAMeB26/7MBYds7nE
+					13MaPGd4LZ23LN8zBAHlXKcPGhxQYAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAATAAAAAQEAAGZzLWV1LWhvbWVw
+					YWdlLW1haW4ABgAAAAEBAABzdGF0aWMAAAYA
+					AAABAQAAaW1hZ2VzAAAEAAAAAQEAAHRlYW0K
+					AAAAAQEAAGF2YXRhci5qcGcAACAAAAABBgAA
+					EAAAACAAAAAwAAAARAAAAGAAAABwAAAAgAAA
+					AIwAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQD
+					AAASzQMAAAAAAAgAAAAEAwAARc0DAAAAAAAI
+					AAAABAMAAAVsYwAAAAAACAAAAAQDAAAdbGMA
+					AAAAAAgAAAAEAwAAHmxjAAAAAAAIAAAABAMA
+					ACxsYwAAAAAACAAAAAQDAACe62MAAAAAACAA
+					AAABBgAAyAAAANgAAADoAAAA+AAAAAgBAAAY
+					AQAAKAEAADgBAAAIAAAAAAQAAEHDquLXGcKw
+					GAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAA
+					AAAAAAAIAAAABAMAAAYAAAAAAAAABAAAAAMD
+					AAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAAB
+					AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
+					5wAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEA
+					AERBMzI2QzIzLUQ2RTEtNDUwMi04Nzk4LUJG
+					MjBDMzk4OUIxQhgAAAABAgAAgQAAAAEAAADv
+					EwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
+					AAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAA
+					AAQQAACgAAAAAAAAAAUQAABIAQAAAAAAABAQ
+					AACAAQAAAAAAAEAQAABwAQAAAAAAAAIgAABM
+					AgAAAAAAAAUgAAC8AQAAAAAAABAgAADMAQAA
+					AAAAABEgAAAAAgAAAAAAABIgAADgAQAAAAAA
+					ABMgAADwAQAAAAAAACAgAAAsAgAAAAAAADAg
+					AABYAgAAAAAAAAHAAACgAQAAAAAAABHAAAAg
+					AAAAAAAAABLAAACwAQAAAAAAABDQAAAEAAAA
+					AAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>avatar.jpg</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/fs-eu-homepage-main/static/images/team/avatar.jpg</string>
 			</dict>
 		</array>
 		<key>Text</key>
 		<array>
 			<dict>
 				<key>Date</key>
-				<date>2022-09-08T01:56:26Z</date>
+				<date>2022-12-21T22:45:08Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/gCAAAAAAQQMAAAAMecbT8TMhl4y339
-					0jUXLWnQeUq34AH+Nlkz7ioUI9Od6AEAAAQA
+					Ym9va/wCAAAAAAQQMAAAAFWiuI440hE8vpXO
+					An9F64NOZq6oEvg37FPn9tpNx5Re7AEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAMAAAAAQEAAGNpdGF0aW9uLmJp
-					YhAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
-					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
-					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
-					DZ5lAQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
-					AKAAAAAIAAAAAAQAAEHEZMGlCsm0GAAAAAEC
-					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
-					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
-					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
-					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-					AAAABAAAQcRSbmsAAAAkAAAAAQEAAERBMzI2
-					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
-					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
-					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
-					dGlmaWVyS2V5AAAEAAAAAwMAADYsAADYAAAA
-					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
-					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
-					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
-					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
-					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
-					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
-					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
-					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
-					AAAAAA==
+					bG9hZHMAAAAPAAAAAQEAAGhlbHZpdGljYW4u
+					bGVzcwAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
+					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
+					BAMAAEP4BwIAAAAAEAAAAAEGAAB0AAAAhAAA
+					AJQAAACkAAAACAAAAAAEAABBxKnh+m0PjhgA
+					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHEnQ18AAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
+					SWRlbnRpZmllcktleQAABAAAAAMDAAAtLgAA
+					2AAAAP7///8BAAAAAAAAABEAAAAEEAAAXAAA
+					AAAAAAAFEAAAtAAAAAAAAAAQEAAA3AAAAAAA
+					AABAEAAAzAAAAAAAAAACIAAAqAEAAAAAAAAF
+					IAAAGAEAAAAAAAAQIAAAKAEAAAAAAAARIAAA
+					XAEAAAAAAAASIAAAPAEAAAAAAAATIAAATAEA
+					AAAAAAAgIAAAiAEAAAAAAAAwIAAAtAEAAAAA
+					AAABwAAA/AAAAAAAAAARwAAAIAAAAAAAAAAS
+					wAAADAEAAAAAAAAQ0AAABAAAAAAAAAC8AQCA
+					4AEAAAAAAAA=
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/citation.bib</string>
+					<string>file:///Users/sethdoty/Downloads/helvitican.less</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1263,51 +1499,49 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>citation.bib</string>
+				<string>helvitican.less</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/citation.bib</string>
+				<string>file:///Users/sethdoty/Downloads/helvitican.less</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-09-08T01:56:26Z</date>
+				<date>2022-12-06T05:29:00Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/gCAAAAAAQQMAAAADay6qAWEdvz9LAY
-					0FjVbgzFqmHiUzdD+MlRSPODfR4A6AEAAAQA
+					Ym9va8ACAAAAAAQQMAAAAHre5crCYl5Bou72
+					x27M4Pc0wSjLeg0iRWz8x0x78Qx7vAEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAMAAAAAQEAAGNpdGF0aW9uLnR4
-					dBAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
-					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
-					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
-					o51lAQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
-					AKAAAAAIAAAAAAQAAEHEZMGVRo2AGAAAAAEC
-					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
-					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
-					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
-					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-					AAAABAAAQcRSbmsAAAAkAAAAAQEAAERBMzI2
-					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
-					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
-					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
-					dGlmaWVyS2V5AAAEAAAAAwMAADUsAADYAAAA
-					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
-					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
-					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
-					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
-					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
-					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
-					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
-					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
-					AAAAAA==
+					bG9hZHMAAAAOAAAAAQEAAGVudi5wcm9kdWN0
+					aW9uAAAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
+					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
+					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
+					BAMAAB3P6AEAAAAAEAAAAAEGAAB0AAAAhAAA
+					AJQAAACkAAAACAAAAAAEAABBxJ+FSfI+txgA
+					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
+					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
+					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+					AAAIAAAAAAQAAEHEhebagAAAJAAAAAEBAABE
+					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
+					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
+					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+					AAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
+					EAAAXAAAAAAAAAAFEAAAtAAAAAAAAAAQEAAA
+					3AAAAAAAAABAEAAAzAAAAAAAAAACIAAAqAEA
+					AAAAAAAFIAAAGAEAAAAAAAAQIAAAKAEAAAAA
+					AAARIAAAXAEAAAAAAAASIAAAPAEAAAAAAAAT
+					IAAATAEAAAAAAAAgIAAAiAEAAAAAAAAwIAAA
+					tAEAAAAAAAABwAAA/AAAAAAAAAARwAAAIAAA
+					AAAAAAASwAAADAEAAAAAAAAQ0AAABAAAAAAA
+					AAA=
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/citation.txt</string>
+					<string>file:///Users/sethdoty/Downloads/env.production</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1316,452 +1550,34 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>citation.txt</string>
+				<string>env.production</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/citation.txt</string>
+				<string>file:///Users/sethdoty/Downloads/env.production</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-09-06T02:23:03Z</date>
+				<date>2022-12-03T04:33:52Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9vawADAAAAAAQQMAAAADOJj8LJywfDeGIl
-					alJzR2w5PztGdKJeuXOmySJ1wPks8AEAAAQA
+					Ym9va7gCAAAAAAQQMAAAADbwKlqbRkfD0e/X
+					aTtPr0SUa2ExFJccdiMSlLqMDym2tAEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAARAAAAAQEAAHZhdWx0d2FyZGVu
-					Lm5vbWFkAAAAEAAAAAEGAAAQAAAAIAAAADAA
-					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
-					AwAAEs0DAAAAAAAIAAAABAMAAEXNAwAAAAAA
-					CAAAAAQDAAD6RGMBAAAAABAAAAABBgAAeAAA
-					AIgAAACYAAAAqAAAAAgAAAAABAAAQcRjcfs4
-					0JIYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
-					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
-					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
-					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
-					gpbnAAAACAAAAAAEAABBxFJuawAAACQAAAAB
-					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
-					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
-					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-					bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAA
-					MSwAANgAAAD+////AQAAAAAAAAARAAAABBAA
-					AGAAAAAAAAAABRAAALgAAAAAAAAAEBAAAOAA
-					AAAAAAAAQBAAANAAAAAAAAAAAiAAAKwBAAAA
-					AAAABSAAABwBAAAAAAAAECAAACwBAAAAAAAA
-					ESAAAGABAAAAAAAAEiAAAEABAAAAAAAAEyAA
-					AFABAAAAAAAAICAAAIwBAAAAAAAAMCAAALgB
-					AAAAAAAAAcAAAAABAAAAAAAAEcAAACAAAAAA
-					AAAAEsAAABABAAAAAAAAENAAAAQAAAAAAAAA
-					wAEAgOQBAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/vaultwarden.nomad</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>vaultwarden.nomad</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/vaultwarden.nomad</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-09-05T05:19:25Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va+QCAAAAAAQQMAAAAC2j3d6lLR2cyw+s
-					Arl9L+xyAruAK4ewzwXGuzbZ/ON64AEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAxAAAAAQEAAHZhdWx0LWNsdXN0
-					ZXItdmF1bHQtMjAyMi0wOS0wNVQwM18wNl8y
-					Ny42MzJaLmpzb24AAAAQAAAAAQYAABAAAAAg
-					AAAAMAAAAEQAAAAIAAAABAMAAIRcAAAAAAAA
-					CAAAAAQDAAASzQMAAAAAAAgAAAAEAwAARc0D
-					AAAAAAAIAAAABAMAAJQwYgEAAAAAEAAAAAEG
-					AACYAAAAqAAAALgAAADIAAAACAAAAAAEAABB
-					xGLPngXxKBgAAAABAgAAAQAAAAAAAAAPAAAA
-					AAAAAAAAAAAAAAAACAAAAAQDAAACAAAAAAAA
-					AAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTov
-					Ly8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAE
-					AwAAAJCClucAAAAIAAAAAAQAAEHEUm5rAAAA
-					JAAAAAEBAABEQTMyNkMyMy1ENkUxLTQ1MDIt
-					ODc5OC1CRjIwQzM5ODlCMUIYAAAAAQIAAIEA
-					AAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAAB
-					AQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAA
-					AAAAABAAAAAEEAAAgAAAAAAAAAAFEAAA2AAA
-					AAAAAAAQEAAAAAEAAAAAAABAEAAA8AAAAAAA
-					AAACIAAAzAEAAAAAAAAFIAAAPAEAAAAAAAAQ
-					IAAATAEAAAAAAAARIAAAgAEAAAAAAAASIAAA
-					YAEAAAAAAAATIAAAcAEAAAAAAAAgIAAArAEA
-					AAAAAAAwIAAA2AEAAAAAAAABwAAAIAEAAAAA
-					AAARwAAAIAAAAAAAAAASwAAAMAEAAAAAAAAQ
-					0AAABAAAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/vault-cluster-vault-2022-09-05T03_06_27.632Z.json</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>vault-cluster-vault-2022-09-05T03_06_27.632Z.json</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/vault-cluster-vault-2022-09-05T03_06_27.632Z.json</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-09-03T04:04:08Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va/gCAAAAAAQQMAAAACNv6R/mH3KNdqHm
-					lPItiRTQWYdj8aJdFDjUngb4vvCc6AEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAJAAAAAQEAAHN0YWNrLmVudgAA
-					ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
-					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
-					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
-					3UxfAQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
-					AKAAAAAIAAAAAAQAAEHEYYQwFXGsGAAAAAEC
-					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
-					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
-					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
-					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-					AAAABAAAQcRSbmsAAAAkAAAAAQEAAERBMzI2
-					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
-					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
-					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
-					dGlmaWVyS2V5AAAEAAAAAwMAACosAADYAAAA
-					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
-					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
-					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
-					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
-					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
-					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
-					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
-					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
-					AAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/stack.env</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>stack.env</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/stack.env</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-29T02:06:42Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va9ACAAAAAAQQMAAAAPtWlgn9ff1rXOIz
-					iUg6/rXykVYOtCRXBldQ8PsXtBI2zAEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAdAAAAAQEAAENsb3VkZmxhcmVf
-					YXV0aGVudGlrX21ldGEueG1sAAAAEAAAAAEG
-					AAAQAAAAIAAAADAAAABEAAAACAAAAAQDAACE
-					XAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAIAAAA
-					BAMAAEXNAwAAAAAACAAAAAQDAACQCFkBAAAA
-					ABAAAAABBgAAhAAAAJQAAACkAAAAtAAAAAgA
-					AAAABAAAQcReKf/KQEYYAAAAAQIAAAEAAAAA
-					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
-					AgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
-					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
-					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
-					xFJuawAAACQAAAABAQAAREEzMjZDMjMtRDZF
-					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
-					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
-					AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+
-					////AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAA
-					BRAAAMQAAAAAAAAAEBAAAOwAAAAAAAAAQBAA
-					ANwAAAAAAAAAAiAAALgBAAAAAAAABSAAACgB
-					AAAAAAAAECAAADgBAAAAAAAAESAAAGwBAAAA
-					AAAAEiAAAEwBAAAAAAAAEyAAAFwBAAAAAAAA
-					ICAAAJgBAAAAAAAAMCAAAMQBAAAAAAAAAcAA
-					AAwBAAAAAAAAEcAAACAAAAAAAAAAEsAAABwB
-					AAAAAAAAENAAAAQAAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/Cloudflare_authentik_meta.xml</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Cloudflare_authentik_meta.xml</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/Cloudflare_authentik_meta.xml</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-29T01:05:19Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va/ACAAAAAAQQMAAAAAE4/ojL3COfLI3W
-					/Aep8rBYBtjy5MRZTE4I3vqKpb/m4AEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAEAAAAAQEAAC5lbnYQAAAAAQYA
-					ABAAAAAgAAAAMAAAAEQAAAAIAAAABAMAAIRc
-					AAAAAAAACAAAAAQDAAASzQMAAAAAAAgAAAAE
-					AwAARc0DAAAAAAAIAAAABAMAAGjfVwEAAAAA
-					EAAAAAEGAABoAAAAeAAAAIgAAACYAAAACAAA
-					AAAEAABBxF3tWQR+HxgAAAABAgAAAQAAAAAA
-					AAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAC
-					AAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAA
-					ZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBI
-					RAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHE
-					Um5rAAAAJAAAAAEBAABEQTMyNkMyMy1ENkUx
-					LTQ1MDItODc5OC1CRjIwQzM5ODlCMUIYAAAA
-					AQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
-					AAEAAAABAQAALwAAAAAAAAABBQAAGgAAAAEB
-					AABOU1VSTERvY3VtZW50SWRlbnRpZmllcktl
-					eQAABAAAAAMDAAAnLAAA2AAAAP7///8BAAAA
-					AAAAABEAAAAEEAAAUAAAAAAAAAAFEAAAqAAA
-					AAAAAAAQEAAA0AAAAAAAAABAEAAAwAAAAAAA
-					AAACIAAAnAEAAAAAAAAFIAAADAEAAAAAAAAQ
-					IAAAHAEAAAAAAAARIAAAUAEAAAAAAAASIAAA
-					MAEAAAAAAAATIAAAQAEAAAAAAAAgIAAAfAEA
-					AAAAAAAwIAAAqAEAAAAAAAABwAAA8AAAAAAA
-					AAARwAAAIAAAAAAAAAASwAAAAAEAAAAAAAAQ
-					0AAABAAAAAAAAACwAQCA1AEAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/.env</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>.env</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/.env</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-28T19:19:51Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va8QCAAAAAAQQMAAAALVEDK5siRC9ngiv
-					FeVqzc5nIT4JdUeSaxA6mff1gj26wAEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAASAAAAAQEAAGRvY2tlci1jb21w
-					b3NlLnltbAAAEAAAAAEGAAAQAAAAIAAAADAA
-					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
-					AwAAEs0DAAAAAAAIAAAABAMAAEXNAwAAAAAA
-					CAAAAAQDAABC0FcBAAAAABAAAAABBgAAeAAA
-					AIgAAACYAAAAqAAAAAgAAAAABAAAQcRd7Sg3
-					QUEYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
-					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
-					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
-					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
-					gpbnAAAACAAAAAAEAABBxFJuawAAACQAAAAB
-					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
-					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
-					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQ
-					AAAABBAAAGAAAAAAAAAABRAAALgAAAAAAAAA
-					EBAAAOAAAAAAAAAAQBAAANAAAAAAAAAAAiAA
-					AKwBAAAAAAAABSAAABwBAAAAAAAAECAAACwB
-					AAAAAAAAESAAAGABAAAAAAAAEiAAAEABAAAA
-					AAAAEyAAAFABAAAAAAAAICAAAIwBAAAAAAAA
-					MCAAALgBAAAAAAAAAcAAAAABAAAAAAAAEcAA
-					ACAAAAAAAAAAEsAAABABAAAAAAAAENAAAAQA
-					AAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/docker-compose.yml</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>docker-compose.yml</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/docker-compose.yml</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-14T15:00:12Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va/gCAAAAAAQQMAAAAEJykCwORWNZFVLT
-					DaGsmA2Adhnzcrv4p8Qc6TD4ZKPN6AEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAALAAAAAQEAAGdyYWZhbmEudHh0
-					ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
-					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
-					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
-					wNRFAQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
-					AKAAAAAIAAAAAAQAAEHEVKK+P2UtGAAAAAEC
-					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
-					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
-					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
-					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-					AAAABAAAQcRAB+AAAAAkAAAAAQEAAERBMzI2
-					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
-					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
-					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
-					dGlmaWVyS2V5AAAEAAAAAwMAABUsAADYAAAA
-					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
-					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
-					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
-					AQAAAAAAABAgAAAkAQAAAAAAABEgAABYAQAA
-					AAAAABIgAAA4AQAAAAAAABMgAABIAQAAAAAA
-					ACAgAACEAQAAAAAAADAgAACwAQAAAAAAAAHA
-					AAD4AAAAAAAAABHAAAAgAAAAAAAAABLAAAAI
-					AQAAAAAAABDQAAAEAAAAAAAAALgBAIDcAQAA
-					AAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/grafana.txt</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>grafana.txt</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/grafana.txt</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-14T04:33:53Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9vawADAAAAAAQQMAAAAHRvb0ohe6y2JaSw
-					66ctwlFq5YPNi5TVZBA8Xq5n8efI8AEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAATAAAAAQEAAGdyYWZhbmFfbW9u
-					aXRvci5jc3YAEAAAAAEGAAAQAAAAIAAAADAA
-					AABEAAAACAAAAAQDAACEXAAAAAAAAAgAAAAE
-					AwAAEs0DAAAAAAAIAAAABAMAAEXNAwAAAAAA
-					CAAAAAQDAAAxmkUBAAAAABAAAAABBgAAeAAA
-					AIgAAACYAAAAqAAAAAgAAAAABAAAQcRUWQI3
-					7cUYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
-					AAAAAAAAAAgAAAAEAwAAAgAAAAAAAAAEAAAA
-					AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
-					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
-					gpbnAAAACAAAAAAEAABBxEAH4AAAACQAAAAB
-					AQAAREEzMjZDMjMtRDZFMS00NTAyLTg3OTgt
-					QkYyMEMzOTg5QjFCGAAAAAECAACBAAAAAQAA
-					AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-					bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAA
-					EywAANgAAAD+////AQAAAAAAAAARAAAABBAA
-					AGAAAAAAAAAABRAAALgAAAAAAAAAEBAAAOAA
-					AAAAAAAAQBAAANAAAAAAAAAAAiAAAKwBAAAA
-					AAAABSAAABwBAAAAAAAAECAAACwBAAAAAAAA
-					ESAAAGABAAAAAAAAEiAAAEABAAAAAAAAEyAA
-					AFABAAAAAAAAICAAAIwBAAAAAAAAMCAAALgB
-					AAAAAAAAAcAAAAABAAAAAAAAEcAAACAAAAAA
-					AAAAEsAAABABAAAAAAAAENAAAAQAAAAAAAAA
-					wAEAgOQBAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/grafana_monitor.csv</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>grafana_monitor.csv</string>
-				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/grafana_monitor.csv</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-14T04:15:30Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va7gCAAAAAAQQMAAAAF3gZmM4q4BybYcG
-					3JQOJQE6PysSo1v35U9l9FgN+mqmtAEAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAHAAAAAQEAAG91dC50eHQAEAAA
+					bG9hZHMAAAAIAAAAAQEAAG5tYXBfb3V0EAAA
 					AAEGAAAQAAAAIAAAADAAAABEAAAACAAAAAQD
 					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
-					AAAABAMAAEXNAwAAAAAACAAAAAQDAACmg0UB
+					AAAABAMAAEXNAwAAAAAACAAAAAQDAACPo+QB
 					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
-					AAgAAAAABAAAQcRUVy+ovpoYAAAAAQIAAAEA
+					AAgAAAAABAAAQcSdg9u5CvMYAAAAAQIAAAEA
 					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAE
 					AwAAAgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAA
 					AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRv
 					c2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
-					AABBxEAH4AAAACQAAAABAQAAREEzMjZDMjMt
+					AABBxIXm2oAAACQAAAABAQAAREEzMjZDMjMt
 					RDZFMS00NTAyLTg3OTgtQkYyMEMzOTg5QjFC
 					GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
 					AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwA
@@ -1775,7 +1591,7 @@
 					AAQBAAAAAAAAENAAAAQAAAAAAAAA
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/out.txt</string>
+					<string>file:///Users/sethdoty/Downloads/nmap_out</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1784,51 +1600,50 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>out.txt</string>
+				<string>nmap_out</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/out.txt</string>
+				<string>file:///Users/sethdoty/Downloads/nmap_out</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-08-14T03:15:51Z</date>
+				<date>2022-11-25T16:52:20Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/wCAAAAAAQQMAAAAAafCyY50H7uMPqk
-					zh+fz1unufa8iUTsBhgOT77qgidI7AEAAAQA
+					Ym9va/QCAAAAAAQQMAAAALHT0K/wx45CJrwq
+					uCC9j1R8N7zcmRu7TW7GDPIk6gxd5AEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAQAAAAAQEAADA5ZDI5NTM2MTM1
-					MjYwMDAQAAAAAQYAABAAAAAgAAAAMAAAAEQA
-					AAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAAS
-					zQMAAAAAAAgAAAAEAwAARc0DAAAAAAAIAAAA
-					BAMAAG5oRQEAAAAAEAAAAAEGAAB0AAAAhAAA
-					AJQAAACkAAAACAAAAAAEAABBxFRP9z134RgA
-					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
-					AAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA
-					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
-					AAAIAAAAAAQAAEHEQAfgAAAAJAAAAAEBAABE
-					QTMyNkMyMy1ENkUxLTQ1MDItODc5OC1CRjIw
-					QzM5ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMA
-					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
-					AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
-					SWRlbnRpZmllcktleQAABAAAAAMDAAAPLAAA
-					2AAAAP7///8BAAAAAAAAABEAAAAEEAAAXAAA
-					AAAAAAAFEAAAtAAAAAAAAAAQEAAA3AAAAAAA
-					AABAEAAAzAAAAAAAAAACIAAAqAEAAAAAAAAF
-					IAAAGAEAAAAAAAAQIAAAKAEAAAAAAAARIAAA
-					XAEAAAAAAAASIAAAPAEAAAAAAAATIAAATAEA
-					AAAAAAAgIAAAiAEAAAAAAAAwIAAAtAEAAAAA
-					AAABwAAA/AAAAAAAAAARwAAAIAAAAAAAAAAS
-					wAAADAEAAAAAAAAQ0AAABAAAAAAAAAC8AQCA
-					4AEAAAAAAAA=
+					bG9hZHMAAAAIAAAAAQEAAGVudi5wcm9kEAAA
+					AAEGAAAQAAAAIAAAADAAAABEAAAACAAAAAQD
+					AACEXAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAI
+					AAAABAMAAEXNAwAAAAAACAAAAAQDAABbq9cB
+					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
+					AAgAAAAABAAAQcSYk4XBJG4YAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAE
+					AwAAAgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAA
+					AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRv
+					c2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
+					AABBxIXm2oAAACQAAAABAQAAREEzMjZDMjMt
+					RDZFMS00NTAyLTg3OTgtQkYyMEMzOTg5QjFC
+					GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
+					AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoA
+					AAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
+					ZXJLZXkAAAQAAAADAwAAsiwAANgAAAD+////
+					AQAAAAAAAAARAAAABBAAAFQAAAAAAAAABRAA
+					AKwAAAAAAAAAEBAAANQAAAAAAAAAQBAAAMQA
+					AAAAAAAAAiAAAKABAAAAAAAABSAAABABAAAA
+					AAAAECAAACABAAAAAAAAESAAAFQBAAAAAAAA
+					EiAAADQBAAAAAAAAEyAAAEQBAAAAAAAAICAA
+					AIABAAAAAAAAMCAAAKwBAAAAAAAAAcAAAPQA
+					AAAAAAAAEcAAACAAAAAAAAAAEsAAAAQBAAAA
+					AAAAENAAAAQAAAAAAAAAtAEAgNgBAAAAAAAA
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/09d2953613526000</string>
+					<string>file:///Users/sethdoty/Downloads/env.prod</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1837,109 +1652,52 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>09d2953613526000</string>
+				<string>env.prod</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/09d2953613526000</string>
+				<string>file:///Users/sethdoty/Downloads/env.prod</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-08-10T20:03:43Z</date>
+				<date>2022-11-16T03:44:05Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va8ADAAAAAAQQMAAAAGwjae8jO2r6S+xm
-					+XfMjznn6v2xN+OZ1bFZ3GnT7PEW4AIAAAQA
-					AAADAwAAAAgAKAcAAAABAQAAVm9sdW1lcwAL
-					AAAAAQEAAEtPQk9lUmVhZGVyAAUAAAABAQAA
-					LmtvYm8AAAAEAAAAAQEAAEtvYm8RAAAAAQEA
-					AEtvYm8gZVJlYWRlci5jb25mAAAAFAAAAAEG
-					AAAQAAAAIAAAADQAAABEAAAAUAAAAAgAAAAE
-					AwAAG2YAAAAAAAAAAAAAAQoAABQAAAABBgAA
-					iAAAAJgAAACYAAAAmAAAAJgAAAAIAAAAAAQA
-					AEHEUkZhAAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAcAAAAAQkAAGZpbGU6
-					Ly8vVm9sdW1lcy9LT0JPZVJlYWRlci8IAAAA
-					BAMAAACQqK4BAAAACAAAAAAEAADBzSfkQAAA
-					ACQAAAABAQAAMzRGNjBBQzctMDIwNi0zRkNC
-					LUE5OUItQzg2MTIyN0YxNzQwGAAAAAECAABh
-					AQAAAAAAAO8TAAABAAAAAAAAAAAAAAAUAAAA
-					AQEAAC9Wb2x1bWVzL0tPQk9lUmVhZGVyCAAA
-					AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50
-					b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAA
-					BAAAQcRAB+AAAAAkAAAAAQEAAERBMzI2QzIz
-					LUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIx
-					QhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAA
-					AAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A
-					8AAAAAAAAAcAAAACIAAAKAIAAAAAAAAFIAAA
-					mAEAAAAAAAAQIAAAqAEAAAAAAAARIAAA3AEA
-					AAAAAAASIAAAvAEAAAAAAAATIAAAzAEAAAAA
-					AAAgIAAACAIAAAAAAAAEAAAAAwMAAADwAAAE
-					AAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAYAAAA
-					AQYAAJwCAACoAgAAtAIAAKgCAACoAgAAqAIA
-					AKgAAAD+////AQAAADQCAAANAAAABBAAAGwA
-					AAAAAAAABRAAAKAAAAAAAAAAEBAAAMwAAAAA
-					AAAAQBAAALwAAAAAAAAAACAAAMACAAAAAAAA
-					AiAAAHwBAAAAAAAABSAAAOwAAAAAAAAAECAA
-					ACAAAAAAAAAAESAAADABAAAAAAAAEiAAABAB
-					AAAAAAAAEyAAACABAAAAAAAAICAAAFwBAAAA
-					AAAAENAAAAQAAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Volumes/KOBOeReader/.kobo/Kobo/Kobo%20eReader.conf</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>Kobo eReader.conf</string>
-				<key>URL</key>
-				<string>file:///Volumes/KOBOeReader/.kobo/Kobo/Kobo%20eReader.conf</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2022-08-08T22:27:30Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va9gCAAAAAAQQMAAAACx5IRs6DUDVRghZ
-					SvgSRvhDQkGh/JCRGMviWbG0l4P21AEAAAQA
+					Ym9vaygDAAAAAAQQMAAAAMyyIuSEYiHJdQH5
+					aAo/zeg8cQQ15UAvW+VNSSXbPmZeGAIAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
-					AAAAAQEAAHNldGhkb3R5DQAAAAEBAABTeW5v
-					bG9neURyaXZlAAAAIQAAAAEBAABjYWxpYnJl
-					LXdlYi5zdWJmb2xkZXIuY29uZi5zYW1wbGUA
-					AAAQAAAAAQYAABAAAAAgAAAAMAAAAEgAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAALAAAAAQEAAGFyY2hpdmUuaGJzABQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFwAAAAI
 					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
-					AAAAAAgAAAAEAwAAFLMlAQAAAAAIAAAABAMA
-					ADyUPAEAAAAAEAAAAAEGAACMAAAAnAAAAKwA
-					AAC8AAAACAAAAAAEAABBxFDh0AAAABgAAAAB
-					AgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAA
-					CAAAAAQDAAACAAAAAAAAAAQAAAADAwAA9QEA
-					AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1h
-					Y2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAI
-					AAAAAAQAAEHEQAfgAAAAJAAAAAEBAABEQTMy
-					NkMyMy1ENkUxLTQ1MDItODc5OC1CRjIwQzM5
-					ODlCMUIYAAAAAQIAAIEAAAABAAAA7xMAAAEA
-					AAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAAB
-					BQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAA
-					dAAAAAAAAAAFEAAAzAAAAAAAAAAQEAAA9AAA
-					AAAAAABAEAAA5AAAAAAAAAACIAAAwAEAAAAA
-					AAAFIAAAMAEAAAAAAAAQIAAAQAEAAAAAAAAR
-					IAAAdAEAAAAAAAASIAAAVAEAAAAAAAATIAAA
-					ZAEAAAAAAAAgIAAAoAEAAAAAAAAwIAAAzAEA
-					AAAAAAABwAAAFAEAAAAAAAARwAAAIAAAAAAA
-					AAASwAAAJAEAAAAAAAAQ0AAABAAAAAAAAAA=
+					AAAAAAgAAAAEAwAARc0DAAAAAAAIAAAABAMA
+					AISwywEAAAAACAAAAAQDAAClscsBAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEkkgsYvQ4GAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcSF5tqAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAA
+					AQEAAE5TVVJMRG9jdW1lbnRJZGVudGlmaWVy
+					S2V5AAAEAAAAAwMAALAsAADYAAAA/v///wEA
+					AAAAAAAAEQAAAAQQAABwAAAAAAAAAAUQAADc
+					AAAAAAAAABAQAAAIAQAAAAAAAEAQAAD4AAAA
+					AAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAA
+					ABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIg
+					AABoAQAAAAAAABMgAAB4AQAAAAAAACAgAAC0
+					AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAA
+					AAAAABHAAAAgAAAAAAAAABLAAAA4AQAAAAAA
+					ABDQAAAEAAAAAAAAAOgBAIAMAgAAAAAAAA==
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/SynologyDrive/calibre-web.subfolder.conf.sample</string>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/archive.hbs</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -1948,39 +1706,39 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>calibre-web.subfolder.conf.sample</string>
+				<string>archive.hbs</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/SynologyDrive/calibre-web.subfolder.conf.sample</string>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/archive.hbs</string>
 			</dict>
 			<dict>
 				<key>Date</key>
-				<date>2022-08-06T20:02:03Z</date>
+				<date>2022-11-16T03:43:12Z</date>
 				<key>DocumentClass</key>
 				<string>Text</string>
 				<key>Locator</key>
 				<dict>
 					<key>BookmarkData</key>
 					<data>
-					Ym9va/gCAAAAAAQQMAAAAKeDg1WpzJMX036o
-					B2GqwHoduQXREnJdDdQVZx6L0jE/6AEAAAQA
+					Ym9va/gCAAAAAAQQMAAAAJjegTI1PNyt2AC3
+					72A2gmSJzOe3lAgSuN/7IibjDL8e6AEAAAQA
 					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
 					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
-					bG9hZHMAAAAKAAAAAQEAAGNvbmZpZy55bWwA
+					bG9hZHMAAAALAAAAAQEAAHJvdXRlcy55YW1s
 					ABAAAAABBgAAEAAAACAAAAAwAAAARAAAAAgA
 					AAAEAwAAhFwAAAAAAAAIAAAABAMAABLNAwAA
 					AAAACAAAAAQDAABFzQMAAAAAAAgAAAAEAwAA
-					vUE5AQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
-					AKAAAAAIAAAAAAQAAEHET3j3PKy6GAAAAAEC
+					NanLAQAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
+					AKAAAAAIAAAAAAQAAEHEkkakwxOBGAAAAAEC
 					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
 					AAAABAMAAAIAAAAAAAAABAAAAAMDAAD1AQAA
 					CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
 					aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-					AAAABAAAQcRAB+AAAAAkAAAAAQEAAERBMzI2
+					AAAABAAAQcSF5tqAAAAkAAAAAQEAAERBMzI2
 					QzIzLUQ2RTEtNDUwMi04Nzk4LUJGMjBDMzk4
 					OUIxQhgAAAABAgAAgQAAAAEAAADvEwAAAQAA
 					AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEF
 					AAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
-					dGlmaWVyS2V5AAAEAAAAAwMAAAIsAADYAAAA
+					dGlmaWVyS2V5AAAEAAAAAwMAAK8sAADYAAAA
 					/v///wEAAAAAAAAAEQAAAAQQAABYAAAAAAAA
 					AAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
 					AADIAAAAAAAAAAIgAACkAQAAAAAAAAUgAAAU
@@ -1992,7 +1750,7 @@
 					AAAAAA==
 					</data>
 					<key>FileURL</key>
-					<string>file:///Users/sethdoty/Downloads/config.yml</string>
+					<string>file:///Users/sethdoty/Downloads/routes.yaml</string>
 					<key>HasSecurityScope</key>
 					<true/>
 					<key>TypeID</key>
@@ -2001,9 +1759,477 @@
 					<integer>1</integer>
 				</dict>
 				<key>Name</key>
-				<string>config.yml</string>
+				<string>routes.yaml</string>
 				<key>URL</key>
-				<string>file:///Users/sethdoty/Downloads/config.yml</string>
+				<string>file:///Users/sethdoty/Downloads/routes.yaml</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:40:35Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+gCAAAAAAQQMAAAAFAf8L+/YDxnRhWL
+					qYO4J4MkX6jtXlS5D3XG24DolWFH5AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAIAAAAAQEAAHBvc3QuaGJzFAAAAAEG
+					AAAQAAAAIAAAADAAAABEAAAAXAAAAAgAAAAE
+					AwAAhFwAAAAAAAAIAAAABAMAABLNAwAAAAAA
+					CAAAAAQDAABFzQMAAAAAAAgAAAAEAwAAhLDL
+					AQAAAAAIAAAABAMAAK6wywEAAAAAFAAAAAEG
+					AACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+					BAAAQcSQ8/wAAAAYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABBxIXm
+					2oAAACQAAAABAQAAREEzMjZDMjMtRDZFMS00
+					NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////
+					AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAABRAA
+					ANgAAAAAAAAAEBAAAAQBAAAAAAAAQBAAAPQA
+					AAAAAAAAAiAAANABAAAAAAAABSAAAEABAAAA
+					AAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAA
+					EiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAA
+					ALABAAAAAAAAMCAAANwBAAAAAAAAAcAAACQB
+					AAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAA
+					AAAAENAAAAQAAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/post.hbs</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>post.hbs</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/post.hbs</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:23Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+wCAAAAAAQQMAAAABojQgHYRwGiFtgW
+					EX6BySzF2OMav4uOFmR4x7injizq6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAJAAAAAQEAAGluZGV4LmhicwAAABQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFwAAAAI
+					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
+					AAAAAAgAAAAEAwAARc0DAAAAAAAIAAAABAMA
+					AISwywEAAAAACAAAAAQDAACgsMsBAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEkPP8AAAAGAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcSF5tqAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+					/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAA
+					AAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
+					AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABE
+					AQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAA
+					AAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAA
+					ACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHA
+					AAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4
+					AQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/index.hbs</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>index.hbs</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/index.hbs</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:21Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+gCAAAAAAQQMAAAADVfMs4VDU4v6T2I
+					WzdkUxAqMpBS1gonKC5EvaQKP9yF5AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAHAAAAAQEAAExJQ0VOU0UAFAAAAAEG
+					AAAQAAAAIAAAADAAAABEAAAAXAAAAAgAAAAE
+					AwAAhFwAAAAAAAAIAAAABAMAABLNAwAAAAAA
+					CAAAAAQDAABFzQMAAAAAAAgAAAAEAwAAhLDL
+					AQAAAAAIAAAABAMAAIawywEAAAAAFAAAAAEG
+					AACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+					BAAAQcSQ8/wAAAAYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABBxIXm
+					2oAAACQAAAABAQAAREEzMjZDMjMtRDZFMS00
+					NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////
+					AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAABRAA
+					ANgAAAAAAAAAEBAAAAQBAAAAAAAAQBAAAPQA
+					AAAAAAAAAiAAANABAAAAAAAABSAAAEABAAAA
+					AAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAA
+					EiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAA
+					ALABAAAAAAAAMCAAANwBAAAAAAAAAcAAACQB
+					AAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAA
+					AAAAENAAAAQAAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/LICENSE</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>LICENSE</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/LICENSE</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:20Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+wCAAAAAAQQMAAAALfnhUpeUsigMOlD
+					iC1DPgOx+M91nTH56x6up6nCoe1T6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAMAAAAAQEAAHBhY2thZ2UuanNvbhQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFwAAAAI
+					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
+					AAAAAAgAAAAEAwAARc0DAAAAAAAIAAAABAMA
+					AISwywEAAAAACAAAAAQDAAChsMsBAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEkPP8AAAAGAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcSF5tqAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+					/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAA
+					AAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
+					AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABE
+					AQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAA
+					AAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAA
+					ACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHA
+					AAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4
+					AQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/package.json</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>package.json</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/package.json</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:14Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+gCAAAAAAQQMAAAAFTpmcT+++y3SVJ2
+					aaTnEXqdrTS1Jm8troOITYQXJLaS5AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAIAAAAAQEAAHBhZ2UuaGJzFAAAAAEG
+					AAAQAAAAIAAAADAAAABEAAAAXAAAAAgAAAAE
+					AwAAhFwAAAAAAAAIAAAABAMAABLNAwAAAAAA
+					CAAAAAQDAABFzQMAAAAAAAgAAAAEAwAAhLDL
+					AQAAAAAIAAAABAMAAKKwywEAAAAAFAAAAAEG
+					AACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+					BAAAQcSQ8/wAAAAYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABBxIXm
+					2oAAACQAAAABAQAAREEzMjZDMjMtRDZFMS00
+					NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////
+					AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAABRAA
+					ANgAAAAAAAAAEBAAAAQBAAAAAAAAQBAAAPQA
+					AAAAAAAAAiAAANABAAAAAAAABSAAAEABAAAA
+					AAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAA
+					EiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAA
+					ALABAAAAAAAAMCAAANwBAAAAAAAAAcAAACQB
+					AAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAA
+					AAAAENAAAAQAAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/page.hbs</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>page.hbs</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/page.hbs</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:09Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+wCAAAAAAQQMAAAAPoNYOWUtPNiGQZR
+					MLAiDzV5tKXfv34q7yqrhtlM+aZl6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAJAAAAAQEAAFJFQURNRS5tZAAAABQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFwAAAAI
+					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
+					AAAAAAgAAAAEAwAARc0DAAAAAAAIAAAABAMA
+					AISwywEAAAAACAAAAAQDAACHsMsBAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEkPP8AAAAGAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcSF5tqAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+					/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAA
+					AAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
+					AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABE
+					AQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAA
+					AAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAA
+					ACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHA
+					AAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4
+					AQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/README.md</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>README.md</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/README.md</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-16T03:33:08Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va+wCAAAAAAQQMAAAAAhUn1VZjc1QRpvr
+					w3obFOdELgf9dbu2+3x7nQuTuyqQ6AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAANAAAAAQEAAGNhc3Blci1jdXN0
+					b20AAAAJAAAAAQEAAHlhcm4ubG9jawAAABQA
+					AAABBgAAEAAAACAAAAAwAAAARAAAAFwAAAAI
+					AAAABAMAAIRcAAAAAAAACAAAAAQDAAASzQMA
+					AAAAAAgAAAAEAwAARc0DAAAAAAAIAAAABAMA
+					AISwywEAAAAACAAAAAQDAACwsMsBAAAAABQA
+					AAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+					AAAAAAQAAEHEkPP8AAAAGAAAAAECAAABAAAA
+					AAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMA
+					AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
+					AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+					IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAA
+					QcSF5tqAAAAkAAAAAQEAAERBMzI2QzIzLUQ2
+					RTEtNDUwMi04Nzk4LUJGMjBDMzk4OUIxQhgA
+					AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+					AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA
+					/v///wEAAAAAAAAAEAAAAAQQAABwAAAAAAAA
+					AAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
+					AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABE
+					AQAAAAAAABAgAABUAQAAAAAAABEgAACIAQAA
+					AAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAA
+					ACAgAAC0AQAAAAAAADAgAADgAQAAAAAAAAHA
+					AAAoAQAAAAAAABHAAAAgAAAAAAAAABLAAAA4
+					AQAAAAAAABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/casper-custom/yarn.lock</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>yarn.lock</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/casper-custom/yarn.lock</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-11-02T01:40:26Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va/wCAAAAAAQQMAAAAKi1GAHkis2ZEPvr
+					75Lo/0wpeNaiY6/9Y9YV9i/4w/oA+AEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAABLAAAAAQEAAG9rdGFfZmlyZWhv
+					c2VfczMtNS0yMDIyLTExLTAxLTIzLTAwLTEx
+					LWM5M2UzN2E4LWZiMWQtM2RiMy1hMjYxLWI4
+					MDA2ZDlmZGNkMwAQAAAAAQYAABAAAAAgAAAA
+					MAAAAEQAAAAIAAAABAMAAIRcAAAAAAAACAAA
+					AAQDAAASzQMAAAAAAAgAAAAEAwAARc0DAAAA
+					AAAIAAAABAMAAO9vswEAAAAAEAAAAAEGAACw
+					AAAAwAAAANAAAADgAAAACAAAAAAEAABBxIkA
+					3E07txgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAACAAAAAQDAAACAAAAAAAAAAQA
+					AAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8M
+					AAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
+					AJCClucAAAAIAAAAAAQAAEHEf2qigAAAJAAA
+					AAEBAABEQTMyNkMyMy1ENkUxLTQ1MDItODc5
+					OC1CRjIwQzM5ODlCMUIYAAAAAQIAAIEAAAAB
+					AAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+					LwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAA
+					ABAAAAAEEAAAmAAAAAAAAAAFEAAA8AAAAAAA
+					AAAQEAAAGAEAAAAAAABAEAAACAEAAAAAAAAC
+					IAAA5AEAAAAAAAAFIAAAVAEAAAAAAAAQIAAA
+					ZAEAAAAAAAARIAAAmAEAAAAAAAASIAAAeAEA
+					AAAAAAATIAAAiAEAAAAAAAAgIAAAxAEAAAAA
+					AAAwIAAA8AEAAAAAAAABwAAAOAEAAAAAAAAR
+					wAAAIAAAAAAAAAASwAAASAEAAAAAAAAQ0AAA
+					BAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/okta_firehose_s3-5-2022-11-01-23-00-11-c93e37a8-fb1d-3db3-a261-b8006d9fdcd3</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>okta_firehose_s3-5-2022-11-01-23-00-11-c93e37a8-fb1d-3db3-a261-b8006d9fdcd3</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/okta_firehose_s3-5-2022-11-01-23-00-11-c93e37a8-fb1d-3db3-a261-b8006d9fdcd3</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2022-10-20T02:09:42Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va9ACAAAAAAQQMAAAAM4dAGQKkUTG/K95
+					pSQBZd74dR7/56F9ohdSu4lz5zrJzAEAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAI
+					AAAAAQEAAHNldGhkb3R5CQAAAAEBAABEb3du
+					bG9hZHMAAAAdAAAAAQEAAG5ldGJveF9pbnRl
+					cmZhY2VfdGVtcGxhdGUuY3N2AAAAEAAAAAEG
+					AAAQAAAAIAAAADAAAABEAAAACAAAAAQDAACE
+					XAAAAAAAAAgAAAAEAwAAEs0DAAAAAAAIAAAA
+					BAMAAEXNAwAAAAAACAAAAAQDAAAlSJ8BAAAA
+					ABAAAAABBgAAhAAAAJQAAACkAAAAtAAAAAgA
+					AAAABAAAQcSAcTy9L9wYAAAAAQIAAAEAAAAA
+					AAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAA
+					AgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkA
+					AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2gg
+					SEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABB
+					xFsP/YAAACQAAAABAQAAREEzMjZDMjMtRDZF
+					MS00NTAyLTg3OTgtQkYyMEMzOTg5QjFCGAAA
+					AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
+					AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+
+					////AQAAAAAAAAAQAAAABBAAAGwAAAAAAAAA
+					BRAAAMQAAAAAAAAAEBAAAOwAAAAAAAAAQBAA
+					ANwAAAAAAAAAAiAAALgBAAAAAAAABSAAACgB
+					AAAAAAAAECAAADgBAAAAAAAAESAAAGwBAAAA
+					AAAAEiAAAEwBAAAAAAAAEyAAAFwBAAAAAAAA
+					ICAAAJgBAAAAAAAAMCAAAMQBAAAAAAAAAcAA
+					AAwBAAAAAAAAEcAAACAAAAAAAAAAEsAAABwB
+					AAAAAAAAENAAAAQAAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/sethdoty/Downloads/netbox_interface_template.csv</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>netbox_interface_template.csv</string>
+				<key>URL</key>
+				<string>file:///Users/sethdoty/Downloads/netbox_interface_template.csv</string>
 			</dict>
 		</array>
 	</dict>
@@ -2670,7 +2896,7 @@
 	dHJ5VmVyc2lvbjwva2V5PgoJCQk8c3RyaW5nPjQxNjE2Mjwvc3RyaW5nPgoJCTwvZGlj
 	dD4KCQk8ZGljdD4KCQkJPGtleT5TVUZlZWRFbnRyeURlc2NyaXB0aW9uUlRGRDwva2V5
 	PgoJCQk8ZGF0YT4KCQkJY25SbVpBQUFBQUFEQUFBQUFnQUFBQWNBQUFCVVdGUXVjblJt
-	QVFBQUFDNVFCUUFBS3dBQQoJCQlBQUVBQUFCSUJRQUFlMXh5ZEdZeFhHRnVjMmxjWVc1
+	QVFBQUFDNVBCUUFBS3dBQQoJCQlBQUVBQUFCSEJRQUFlMXh5ZEdZeFhHRnVjMmxjWVc1
 	emFXTndaekV5TlRKY1kyOWpiMkZ5CgkJCWRHWXhOamN4WEdOdlkyOWhjM1ZpY25SbU5q
 	QXdDbnRjWm05dWRIUmliRnhtTUZ4bWJtbHMKCQkJWEdaamFHRnljMlYwTUNCSVpXeDJa
 	WFJwWTJGT1pYVmxMVUp2YkdRN1hHWXhYR1p1YVd4YwoJCQlabU5vWVhKelpYUXdJRWhs
@@ -2682,39 +2908,39 @@
 	MGVERTIKCQkJT0RCY2RIZ3lNalF3WEhSNE1qZ3dNRngwZURNek5qQmNkSGd6T1RJd1hI
 	UjRORFE0TUZ4MAoJCQllRFV3TkRCY2RIZzFOakF3WEhSNE5qRTJNRngwZURZM01qQmNj
 	R0Z5WkdseWJtRjBkWEpoCgkJCWJGeHdZWEowYVdkb2RHVnVabUZqZEc5eU1Bb0tYR1l3
-	WEdKY1puTXpNQ0JjWTJZeUlFSkMKCQkJUldScGRDQXhOQzQxTGpJZ0tERTBRekl5TUN3
-	Z05qUXRZbWwwTENCellXNWtZbTk0WldRcAoJCQlJQ0FvTURndk1qVXZNakF5TWlsY0Nn
-	cGNaakZjWWpCY1puTXlOQ0JjQ2xSb2FYTWdjbVZzCgkJCVpXRnpaU0JwY3lCaElHWnla
-	V1VzSUhKbFkyOXRiV1Z1WkdWa0lIVndaR0YwWlNCbWIzSWcKCQkJWVd4c0lFSkNSV1Jw
-	ZENBeE5DQmpkWE4wYjIxbGNuTTdJR2wwSUdsdVkyeDFaR1Z6SUdacAoJCQllR1Z6SUda
-	dmNpQnBjM04xWlhNZ2NtVndiM0owWldRZ2FXNGdjSEpsZG1sdmRYTWdRa0pGCgkJCVpH
-	bDBJREUwSUhKbGJHVmhjMlZ6SUdGdVpDQndjbWx2Y2l3Z1lXNWtJR1JsZEdGcGJHVmsK
-	CQkJSUdOb1lXNW5aU0J1YjNSbGN5QmhjbVVnWVhaaGFXeGhZbXhsSUc5dUlIdGNabWxs
-	YkdSNwoJCQlYQ3BjWm14a2FXNXpkSHRJV1ZCRlVreEpUa3NnSW1oMGRIQnpPaTh2ZDNk
-	M0xtSmhjbVZpCgkJCWIyNWxjeTVqYjIwdmMzVndjRzl5ZEM5aVltVmthWFF2WTNWeWNt
-	VnVkRjl1YjNSbGN5NW8KCQkJZEcxc0luMTllMXhtYkdSeWMyeDBJRzkxY2lCM1pXSWdj
-	MmwwWlgxOUxsd0tYQXBDUWtWawoJCQlhWFFnTVRRZ2FYTWdZU0J0WVdwdmNpQnlaV3hs
-	WVhObElIZG9hV05vSUc5bVptVnljeUJoCgkJCUlIZHBaR1VnY21GdVoyVWdiMllnWm1W
-	aGRIVnlaU0JoWkdScGRHbHZibk1zSUdOb1lXNW4KCQkJWlhNc0lHRnVaQ0J5WldacGJt
-	VnRaVzUwY3l3Z2FXNWpiSFZrYVc1bklHSjFhV3gwTFdsdQoJCQlJSE4xY0hCdmNuUWda
-	bTl5SUh0Y1ptbGxiR1I3WENwY1pteGthVzV6ZEh0SVdWQkZVa3hKCgkJCVRrc2dJbWgw
-	ZEhCek9pOHZiV2xqY205emIyWjBMbWRwZEdoMVlpNXBieTlzWVc1bmRXRm4KCQkJWlMx
-	elpYSjJaWEl0Y0hKdmRHOWpiMnd2SW4xOWUxeG1iR1J5YzJ4MElFeGhibWQxWVdkbAoJ
-	CQlJRk5sY25abGNpQlFjbTkwYjJOdmJDQW9URk5RS1NCelpYSjJaWEp6Zlgwc0lHRWda
-	R1ZrCgkJCWFXTmhkR1ZrSUU1dmRHVnpJSGRwYm1SdmR5d2djMmw0SUc1bGR5QnNZVzVu
-	ZFdGblpYTWcKCQkJYVc1amJIVmthVzVuSUVkdklHRnVaQ0JTTENCaElDSlNaWEJsWVhR
-	Z1RHRnpkQ0JEYjIxdAoJCQlZVzVrSWlCamIyMXRZVzVrTENCeVpXTnZaMjVwZEdsdmJp
-	QnZaaUJCYm1GamIyNWtZU0JsCgkJCWJuWnBjbTl1YldWdWRITXNJR0Z1WkNCdGRXTm9J
-	RzF2Y21VdUlIdGNabWxsYkdSN1hDcGMKCQkJWm14a2FXNXpkSHRJV1ZCRlVreEpUa3Nn
-	SW1oMGRIQnpPaTh2ZDNkM0xtSmhjbVZpYjI1bAoJCQljeTVqYjIwdmNISnZaSFZqZEhN
-	dlltSmxaR2wwTDJKaVpXUnBkREUwTG1oMGJXd2lmWDE3CgkJCVhHWnNaSEp6YkhRZ0Ns
-	eG1NaUJTWldGa0lHRnNiQ0JoWW05MWRDQnBkQ0Y5ZlgwQkFBQUEKCQkJSXdBQUFBRUFB
-	QUFIQUFBQVZGaFVMbkowWmhBQUFBQVdud2RqdGdFQUFBQUFBQUFBQUFBQQoJCQk8L2Rh
+	WEdKY1puTXpNQ0JjWTJZeUlFSkMKCQkJUldScGRDQXhOQzQyTGpJZ0tERTBSRFF5TENB
+	Mk5DMWlhWFFzSUhOaGJtUmliM2hsWkNrZwoJCQlJQ2d4TWk4eE15OHlNREl5S1Z3S0Ns
+	eG1NVnhpTUZ4bWN6STBJRndLVkdocGN5QnlaV3hsCgkJCVlYTmxJR2x6SUdFZ1puSmxa
+	U3dnY21WamIyMXRaVzVrWldRZ2RYQmtZWFJsSUdadmNpQmgKCQkJYkd3Z1FrSkZaR2ww
+	SURFMElHTjFjM1J2YldWeWN6c2dhWFFnYVc1amJIVmtaWE1nWm1sNAoJCQlaWE1nWm05
+	eUlHbHpjM1ZsY3lCeVpYQnZjblJsWkNCcGJpQndjbVYyYVc5MWN5QkNRa1ZrCgkJCWFY
+	UWdNVFFnY21Wc1pXRnpaWE1nWVc1a0lIQnlhVzl5TENCaGJtUWdaR1YwWVdsc1pXUWcK
+	CQkJWTJoaGJtZGxJRzV2ZEdWeklHRnlaU0JoZG1GcGJHRmliR1VnYjI0Z2UxeG1hV1Zz
+	Wkh0YwoJCQlLbHhtYkdScGJuTjBlMGhaVUVWU1RFbE9TeUFpYUhSMGNITTZMeTkzZDNj
+	dVltRnlaV0p2CgkJCWJtVnpMbU52YlM5emRYQndiM0owTDJKaVpXUnBkQzlqZFhKeVpX
+	NTBYMjV2ZEdWekxtaDAKCQkJYld3aWZYMTdYR1pzWkhKemJIUWdiM1Z5SUhkbFlpQnph
+	WFJsZlgwdVhBcGNDa0pDUldScAoJCQlkQ0F4TkNCcGN5QmhJRzFoYW05eUlISmxiR1Zo
+	YzJVZ2QyaHBZMmdnYjJabVpYSnpJR0VnCgkJCWQybGtaU0J5WVc1blpTQnZaaUJtWldG
+	MGRYSmxJR0ZrWkdsMGFXOXVjeXdnWTJoaGJtZGwKCQkJY3l3Z1lXNWtJSEpsWm1sdVpX
+	MWxiblJ6TENCcGJtTnNkV1JwYm1jZ1luVnBiSFF0YVc0ZwoJCQljM1Z3Y0c5eWRDQm1i
+	M0lnZTF4bWFXVnNaSHRjS2x4bWJHUnBibk4wZTBoWlVFVlNURWxPCgkJCVN5QWlhSFIw
+	Y0hNNkx5OXRhV055YjNOdlpuUXVaMmwwYUhWaUxtbHZMMnhoYm1kMVlXZGwKCQkJTFhO
+	bGNuWmxjaTF3Y205MGIyTnZiQzhpZlgxN1hHWnNaSEp6YkhRZ1RHRnVaM1ZoWjJVZwoJ
+	CQlVMlZ5ZG1WeUlGQnliM1J2WTI5c0lDaE1VMUFwSUhObGNuWmxjbk45ZlN3Z1lTQmta
+	V1JwCgkJCVkyRjBaV1FnVG05MFpYTWdkMmx1Wkc5M0xDQnphWGdnYm1WM0lHeGhibWQx
+	WVdkbGN5QnAKCQkJYm1Oc2RXUnBibWNnUjI4Z1lXNWtJRklzSUdFZ0lsSmxjR1ZoZENC
+	TVlYTjBJRU52YlcxaAoJCQlibVFpSUdOdmJXMWhibVFzSUhKbFkyOW5ibWwwYVc5dUlH
+	OW1JRUZ1WVdOdmJtUmhJR1Z1CgkJCWRtbHliMjV0Wlc1MGN5d2dZVzVrSUcxMVkyZ2di
+	Vzl5WlM0Z2UxeG1hV1ZzWkh0Y0tseG0KCQkJYkdScGJuTjBlMGhaVUVWU1RFbE9TeUFp
+	YUhSMGNITTZMeTkzZDNjdVltRnlaV0p2Ym1WegoJCQlMbU52YlM5d2NtOWtkV04wY3k5
+	aVltVmthWFF2WW1KbFpHbDBNVFF1YUhSdGJDSjlmWHRjCgkJCVpteGtjbk5zZENBS1hH
+	WXlJRkpsWVdRZ1lXeHNJR0ZpYjNWMElHbDBJWDE5ZlFFQUFBQWoKCQkJQUFBQUFRQUFB
+	QWNBQUFCVVdGUXVjblJtRUFBQUFPckhtR08yQVFBQUFBQUFBQUFBQUFBPQoJCQk8L2Rh
 	dGE+CgkJCTxrZXk+U1VGZWVkRW50cnlEb3dubG9hZENoZWNrc3VtPC9rZXk+CgkJCTxz
-	dHJpbmc+MTg0ZjIwOTA2MWIxNWNhMTViNmNkYWIwYmRjMzU0MDhiMTIwOTRjMzY5ZDJh
-	YmJhMzIzNGViNzc2NDZjMjEyZDwvc3RyaW5nPgoJCQk8a2V5PlNVRmVlZEVudHJ5RG93
+	dHJpbmc+ZTU4MDVlNGIzOGZiM2UyN2MwMDZjZjY5ZjZkNzU5NjM3MzQ5ZjAyNzk5Y2Y0
+	OTYzZGQ2MTk2OTAwMGY0OWNiYTwvc3RyaW5nPgoJCQk8a2V5PlNVRmVlZEVudHJ5RG93
 	bmxvYWRVUkw8L2tleT4KCQkJPHN0cmluZz5odHRwczovL3MzLmFtYXpvbmF3cy5jb20v
-	QkJTVy1kb3dubG9hZC9CQkVkaXRfMTQuNS4yLmRtZzwvc3RyaW5nPgoJCQk8a2V5PlNV
+	QkJTVy1kb3dubG9hZC9CQkVkaXRfMTQuNi4yLmRtZzwvc3RyaW5nPgoJCQk8a2V5PlNV
 	RmVlZEVudHJ5RnJlZVVwZ3JhZGVCYXNlPC9rZXk+CgkJCTxzdHJpbmc+NDE2MDAxPC9z
 	dHJpbmc+CgkJCTxrZXk+U1VGZWVkRW50cnlNYXJrZXRpbmdCYXNlPC9rZXk+CgkJCTxz
 	dHJpbmc+MTRDMTU1PC9zdHJpbmc+CgkJCTxrZXk+U1VGZWVkRW50cnlNYXJrZXRpbmdC
@@ -2782,17 +3008,17 @@
 	aGRIVnkKCQkJWlMxc2FXMXBkR1ZrSUc5d1pYSmhkR2x2Ymk1OUFRQUFBQ01BQUFBQkFB
 	QUFCd0FBQUZSWQoJCQlWQzV5ZEdZUUFBQUFCeUczWXJZQkFBQUFBQUFBQUFBQUFBPT0K
 	CQkJPC9kYXRhPgoJCQk8a2V5PlNVRmVlZEVudHJ5U2hvcnRWZXJzaW9uU3RyaW5nPC9r
-	ZXk+CgkJCTxzdHJpbmc+MTQuNS4yPC9zdHJpbmc+CgkJCTxrZXk+U1VGZWVkRW50cnlV
-	cGRhdGVDaGVja3N1bTwva2V5PgoJCQk8c3RyaW5nPjUwM2QwZWYzMTNkNzNmMDNjZjU3
-	NTI4NTQ1MGRmODUwZjI5YTQzY2I3YjE5ZmQyY2ZhOTVjY2M1MmY3MmNiZmE8L3N0cmlu
+	ZXk+CgkJCTxzdHJpbmc+MTQuNi4yPC9zdHJpbmc+CgkJCTxrZXk+U1VGZWVkRW50cnlV
+	cGRhdGVDaGVja3N1bTwva2V5PgoJCQk8c3RyaW5nPjBhMTE2YzgxYWM1YzdiZThiMjBi
+	ZTU4MTEyMDMwMmY5Zjc4ZTdhOTk0Njk2NDk3MGRkYTBhNWE4M2RhOGM2Yjk8L3N0cmlu
 	Zz4KCQkJPGtleT5TVUZlZWRFbnRyeVVwZGF0ZVVSTDwva2V5PgoJCQk8c3RyaW5nPmh0
-	dHBzOi8vczMuYW1hem9uYXdzLmNvbS9CQlNXLWRvd25sb2FkL0JCRWRpdF8xNC41LjIu
+	dHBzOi8vczMuYW1hem9uYXdzLmNvbS9CQlNXLWRvd25sb2FkL0JCRWRpdF8xNC42LjIu
 	Y3Bnejwvc3RyaW5nPgoJCQk8a2V5PlNVRmVlZEVudHJ5VmVyc2lvbjwva2V5PgoJCQk8
-	c3RyaW5nPjQxNzIwMDIwPC9zdHJpbmc+CgkJPC9kaWN0PgoJPC9hcnJheT4KCTxrZXk+
+	c3RyaW5nPjQxODAwMDQyPC9zdHJpbmc+CgkJPC9kaWN0PgoJPC9hcnJheT4KCTxrZXk+
 	U1VGZWVkT3B0aW9uczwva2V5PgoJPGRpY3QvPgo8L2RpY3Q+CjwvcGxpc3Q+Cg==
 	</data>
 	<key>SULastCheckedDate</key>
-	<date>2022-09-11T02:33:43Z</date>
+	<date>2022-12-21T22:45:30Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_mode</key>

@@ -1,9 +1,0 @@
-{
-	"ignored_packages":
-	[
-		"Vintage",
-	],
-	"color_scheme": "Packages/Darcula_Pro/Dracula Pro.tmTheme",
-	"auto_complete": true,
-	"theme": "auto",
-}

@@ -11,7 +11,7 @@
 
 ;;; UI
 
-(setq doom-theme 'doom-dracula
+(setq doom-theme 'doom-monokai-pro
       doom-font (font-spec :family "JetBrains Mono" :size 12 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Source Sans Pro" :size 13))
 
@@ -19,21 +19,22 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-;; Prevents some cases of Emacs flickering.
-(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
-
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-;;; :tools magit
-(setq magit-repository-directories '(("~/workspace" . 2))
-      magit-save-repository-buffers nil
-      ;; Don't restore the wconf after quitting magit, it's jarring
-      magit-inhibit-save-previous-winconf t
-      transient-values '((magit-rebase "--autosquash" "--autostash")
-                         (magit-pull "--rebase" "--autostash")
-                         (magit-revert "--autostash")))
+(use-package! org-journal
+  :after org
+  :custom
+  (org-journal-enable-agenda-integration t))
+
+(use-package! org-clock-convenience
+  :bind (:map org-agenda-mode-map
+              ("<S-up>" . org-clock-convenience-timestamp-up)
+              ("<S-down>" . org-clock-convenience-timestamp-down)
+              ("o" . org-clock-convenience-fill-gap)
+              ("e" . org-clock-convenience-fill-gap-both)))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
@@ -73,7 +74,7 @@
 
   ;; Use the tab-and-go frontend.
   ;; Allows TAB to select and complete at the same time.
-  (company-tng-configure-default)
+  (company-tng-mode)
   (setq company-frontends
         '(company-tng-frontend
           company-pseudo-tooltip-frontend
