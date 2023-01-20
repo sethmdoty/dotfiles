@@ -49,3 +49,6 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 (package! company-tabnine)
+(package! doct
+  :recipe (:host github :repo "progfolio/doct")
+  :pin "4033a8fd8681d3989550f7a2532d6b4e3c45bfe8")
