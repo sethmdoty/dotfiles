@@ -76,12 +76,16 @@
 
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
-      org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/"
+      org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
       org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
       org-roam-db-location (concat org-directory ".org-roam.db")
       org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
       org-archive-location (concat org-directory ".archive/%s::"))
 
+;; Doom roam read md files
+(md-roam-mode 1) ; md-roam-mode must be active before org-roam-db-sync
+(setq md-roam-file-extension "md") ; default "md". Specify an extension such as "markdown"
+                                   ;
 (setq org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil)
@@ -114,8 +118,8 @@
                               ))
 
 ;;;bibliography
-(setq! citar-bibliography '("/Users/sethdoty/.logseq/storages/logseq-citation-manager/Doctorate.bib"))
-(setq! citar-library-paths '("/Users/sethdoty/Library/Mobile\ Documents/com\~apple\~CloudDocs/Zotero/PDFs")
+(setq! citar-bibliography '("/Users/sethdoty/SynologyDrive/Documents/Doctoral_Program/Dissertation/eDoctorate.bib"))
+(setq! citar-library-paths '("/Users/sethdoty/Library/Mobile Documents/com~apple~CloudDocs/Zotero/PDFs")
        citar-notes-paths '("/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages"))
 (setq org-cite-csl-styles-dir "~/Zotero/styles")
 (setq citar-citeproc-csl-styles-dir "~/Zotero/styles")
@@ -130,7 +134,7 @@
  ;; org-noter stuffS
   (after! org-noter
     (setq
-          org-noter-notes-search-path '("/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages")
+          org-noter-notes-search-path '("/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/")
           org-noter-hide-other nil
           org-noter-separate-notes-from-heading t
           org-noter-always-create-frame nil)
@@ -215,7 +219,7 @@
   (setq doct-after-conversion-functions '(+doct-iconify-capture-templates))
 
 
-  (defun set-org-capture-templates ()
+ (defun set-org-capture-templates ()
     (setq org-capture-templates
           (doct `(("Personal todo" :keys "t"
                    :icon ("checklist" :set "octicon" :color "green")
@@ -331,6 +335,7 @@
                                :heading "Unreleased"
                                :file +org-capture-central-project-changelog-file)))))))
 
+
   (set-org-capture-templates)
   (unless (display-graphic-p)
     (add-hook 'server-after-make-frame-hook
@@ -434,3 +439,13 @@ Lisp programs can force the template by setting KEYS to a string."
         (interactive)
         (set-window-parameter nil 'mode-line-format 'none)
         (org-capture)))
+
+;; Make Markdown Pretty
+(custom-set-faces!
+'(markdown-header-delimiter-face :foreground "#616161" :height 0.9)
+'(markdown-header-face-1 :height 1.8 :foreground "#A3BE8C" :weight extra-bold :inherit markdown-header-face)
+'(markdown-header-face-2 :height 1.4 :foreground "#EBCB8B" :weight extra-bold :inherit markdown-header-face)
+'(markdown-header-face-3 :height 1.2 :foreground "#D08770" :weight extra-bold :inherit markdown-header-face)
+'(markdown-header-face-4 :height 1.15 :foreground "#BF616A" :weight bold :inherit markdown-header-face)
+'(markdown-header-face-5 :height 1.1 :foreground "#b48ead" :weight bold :inherit markdown-header-face)
+'(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))

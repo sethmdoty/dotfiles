@@ -52,3 +52,8 @@
 (package! doct
   :recipe (:host github :repo "progfolio/doct")
   :pin "4033a8fd8681d3989550f7a2532d6b4e3c45bfe8")
+(package! ebib)
+
+(package! md-roam
+  :recipe (:host github :repo "nobiot/md-roam")
+  :pin "7e072a376baf5a94bd06b5e31ec593651900370c")
