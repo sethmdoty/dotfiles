@@ -12,7 +12,7 @@
 ;;; UI
 
 (setq doom-theme 'doom-vibrant
-      doom-font (font-spec :family "JetBrains Mono" :size 12 :weight 'light)
+      doom-font (font-spec :family "MonoLisa" :size 12 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Source Sans Pro" :size 13))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line

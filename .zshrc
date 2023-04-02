@@ -72,7 +72,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker macos brew direnv kubectl asdf aws terraform ssh-agent taskwarrior)
+plugins=(git docker macos brew direnv kubectl asdf aws terraform iterm2)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,7 +107,7 @@ export FZF_DEFAULT_COMMAND='fd -HI --color=always'
 alias find='fd -HI -E=".git" --color=always'
 alias fzf='fzf --ansi --exact --multi --no-sort'
 alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --no-heading --sort=path'
-
+eval "$('keychain --eval --agents ssh --inherit any id_rsa' 2> /dev/null)"
 # ls
 alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
 
@@ -142,3 +142,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
