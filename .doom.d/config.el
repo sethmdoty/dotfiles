@@ -76,16 +76,20 @@
 
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
-      org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
-      org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
+      ;;org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
+      org-directory "~/org"
+      ;;org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
+      org-roam-directory "~/org/roam/"
       org-roam-db-location (concat org-directory ".org-roam.db")
-      org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
+      ;;org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
+      org-roam-dailies-directory "~/org/roam/journals/"
+      org-agenda-files (directory-files-recursively "~/org/" "\\.org$")
       org-archive-location (concat org-directory ".archive/%s::"))
 
 ;; Doom roam read md files
 (md-roam-mode 1) ; md-roam-mode must be active before org-roam-db-sync
 (setq md-roam-file-extension "md") ; default "md". Specify an extension such as "markdown"
-                                   ;
+                                        ;
 (setq org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil)
@@ -93,9 +97,109 @@
 ;; enable pretty mode in org
 (add-hook 'org-mode-hook #'+org-pretty-mode)
 
+;;agenda
+(use-package! org-agenda
+  :config
+  ;; Setting the TODO keywords
+  (setq org-todo-keywords
+        '((sequence
+           "TODO(t)"                    ;What needs to be done
+           "IN PROGRESS(n)"
+           "|"
+           "DONE(d)"))
+        org-todo-keyword-faces
+        '(("[-]"  . +org-todo-active)
+          ("NEXT" . +org-todo-active)
+          ("[?]"  . +org-todo-onhold)
+          ("REVIEW" . +org-todo-onhold)
+          ("HOLD" . +org-todo-cancel)
+          ("PROJ" . +org-todo-project)
+          ("DONE"   . +org-todo-cancel)
+          ("STOP" . +org-todo-cancel)))
+  ;; Appearance
+  (setq org-agenda-span 20
+        org-agenda-prefix-format       " %i %?-2 t%s"
+        org-agenda-todo-keyword-format "%-6s"
+        org-agenda-current-time-string "ᐊ┈┈┈┈┈┈┈ Now"
+        org-agenda-time-grid '((today require-timed remove-match)
+                               (0900 1200 1400 1700 2100)
+                               "      "
+                               "┈┈┈┈┈┈┈┈┈┈┈┈┈")
+        )
+  ;; Clocking
+  (setq org-clock-persist 'history
+        org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA"
+        org-agenda-start-with-log-mode t)
+  (org-clock-persistence-insinuate))
+;; super agenda
+(use-package! org-super-agenda
+  :commands org-super-agenda-mode)
+
+(after! org-agenda
+  (let ((inhibit-message t))
+    (org-super-agenda-mode)))
+
+(setq org-agenda-skip-scheduled-if-done t
+      org-agenda-skip-deadline-if-done t
+      org-agenda-include-deadlines t
+      org-agenda-block-separator nil
+      org-agenda-tags-column 100 ;; from testing this seems to be a good value
+      org-agenda-compact-blocks t)
+
+(setq org-agenda-custom-commands
+      '(("o" "Overview"
+         ((agenda "" ((org-agenda-span 'day)
+                      (org-super-agenda-groups
+                       '((:name "Today"
+                          :time-grid t
+                          :date today
+                          :todo "TODAY"
+                          :scheduled today
+                          :order 1)))))
+          (alltodo "" ((org-agenda-overriding-header "")
+                       (org-super-agenda-groups
+                        '((:name "Next to do"
+                           :todo "NEXT"
+                           :order 1)
+                          (:name "Important"
+                           :tag "Important"
+                           :priority "A"
+                           :order 6)
+                          (:name "Due Today"
+                           :deadline today
+                           :order 2)
+                          (:name "Due Soon"
+                           :deadline future
+                           :order 8)
+                          (:name "Overdue"
+                           :deadline past
+                           :face error
+                           :order 7)
+                          (:name "Assignments"
+                           :tag "Assignment"
+                           :order 10)
+                          (:name "Issues"
+                           :tag "Issue"
+                           :order 12)
+                          (:name "Projects"
+                           :tag "Project"
+                           :order 14)
+                          (:name "Research"
+                           :tag "Research"
+                           :order 15)
+                          (:name "To read"
+                           :tag "Read"
+                           :order 30)
+                          (:name "Trivial"
+                           :priority<= "E"
+                           :tag ("Trivial" "Unimportant")
+                           :todo ("SOMEDAY" )
+                           :order 90)
+                          (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
+
 ;; Company Tabnine
 (use-package! company-tabnine
-  :when (featurep! :completion company)
+  :when (modulep! :completion company)
   :config
   ;; Number the candidates (use M-1, M-2 etc to select completions).
   (setq company-show-quick-access t)
@@ -117,78 +221,36 @@
                               company-tabnine
                               ))
 
-;;;bibliography
-(setq! citar-bibliography '("/Users/sethdoty/SynologyDrive/Documents/Doctoral_Program/Dissertation/eDoctorate.bib"))
-(setq! citar-library-paths '("/Users/sethdoty/Library/Mobile Documents/com~apple~CloudDocs/Zotero/PDFs")
-       citar-notes-paths '("/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages"))
-(setq org-cite-csl-styles-dir "~/Zotero/styles")
-(setq citar-citeproc-csl-styles-dir "~/Zotero/styles")
-(setq citar-symbols
-      `((file ,(all-the-icons-faicon "file-o" :face 'all-the-icons-green :v-adjust -0.1) . " ")
-        (note ,(all-the-icons-material "speaker_notes" :face 'all-the-icons-blue :v-adjust -0.3) . " ")
-        (link ,(all-the-icons-octicon "link" :face 'all-the-icons-orange :v-adjust 0.01) . " ")))
-(setq citar-symbol-separator "  ")
-
-(setq org-latex-pdf-process
-    '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
- ;; org-noter stuffS
-  (after! org-noter
-    (setq
-          org-noter-notes-search-path '("/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/")
-          org-noter-hide-other nil
-          org-noter-separate-notes-from-heading t
-          org-noter-always-create-frame nil)
-    (map!
-     :map org-noter-doc-mode-map
-     :leader
-     :desc "Insert note"
-     "m i" #'org-noter-insert-note
-     :desc "Insert precise note"
-     "m p" #'org-noter-insert-precise-note
-     :desc "Go to previous note"
-     "m k" #'org-noter-sync-prev-note
-     :desc "Go to next note"
-     "m j" #'org-noter-sync-next-note
-     :desc "Create skeleton"
-     "m s" #'org-noter-create-skeleton
-     :desc "Kill session"
-     "m q" #'org-noter-kill-session
-     )
-  )
-
-;; don't ignore the file field in bibtex entries
-(use-package! org-ref
-  ;; :after org
-  :defer t
-  :config
-  (defadvice! org-ref-open-bibtex-pdf-a ()
-    :override #'org-ref-open-bibtex-pdf
-    (save-excursion
-      (bibtex-beginning-of-entry)
-      (let* ((bibtex-expand-strings t)
-             (entry (bibtex-parse-entry t))
-             (key (reftex-get-bib-field "=key=" entry))
-             (pdf (or
-                   (car (-filter (lambda (f) (string-match-p "\\.pdf$" f))
-                                 (split-string (reftex-get-bib-field "file" entry) ";")))
-                   (funcall org-ref-get-pdf-filename-function key))))
-        (if (file-exists-p pdf)
-            (org-open-file pdf)
-          (ding)))))
-  (defadvice! org-ref-open-pdf-at-point-a ()
-    "Open the pdf for bibtex key under point if it exists."
-    :override #'org-ref-open-pdf-at-point
-    (interactive)
-    (let* ((results (org-ref-get-bibtex-key-and-file))
-           (key (car results))
-           (pdf-file (funcall org-ref-get-pdf-filename-function key)))
-      (with-current-buffer (find-file-noselect (cdr results))
-        (save-excursion
-          (bibtex-search-entry (car results))
-          (org-ref-open-bibtex-pdf))))))
+;; ;;;bibliography
+;; (setq org-latex-pdf-process
+;;       '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
+;; ;; org-noter stuffS
+;; (after! org-noter
+;;   (setq
+;;    org-noter-notes-search-path '("/Users/sethdoty/org/")
+;;    org-noter-hide-other nil
+;;    org-noter-separate-notes-from-heading t
+;;    org-noter-always-create-frame nil)
+;;   (map!
+;;    :map org-noter-doc-mode-map
+;;    :leader
+;;    :desc "Insert note"
+;;    "m i" #'org-noter-insert-note
+;;    :desc "Insert precise note"
+;;    "m p" #'org-noter-insert-precise-note
+;;    :desc "Go to previous note"
+;;    "m k" #'org-noter-sync-prev-note
+;;    :desc "Go to next note"
+;;    "m j" #'org-noter-sync-next-note
+;;    :desc "Create skeleton"
+;;    "m s" #'org-noter-create-skeleton
+;;    :desc "Kill session"
+;;    "m q" #'org-noter-kill-session
+;;    )
+;;   )
 
 ;; in org mode, enable flyspell
-(add-hook 'org-mode-hook 'turn-on-flyspell)
+;;(add-hook 'org-mode-hook 'turn-on-flyspell)
 
 ;; pretify org-capture templates
 (use-package! doct
@@ -199,8 +261,8 @@
   (defun +doct-icon-declaration-to-icon (declaration)
     "Convert :icon declaration to icon"
     (let ((name (pop declaration))
-          (set  (intern (concat "all-the-icons-" (plist-get declaration :set))))
-          (face (intern (concat "all-the-icons-" (plist-get declaration :color))))
+          (set  (intern (concat "nerd-icons-" (plist-get declaration :set))))
+          (face (intern (concat "nerd-icons-" (plist-get declaration :color))))
           (v-adjust (or (plist-get declaration :v-adjust) 0.01)))
       (apply set `(,name :face ,face :v-adjust ,v-adjust))))
 
@@ -219,10 +281,10 @@
   (setq doct-after-conversion-functions '(+doct-iconify-capture-templates))
 
 
- (defun set-org-capture-templates ()
+  (defun set-org-capture-templates ()
     (setq org-capture-templates
           (doct `(("Personal todo" :keys "t"
-                   :icon ("checklist" :set "octicon" :color "green")
+                   :icon ("nf-oct-checklist" :set "octicon" :color "green")
                    :file +org-capture-todo-file
                    :prepend t
                    :headline "Inbox"
@@ -230,7 +292,7 @@
                    :template ("* TODO %?"
                               "%i %a"))
                   ("Personal note" :keys "n"
-                   :icon ("sticky-note-o" :set "faicon" :color "green")
+                   :icon ("nf-fa-sticky_note_o" :set "faicon" :color "green")
                    :file +org-capture-todo-file
                    :prepend t
                    :headline "Inbox"
@@ -238,7 +300,7 @@
                    :template ("* %?"
                               "%i %a"))
                   ("Email" :keys "e"
-                   :icon ("envelope" :set "faicon" :color "blue")
+                   :icon ("nf-fa-envelope" :set "faicon" :color "blue")
                    :file +org-capture-todo-file
                    :prepend t
                    :headline "Inbox"
@@ -248,7 +310,7 @@
                               "about %^{topic}"
                               "%U %i %a"))
                   ("Interesting" :keys "i"
-                   :icon ("eye" :set "faicon" :color "lcyan")
+                   :icon ("nf-fa-eye" :set "faicon" :color "lcyan")
                    :file +org-capture-todo-file
                    :prepend t
                    :headline "Interesting"
@@ -256,23 +318,23 @@
                    :template ("* [ ] %{desc}%? :%{i-type}:"
                               "%i %a")
                    :children (("Webpage" :keys "w"
-                               :icon ("globe" :set "faicon" :color "green")
+                               :icon ("nf-fa-globe" :set "faicon" :color "green")
                                :desc "%(org-cliplink-capture) "
                                :i-type "read:web")
                               ("Article" :keys "a"
-                               :icon ("file-text" :set "octicon" :color "yellow")
+                               :icon ("nf-fa-file_text" :set "faicon" :color "yellow")
                                :desc ""
                                :i-type "read:reaserch")
-                               ("Information" :keys "i"
-                               :icon ("info-circle" :set "faicon" :color "blue")
+                              ("Information" :keys "i"
+                               :icon ("nf-fa-info_circle" :set "faicon" :color "blue")
                                :desc ""
                                :i-type "read:info")
                               ("Idea" :keys "I"
-                               :icon ("bubble_chart" :set "material" :color "silver")
+                               :icon ("nf-md-chart_bubble" :set "mdicon" :color "silver")
                                :desc ""
                                :i-type "idea")))
                   ("Tasks" :keys "k"
-                   :icon ("inbox" :set "octicon" :color "yellow")
+                   :icon ("nf-oct-inbox" :set "octicon" :color "yellow")
                    :file +org-capture-todo-file
                    :prepend t
                    :headline "Tasks"
@@ -280,16 +342,16 @@
                    :template ("* TODO %? %^G%{extra}"
                               "%i %a")
                    :children (("General Task" :keys "k"
-                               :icon ("inbox" :set "octicon" :color "yellow")
+                               :icon ("nf-oct-inbox" :set "octicon" :color "yellow")
                                :extra "")
                               ("Task with deadline" :keys "d"
-                               :icon ("timer" :set "material" :color "orange" :v-adjust -0.1)
+                               :icon ("nf-md-timer" :set "mdicon" :color "orange" :v-adjust -0.1)
                                :extra "\nDEADLINE: %^{Deadline:}t")
                               ("Scheduled Task" :keys "s"
-                               :icon ("calendar" :set "octicon" :color "orange")
+                               :icon ("nf-oct-calendar" :set "octicon" :color "orange")
                                :extra "\nSCHEDULED: %^{Start time:}t")))
                   ("Project" :keys "p"
-                   :icon ("repo" :set "octicon" :color "silver")
+                   :icon ("nf-oct-repo" :set "octicon" :color "silver")
                    :prepend t
                    :type entry
                    :headline "Inbox"
@@ -299,15 +361,15 @@
                    :file ""
                    :custom (:time-or-todo "")
                    :children (("Project-local todo" :keys "t"
-                               :icon ("checklist" :set "octicon" :color "green")
+                               :icon ("nf-oct-checklist" :set "octicon" :color "green")
                                :time-or-todo "TODO"
                                :file +org-capture-project-todo-file)
                               ("Project-local note" :keys "n"
-                               :icon ("sticky-note" :set "faicon" :color "yellow")
+                               :icon ("nf-fa-sticky_note" :set "faicon" :color "yellow")
                                :time-or-todo "%U"
                                :file +org-capture-project-notes-file)
                               ("Project-local changelog" :keys "c"
-                               :icon ("list" :set "faicon" :color "blue")
+                               :icon ("nf-fa-list" :set "faicon" :color "blue")
                                :time-or-todo "%U"
                                :heading "Unreleased"
                                :file +org-capture-project-changelog-file)))
@@ -361,7 +423,7 @@ Lisp programs can force the template by setting KEYS to a string."
       (org-mks org-capture-templates
                "Select a capture template\n━━━━━━━━━━━━━━━━━━━━━━━━━"
                "Template key: "
-               `(("q" ,(concat (all-the-icons-octicon "stop" :face 'all-the-icons-red :v-adjust 0.01) "\tAbort")))))))
+               `(("q" ,(concat (nerd-icons-octicon "nf-oct-stop" :face 'nerd-icons-red :v-adjust 0.01) "\tAbort")))))))
 (advice-add 'org-capture-select-template :override #'org-capture-select-template-prettier)
 
 (defun org-mks-pretty (table title &optional prompt specials)
@@ -408,7 +470,7 @@ Lisp programs can force the template by setting KEYS to a string."
                 (when specials
                   (insert "─────────────────────────\n")
                   (pcase-dolist (`(,key ,description) specials)
-                    (insert (format "%s   %s\n" (propertize key 'face '(bold all-the-icons-red)) description))
+                    (insert (format "%s   %s\n" (propertize key 'face '(bold nerd-icons-red)) description))
                     (push key allowed-keys)))
                 ;; Display UI and let user select an entry or
                 ;; a sub-level prefix.
@@ -442,10 +504,25 @@ Lisp programs can force the template by setting KEYS to a string."
 
 ;; Make Markdown Pretty
 (custom-set-faces!
-'(markdown-header-delimiter-face :foreground "#616161" :height 0.9)
-'(markdown-header-face-1 :height 1.8 :foreground "#A3BE8C" :weight extra-bold :inherit markdown-header-face)
-'(markdown-header-face-2 :height 1.4 :foreground "#EBCB8B" :weight extra-bold :inherit markdown-header-face)
-'(markdown-header-face-3 :height 1.2 :foreground "#D08770" :weight extra-bold :inherit markdown-header-face)
-'(markdown-header-face-4 :height 1.15 :foreground "#BF616A" :weight bold :inherit markdown-header-face)
-'(markdown-header-face-5 :height 1.1 :foreground "#b48ead" :weight bold :inherit markdown-header-face)
-'(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))
+  '(markdown-header-delimiter-face :foreground "#616161" :height 0.9)
+  '(markdown-header-face-1 :height 1.8 :foreground "#A3BE8C" :weight extra-bold :inherit markdown-header-face)
+  '(markdown-header-face-2 :height 1.4 :foreground "#EBCB8B" :weight extra-bold :inherit markdown-header-face)
+  '(markdown-header-face-3 :height 1.2 :foreground "#D08770" :weight extra-bold :inherit markdown-header-face)
+  '(markdown-header-face-4 :height 1.15 :foreground "#BF616A" :weight bold :inherit markdown-header-face)
+  '(markdown-header-face-5 :height 1.1 :foreground "#b48ead" :weight bold :inherit markdown-header-face)
+  '(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))
+
+;; obsidian.el
+
+(obsidian-specify-path "/Users/sethdoty/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault")
+;; If you want a different directory of `obsidian-capture':
+(setq obsidian-inbox-directory "@Obsidian_Inbox")
+
+;; Activate detection of Obsidian vault
+(global-obsidian-mode t)
+
+(after! obsidian
+  (map!
+   :map obsidian-mode-hook
+   :prefix "O"
+   :nv "c" #'obsidian-capture))

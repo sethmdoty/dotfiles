@@ -72,7 +72,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker macos brew direnv kubectl asdf aws terraform iterm2)
+plugins=(git docker macos brew direnv kubectl aws terraform gpg-agent poetry thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,7 +110,6 @@ alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --
 eval "$('keychain --eval --agents ssh --inherit any id_rsa' 2> /dev/null)"
 # ls
 alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
-
 alias tree='ll -T -L=3'
 compdef _ls ll ll=ls
 
@@ -128,18 +127,19 @@ alias grep='grep --color=always'
 # Requires `bat`.
 alias less='bat --pager "$PAGER $LESS" --style=snip,header --color=always'
 
+# Tell zsh how to find installed completions
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/sethdoty/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/sethdoty/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/sethdoty/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/sethdoty/miniconda3/bin:$PATH"
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
