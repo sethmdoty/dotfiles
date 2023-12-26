@@ -77,7 +77,7 @@
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
       ;;org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
-      org-directory "~/org"
+      org-directory "~/org/"
       ;;org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
       org-roam-directory "~/org/roam/"
       org-roam-db-location (concat org-directory ".org-roam.db")
@@ -86,16 +86,54 @@
       org-agenda-files (directory-files-recursively "~/org/" "\\.org$")
       org-archive-location (concat org-directory ".archive/%s::"))
 
-;; Doom roam read md files
-(md-roam-mode 1) ; md-roam-mode must be active before org-roam-db-sync
-(setq md-roam-file-extension "md") ; default "md". Specify an extension such as "markdown"
-                                        ;
 (setq org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil)
 
 ;; enable pretty mode in org
 (add-hook 'org-mode-hook #'+org-pretty-mode)
+
+(after! org-roam
+  (setq org-roam-capture-templates
+        `(("n" "note" plain
+           ,(format "#+title: ${title}\n%%[%s/template/note.org]" org-roam-directory)
+           :target (file "notes/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t)
+          ("r" "thought" plain
+           ,(format "#+title: ${title}\n%%[%s/template/thought.org]" org-roam-directory)
+           :target (file "thoughts/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t)
+          ("t" "topic" plain
+           ,(format "#+title: ${title}\n%%[%s/template/topic.org]" org-roam-directory)
+           :target (file "topics/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t)
+          ("c" "contact" plain
+           ,(format "#+title: ${title}\n%%[%s/template/contact.org]" org-roam-directory)
+           :target (file "contacts/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t)
+          ("p" "project" plain
+           ,(format "#+title: ${title}\n%%[%s/template/project.org]" org-roam-directory)
+           :target (file "projects/%<%Y%m%d>-${slug}.org")
+           :unnarrowed t)
+          ("f" "ref" plain
+           ,(format "#+title: ${title}\n%%[%s/template/ref.org]" org-roam-directory)
+           :target (file "research/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t))
+        ;; Use human readable dates for dailies titles
+        org-roam-dailies-capture-templates
+        `(("d" "default" plain ""
+           :target (file+head "%<%Y-%m-%d>.org" ,(format "%%[%s/template/journal.org]" org-roam-directory))))))
+
+(after! org-roam
+  ;; Make the backlinks buffer easier to peruse by folding leaves by default.
+  (add-hook 'org-roam-buffer-postrender-functions #'magit-section-show-level-2)
+
+  ;; List dailies and zettels separately in the backlinks buffer.
+  (advice-add #'org-roam-backlinks-section :override #'org-roam-grouped-backlinks-section)
+
+  ;; Open in focused buffer, despite popups
+  (advice-add #'org-roam-node-visit :around #'+popup-save-a)
+  )
 
 ;;agenda
 (use-package! org-agenda
@@ -221,210 +259,8 @@
                               company-tabnine
                               ))
 
-;; ;;;bibliography
-;; (setq org-latex-pdf-process
-;;       '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
-;; ;; org-noter stuffS
-;; (after! org-noter
-;;   (setq
-;;    org-noter-notes-search-path '("/Users/sethdoty/org/")
-;;    org-noter-hide-other nil
-;;    org-noter-separate-notes-from-heading t
-;;    org-noter-always-create-frame nil)
-;;   (map!
-;;    :map org-noter-doc-mode-map
-;;    :leader
-;;    :desc "Insert note"
-;;    "m i" #'org-noter-insert-note
-;;    :desc "Insert precise note"
-;;    "m p" #'org-noter-insert-precise-note
-;;    :desc "Go to previous note"
-;;    "m k" #'org-noter-sync-prev-note
-;;    :desc "Go to next note"
-;;    "m j" #'org-noter-sync-next-note
-;;    :desc "Create skeleton"
-;;    "m s" #'org-noter-create-skeleton
-;;    :desc "Kill session"
-;;    "m q" #'org-noter-kill-session
-;;    )
-;;   )
-
 ;; in org mode, enable flyspell
 ;;(add-hook 'org-mode-hook 'turn-on-flyspell)
-
-;; pretify org-capture templates
-(use-package! doct
-  :commands doct)
-
-(after! org-capture
-
-  (defun +doct-icon-declaration-to-icon (declaration)
-    "Convert :icon declaration to icon"
-    (let ((name (pop declaration))
-          (set  (intern (concat "nerd-icons-" (plist-get declaration :set))))
-          (face (intern (concat "nerd-icons-" (plist-get declaration :color))))
-          (v-adjust (or (plist-get declaration :v-adjust) 0.01)))
-      (apply set `(,name :face ,face :v-adjust ,v-adjust))))
-
-  (defun +doct-iconify-capture-templates (groups)
-    "Add declaration's :icon to each template group in GROUPS."
-    (let ((templates (doct-flatten-lists-in groups)))
-      (setq doct-templates (mapcar (lambda (template)
-                                     (when-let* ((props (nthcdr (if (= (length template) 4) 2 5) template))
-                                                 (spec (plist-get (plist-get props :doct) :icon)))
-                                       (setf (nth 1 template) (concat (+doct-icon-declaration-to-icon spec)
-                                                                      "\t"
-                                                                      (nth 1 template))))
-                                     template)
-                                   templates))))
-
-  (setq doct-after-conversion-functions '(+doct-iconify-capture-templates))
-
-
-  (defun set-org-capture-templates ()
-    (setq org-capture-templates
-          (doct `(("Personal todo" :keys "t"
-                   :icon ("nf-oct-checklist" :set "octicon" :color "green")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Inbox"
-                   :type entry
-                   :template ("* TODO %?"
-                              "%i %a"))
-                  ("Personal note" :keys "n"
-                   :icon ("nf-fa-sticky_note_o" :set "faicon" :color "green")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Inbox"
-                   :type entry
-                   :template ("* %?"
-                              "%i %a"))
-                  ("Email" :keys "e"
-                   :icon ("nf-fa-envelope" :set "faicon" :color "blue")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Inbox"
-                   :type entry
-                   :template ("* TODO %^{type|reply to|contact} %\\3 %? :email:"
-                              "Send an email %^{urgancy|soon|ASAP|anon|at some point|eventually} to %^{recipiant}"
-                              "about %^{topic}"
-                              "%U %i %a"))
-                  ("Interesting" :keys "i"
-                   :icon ("nf-fa-eye" :set "faicon" :color "lcyan")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Interesting"
-                   :type entry
-                   :template ("* [ ] %{desc}%? :%{i-type}:"
-                              "%i %a")
-                   :children (("Webpage" :keys "w"
-                               :icon ("nf-fa-globe" :set "faicon" :color "green")
-                               :desc "%(org-cliplink-capture) "
-                               :i-type "read:web")
-                              ("Article" :keys "a"
-                               :icon ("nf-fa-file_text" :set "faicon" :color "yellow")
-                               :desc ""
-                               :i-type "read:reaserch")
-                              ("Information" :keys "i"
-                               :icon ("nf-fa-info_circle" :set "faicon" :color "blue")
-                               :desc ""
-                               :i-type "read:info")
-                              ("Idea" :keys "I"
-                               :icon ("nf-md-chart_bubble" :set "mdicon" :color "silver")
-                               :desc ""
-                               :i-type "idea")))
-                  ("Tasks" :keys "k"
-                   :icon ("nf-oct-inbox" :set "octicon" :color "yellow")
-                   :file +org-capture-todo-file
-                   :prepend t
-                   :headline "Tasks"
-                   :type entry
-                   :template ("* TODO %? %^G%{extra}"
-                              "%i %a")
-                   :children (("General Task" :keys "k"
-                               :icon ("nf-oct-inbox" :set "octicon" :color "yellow")
-                               :extra "")
-                              ("Task with deadline" :keys "d"
-                               :icon ("nf-md-timer" :set "mdicon" :color "orange" :v-adjust -0.1)
-                               :extra "\nDEADLINE: %^{Deadline:}t")
-                              ("Scheduled Task" :keys "s"
-                               :icon ("nf-oct-calendar" :set "octicon" :color "orange")
-                               :extra "\nSCHEDULED: %^{Start time:}t")))
-                  ("Project" :keys "p"
-                   :icon ("nf-oct-repo" :set "octicon" :color "silver")
-                   :prepend t
-                   :type entry
-                   :headline "Inbox"
-                   :template ("* %{time-or-todo} %?"
-                              "%i"
-                              "%a")
-                   :file ""
-                   :custom (:time-or-todo "")
-                   :children (("Project-local todo" :keys "t"
-                               :icon ("nf-oct-checklist" :set "octicon" :color "green")
-                               :time-or-todo "TODO"
-                               :file +org-capture-project-todo-file)
-                              ("Project-local note" :keys "n"
-                               :icon ("nf-fa-sticky_note" :set "faicon" :color "yellow")
-                               :time-or-todo "%U"
-                               :file +org-capture-project-notes-file)
-                              ("Project-local changelog" :keys "c"
-                               :icon ("nf-fa-list" :set "faicon" :color "blue")
-                               :time-or-todo "%U"
-                               :heading "Unreleased"
-                               :file +org-capture-project-changelog-file)))
-                  ("\tCentralised project templates"
-                   :keys "o"
-                   :type entry
-                   :prepend t
-                   :template ("* %{time-or-todo} %?"
-                              "%i"
-                              "%a")
-                   :children (("Project todo"
-                               :keys "t"
-                               :prepend nil
-                               :time-or-todo "TODO"
-                               :heading "Tasks"
-                               :file +org-capture-central-project-todo-file)
-                              ("Project note"
-                               :keys "n"
-                               :time-or-todo "%U"
-                               :heading "Notes"
-                               :file +org-capture-central-project-notes-file)
-                              ("Project changelog"
-                               :keys "c"
-                               :time-or-todo "%U"
-                               :heading "Unreleased"
-                               :file +org-capture-central-project-changelog-file)))))))
-
-
-  (set-org-capture-templates)
-  (unless (display-graphic-p)
-    (add-hook 'server-after-make-frame-hook
-              (defun org-capture-reinitialise-hook ()
-                (when (display-graphic-p)
-                  (set-org-capture-templates)
-                  (remove-hook 'server-after-make-frame-hook
-                               #'org-capture-reinitialise-hook))))))
-
-;; fix capture windows:
-(defun org-capture-select-template-prettier (&optional keys)
-  "Select a capture template, in a prettier way than default
-Lisp programs can force the template by setting KEYS to a string."
-  (let ((org-capture-templates
-         (or (org-contextualize-keys
-              (org-capture-upgrade-templates org-capture-templates)
-              org-capture-templates-contexts)
-             '(("t" "Task" entry (file+headline "" "Tasks")
-                "* TODO %?\n  %u\n  %a")))))
-    (if keys
-        (or (assoc keys org-capture-templates)
-            (error "No capture template referred to by \"%s\" keys" keys))
-      (org-mks org-capture-templates
-               "Select a capture template\n━━━━━━━━━━━━━━━━━━━━━━━━━"
-               "Template key: "
-               `(("q" ,(concat (nerd-icons-octicon "nf-oct-stop" :face 'nerd-icons-red :v-adjust 0.01) "\tAbort")))))))
-(advice-add 'org-capture-select-template :override #'org-capture-select-template-prettier)
 
 (defun org-mks-pretty (table title &optional prompt specials)
 
@@ -513,7 +349,6 @@ Lisp programs can force the template by setting KEYS to a string."
   '(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))
 
 ;; obsidian.el
-
 (obsidian-specify-path "/Users/sethdoty/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault")
 ;; If you want a different directory of `obsidian-capture':
 (setq obsidian-inbox-directory "@Obsidian_Inbox")
@@ -526,3 +361,13 @@ Lisp programs can force the template by setting KEYS to a string."
    :map obsidian-mode-hook
    :prefix "O"
    :nv "c" #'obsidian-capture))
+
+;; biblio
+(setq! bibtex-completion-bibliography '("~/org/roam/research/references.bib"))
+(setq! bibtex-completion-library-path '("~/org/library")
+       bibtex-completion-notes-path "~/org/roam/notes/")
+(setq! citar-library-paths '("~/org/library/")
+       citar-notes-paths '("~/org/roam/research/notes/"))
+(setq! citar-bibliography '("~/org/roam/research/references.bib"))
+(setq org-noter-notes-search-path '("/~/org/roam/notes/"))
+(setq org-cite-csl-styles-dir "~/org/roam/research/styles")

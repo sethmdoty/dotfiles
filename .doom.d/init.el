@@ -25,7 +25,7 @@
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ;;ivy               ; a search engine for love and life
-       (vertico +icons)           ; the search engine of the future
+       (vertico +icons)    ; the search engine of the future
 
        :ui
        ;;deft              ; notational velocity for Emacs
@@ -86,7 +86,7 @@
 
        :tools
        ansible
-       ;;biblio            ; Writes a PhD for you (citation needed)
+       biblio            ; Writes a PhD for you (citation needed)
        ;;debugger          ; FIXME stepping through code, to help you add bugs
        direnv
        (docker +lsp)
@@ -99,7 +99,7 @@
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       ;;pdf               ; pdf enhancements
+       pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
        ;;taskrunner        ; taskrunner for all your projects
@@ -121,7 +121,7 @@
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
-       ;;data              ; config/data formats
+       data              ; config/data formats
        ;;(dart +flutter)   ; paint ui and not much else
        ;;dhall
        ;;elixir            ; erlang done right
@@ -153,7 +153,7 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +pandoc +dragndrop +roam2 +pretty)    ; organize your plain life in plain text
+       (org +pandoc +dragndrop +roam2 +pretty +noter +contacts)    ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
