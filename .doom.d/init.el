@@ -22,6 +22,7 @@
 
        :completion
        company           ; the ultimate code completion backend
+       ;;(corfu +orderless)  ; complete with cap(f), cape and a flying feather!
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ;;ivy               ; a search engine for love and life
@@ -67,7 +68,7 @@
        ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       (dired +icons)             ; making dired pretty [functional]
+       (dired +icons)    ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
        ;;ibuffer         ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
@@ -98,14 +99,14 @@
        lsp               ; M-x vscode
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
-       ;;pass              ; password manager for nerds
+       (pass +auth)              ; password manager for nerds
        pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
        ;;taskrunner        ; taskrunner for all your projects
        (terraform +lsp)         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
-       ;;tree-sitter       ; syntax and parsing, sitting in a tree...
+       tree-sitter       ; syntax and parsing, sitting in a tree...
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
@@ -135,14 +136,14 @@
        ;;fsharp            ; ML stands for Microsoft's Language
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
-       (go +lsp)         ; the hipster dialect
+       (go +lsp +treesitter)         ; the hipster dialect
        ;;(graphql +lsp)    ; Give queries a REST
        ;;(haskell +lsp)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
-       json              ; At least it ain't XML
-       ;;(java +lsp)       ; the poster child for carpal tunnel syndrome
-       (javascript +lsp)   ; all(hope(abandon(ye(who(enter(here))))))
+       (json +lsp +treesitter) ; At least it ain't XML
+       (java +lsp +treesitter)       ; the poster child for carpal tunnel syndrome
+       (javascript +lsp +treesitter)   ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        (latex +lsp)             ; writing papers in Emacs has never been so fun
@@ -153,11 +154,11 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +pandoc +dragndrop +roam2 +pretty +noter +contacts)    ; organize your plain life in plain text
+       (org +pandoc +dragndrop +roam2 +pretty +noter +contacts +present)    ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       (python +lsp +black +poetry +conda)            ; beautiful is better than ugly
+       (python +lsp +black +poetry +conda +treesitter)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
@@ -165,15 +166,15 @@
        ;;rst               ; ReST in peace
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        ;;(rust +lsp)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-       (scala +lsp)             ; java, but good
+       (scala +lsp +treesitter)             ; java, but good
        ;;(scheme +guile)   ; a fully conniving family of lisps
-       (sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
+       (sh +lsp +treesitter)                ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
-       web               ; the tubes
-       (yaml +lsp)              ; JSON, but readable
+       (web +lsp +treesitter)               ; the tubes
+       (yaml +lsp +treesitter)              ; JSON, but readable
        ;;zig               ; C, but simpler
 
        :email

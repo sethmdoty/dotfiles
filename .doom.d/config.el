@@ -74,24 +74,46 @@
                          (magit-pull "--rebase" "--autostash")
                          (magit-revert "--autostash")))
 
+;;; Package Hyperbole
+(use-package! hyperbole)
+;;(setq hyrolo-file-list (append (directory-files "~/org/roam/notes/contacts")))
+(setq hbmap:dir-user "~/org/hyperbole/")
+(setq hyrolo-file-list '("~/org/roam/notes/contacts/contacts.org"))
+(setq hyrolo-kill-buffers-after-use 1)
+
+;; hyperbole in a python identifier doesn't see Anaconda Mode
+;; so this advice overrides it's smart-python-tag behavior
+(defun sd/override-smart-python-tag (original-function &rest args)
+  "Conditionally override `smart-python-tag` to use `anaconda-mode-find-definitions` in Python mode."
+  ;; Check if we're in python-mode and anaconda-mode is active
+  (if (and (eq major-mode 'python-mode)
+           (bound-and-true-p anaconda-mode))
+      (call-interactively 'anaconda-mode-find-definitions) ;; Call anaconda-mode-find-definitions interactively
+    (apply original-function args))) ;; Otherwise, call the original function
+
+(advice-add 'smart-python-tag :around #'sd/override-smart-python-tag)
+
+
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
       ;;org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
       org-directory "~/org/"
       ;;org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
-      org-roam-directory "~/org/roam/"
+      org-roam-directory "~/org/roam/notes"
       org-roam-db-location (concat org-directory ".org-roam.db")
       ;;org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
       org-roam-dailies-directory "~/org/roam/journals/"
       org-agenda-files (directory-files-recursively "~/org/" "\\.org$")
       org-archive-location (concat org-directory ".archive/%s::"))
-
+(org-roam-db-autosync-mode)
 (setq org-log-done 'time
       org-log-into-drawer t
       org-log-state-notes-insert-after-drawers nil)
 
 ;; enable pretty mode in org
 (add-hook 'org-mode-hook #'+org-pretty-mode)
+;;generate org-id by default when running org-capture
+(add-hook 'org-capture-prepare-finalize-hook 'org-id-get-create)
 
 (after! org-roam
   (setq org-roam-capture-templates
@@ -115,6 +137,10 @@
            ,(format "#+title: ${title}\n%%[%s/template/project.org]" org-roam-directory)
            :target (file "projects/%<%Y%m%d>-${slug}.org")
            :unnarrowed t)
+          ("i" "interview" plain
+           ,(format "#+title: ${title}\n%%[%s/template/interview.org]" org-roam-directory)
+           :target (file "research/interviews/%<%Y%m%d>-${slug}.org")
+           :unnarrowed t)
           ("f" "ref" plain
            ,(format "#+title: ${title}\n%%[%s/template/ref.org]" org-roam-directory)
            :target (file "research/%<%Y%m%d%H%M%S>-${slug}.org")
@@ -127,9 +153,6 @@
 (after! org-roam
   ;; Make the backlinks buffer easier to peruse by folding leaves by default.
   (add-hook 'org-roam-buffer-postrender-functions #'magit-section-show-level-2)
-
-  ;; List dailies and zettels separately in the backlinks buffer.
-  (advice-add #'org-roam-backlinks-section :override #'org-roam-grouped-backlinks-section)
 
   ;; Open in focused buffer, despite popups
   (advice-add #'org-roam-node-visit :around #'+popup-save-a)
@@ -171,6 +194,7 @@
   (org-clock-persistence-insinuate))
 ;; super agenda
 (use-package! org-super-agenda
+  :after org-agenda
   :commands org-super-agenda-mode)
 
 (after! org-agenda
@@ -236,32 +260,67 @@
                           (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
 
 ;; Company Tabnine
-(use-package! company-tabnine
-  :when (modulep! :completion company)
+;; (use-package! company-tabnine
+;;   :when (modulep! :completion company)
+;;   :config
+;;   ;; Number the candidates (use M-1, M-2 etc to select completions).
+;;   (setq company-show-quick-access t)
+
+;;   ;; Use the tab-and-go frontend.
+;;   ;; Allows TAB to select and complete at the same time.
+;;   (company-tng-mode)
+;;   (setq company-frontends
+;;         '(company-tng-frontend
+;;           company-pseudo-tooltip-frontend
+;;           company-echo-metadata-frontend))
+;;   )
+;; (add-to-list 'company-backends #'company-tabnine)
+
+;; (setq +lsp-company-backends '(
+;;                               company-files
+;;                               company-yasnippet
+;;                               :separate
+;;                               company-tabnine
+;;                               ))
+
+(use-package! tabnine
+  :hook ((prog-mode . tabnine-mode)
+	 (kill-emacs . tabnine-kill-process))
   :config
-  ;; Number the candidates (use M-1, M-2 etc to select completions).
-  (setq company-show-quick-access t)
-
-  ;; Use the tab-and-go frontend.
-  ;; Allows TAB to select and complete at the same time.
-  (company-tng-mode)
-  (setq company-frontends
-        '(company-tng-frontend
-          company-pseudo-tooltip-frontend
-          company-echo-metadata-frontend))
-  )
-(add-to-list 'company-backends #'company-tabnine)
-
-(setq +lsp-company-backends '(
-                              company-files
-                              company-yasnippet
-                              :separate
-                              company-tabnine
-                              ))
-
+  (add-to-list 'completion-at-point-functions #'tabnine-completion-at-point)
+  (tabnine-start-process)
+  :bind
+  (:map  tabnine-completion-map
+	 ("<tab>" . tabnine-accept-completion)
+	 ("TAB" . tabnine-accept-completion)
+	 ("M-f" . tabnine-accept-completion-by-word)
+	 ("M-<return>" . tabnine-accept-completion-by-line)
+	 ("C-g" . tabnine-clear-overlay)
+	 ("M-[" . tabnine-previous-completion)
+	 ("M-]" . tabnine-next-completion)))
 ;; in org mode, enable flyspell
 ;;(add-hook 'org-mode-hook 'turn-on-flyspell)
+(after! org
+  (add-hook 'org-mode-hook #'flyspell-mode)
+  ;; don't create giant images in org mode
+  (setq org-image-actual-width 600)
+  )
+;; disable the error output, its very verbose
+(setq flyspell-issue-message-flag nil)
+(setq org-startup-folded 'show2levels
+      org-ellipsis " [...] ")
 
+;; org-slide-tree fixes
+(after! org-tree-slide
+  (advice-remove 'org-tree-slide--display-tree-with-narrow
+                 #'+org-present--hide-first-heading-maybe-a)
+  )
+(map!
+ "C->" #'org-tree-slide-move-next-tree
+ "C-<" #'org-tree-slide-move-previous-tree
+ )
+
+;; clean up the org-capture interfaces
 (defun org-mks-pretty (table title &optional prompt specials)
 
   (save-window-excursion
@@ -348,26 +407,34 @@
   '(markdown-header-face-5 :height 1.1 :foreground "#b48ead" :weight bold :inherit markdown-header-face)
   '(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))
 
-;; obsidian.el
-(obsidian-specify-path "/Users/sethdoty/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault")
-;; If you want a different directory of `obsidian-capture':
-(setq obsidian-inbox-directory "@Obsidian_Inbox")
-
-;; Activate detection of Obsidian vault
-(global-obsidian-mode t)
-
-(after! obsidian
-  (map!
-   :map obsidian-mode-hook
-   :prefix "O"
-   :nv "c" #'obsidian-capture))
-
 ;; biblio
 (setq! bibtex-completion-bibliography '("~/org/roam/research/references.bib"))
-(setq! bibtex-completion-library-path '("~/org/library")
-       bibtex-completion-notes-path "~/org/roam/notes/")
-(setq! citar-library-paths '("~/org/library/")
-       citar-notes-paths '("~/org/roam/research/notes/"))
+(setq! bibtex-completion-library-path '("~/org/roam/library")
+       bibtex-completion-notes-path "~/org/roam/notes/research")
+(setq! citar-library-paths '("~/org/roam/library/")
+       citar-notes-paths '("~/org/roam/notes/research"))
 (setq! citar-bibliography '("~/org/roam/research/references.bib"))
-(setq org-noter-notes-search-path '("/~/org/roam/notes/"))
+(setq org-noter-notes-search-path '("~/org/roam/notes/research"))
 (setq org-cite-csl-styles-dir "~/org/roam/research/styles")
+
+;;gptel
+(setq gptel-default-mode #'org-mode)
+
+;; OPTIONAL configuration
+;; Secrets will be stored in the "pass" cli tool
+;; add passwords from cli or within emacs directly. details on pass here:  https://www.passwordstore.org/
+(setq
+ gptel-model "fastgpt"
+ gptel-backend (gptel-make-kagi "Kagi"
+                 :key (auth-source-pass-get 'secret "Emacs/kagi")))
+
+;;function adding org ids to all files in DIR
+(defun add-org-ids-to-directory (directory)
+  "Add Org mode IDs to all files in the specified directory."
+  (interactive "DDirectory to add IDs: ")
+  (setq org-id-link-to-org-use-id t)
+  (dolist (file (directory-files-recursively directory "\\.org$"))
+    (with-current-buffer (find-file file)
+      (org-mode)
+      (org-id-get-create)
+      (save-buffer))))

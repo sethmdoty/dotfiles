@@ -110,6 +110,7 @@ alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --
 eval "$('keychain --eval --agents ssh --inherit any id_rsa' 2> /dev/null)"
 # ls
 alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
+alias tmux="tmux -CC"
 alias tree='ll -T -L=3'
 compdef _ls ll ll=ls
 
@@ -119,6 +120,8 @@ autoload -Uz zmv
 alias zcp='zmv -Civ'
 alias zln='zmv -Liv'
 alias zmv='zmv -Miv'
+# kitty ssh
+alias s="kitten ssh"
 
 # Color `grep`
 alias grep='grep --color=always'
@@ -143,3 +146,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
