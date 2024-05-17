@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR='emacs -nw'
 fi
 
 # Compilation flags
@@ -101,6 +101,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias nvim=lvim
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 export FZF_DEFAULT_COMMAND='fd -HI --color=always'
