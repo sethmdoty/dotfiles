@@ -72,7 +72,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker macos brew direnv kubectl aws terraform gpg-agent poetry thefuck)
+plugins=(git docker macos brew direnv kubectl aws terraform gpg-agent poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='lvim'
 else
   export EDITOR='emacs -nw'
 fi
@@ -103,7 +103,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvim=lvim
 eval "$(zoxide init zsh)"
-eval "$(thefuck --alias)"
 export FZF_DEFAULT_COMMAND='fd -HI --color=always'
 alias find='fd -HI -E=".git" --color=always'
 alias fzf='fzf --ansi --exact --multi --no-sort'
@@ -147,6 +146,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
