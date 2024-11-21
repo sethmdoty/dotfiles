@@ -1,6 +1,0 @@
-#indent#test<#test name#>: function() { with(this) {
-	assertNothingRaised(function() {
-		<#code#>
-	});
-}},
-

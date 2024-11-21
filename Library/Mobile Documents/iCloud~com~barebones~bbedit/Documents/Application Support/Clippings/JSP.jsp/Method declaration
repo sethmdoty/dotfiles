@@ -1,9 +1,0 @@
-<%!
-
-	public #SELSTART#String doSomething#SELEND#(String parameter) {
-		
-		return parameter;
-	
-	}
-
-%>

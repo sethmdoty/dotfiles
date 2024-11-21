@@ -1,6 +1,0 @@
-#indent#function makeSpan(parent, classname) {
-	var span = document.createElement('span');
-	setClass(span, classname);
-	parent.appendChild(span);
-	return span;
-}

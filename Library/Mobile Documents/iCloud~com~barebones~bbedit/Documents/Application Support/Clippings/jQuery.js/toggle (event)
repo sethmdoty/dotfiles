@@ -1,6 +1,0 @@
-#INDENT#
-toggle(function() {
-	<#Stuff to do every *odd* time the element is clicked#>
-}, function() {
-	<#Stuff to do every *odd* time the element is clicked#>
-});

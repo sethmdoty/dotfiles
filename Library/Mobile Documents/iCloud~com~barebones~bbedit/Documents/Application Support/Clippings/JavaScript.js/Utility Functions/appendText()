@@ -1,3 +1,0 @@
-#indent#function appendText(element, text) {
-	element.appendChild(document.createTextNode(text));
-}

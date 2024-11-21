@@ -1,1 +1,0 @@
-prepend('#selstart#Some text <b>and bold!</b>#selend#')<?#?>

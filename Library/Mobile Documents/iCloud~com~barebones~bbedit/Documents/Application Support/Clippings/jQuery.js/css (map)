@@ -1,4 +1,0 @@
-#INDENT#
-css({
-  <#property#>: '<#value#>'<#?#>
-})<#?#>

@@ -1,2 +1,0 @@
-#!/bin/sh
-osascript -e "tell application \"Safari\" to set theURL to URL of current tab of window 1"

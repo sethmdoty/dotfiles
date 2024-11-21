@@ -1,6 +1,0 @@
-#INDENT#
-try {
-	#SELECTIONORPLACEHOLDER statements#
-} catch {
-	#INSERTION#
-}

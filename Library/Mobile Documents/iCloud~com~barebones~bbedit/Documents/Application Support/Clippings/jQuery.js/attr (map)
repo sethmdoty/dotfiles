@@ -1,4 +1,0 @@
-#INDENT#
-attr({
-  <#attribute#>: '<#value#>'<#?#>
-})<#?#>

@@ -2,7 +2,8 @@
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
-
+;; Temporary remove error at init
+;;(setq warning-minimum-level :error)
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
@@ -10,7 +11,6 @@
       user-mail-address "sethmdoty@iCloud.com")
 
 ;;; UI
-
 (setq doom-theme 'doom-vibrant
       doom-font (font-spec :family "MonoLisa" :size 12 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Source Sans Pro" :size 13))
@@ -19,15 +19,11 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-;; more window
-(add-to-list 'default-frame-alist '(height . 53))
+;; ;; more window
+(add-to-list 'default-frame-alist '(height . 55))
 (add-to-list 'default-frame-alist '(width . 150))
 
-;; you are my only hope
-(setq which-key-idle-delay 0.5)
-
-;; enable nested snippets
-(setq yas-triggers-in-field t)
+(setq spell-fu-ignore-modes '(dired-mode vterm-mode elfeed-search-mode))
 
 ;;vertigo cleanup file output
 (after! marginalia
@@ -58,14 +54,13 @@
       (propertize (marginalia--time time) 'face (list :foreground color))))
 
   (defun +marginalia-file-size-colorful (size)
-    (let* ((size-index (/ (log10 (+ 1 size)) 7.0))
+    (let* ((size-index (/ (log (+ 1 size)) 7.0))
            (color (if (< size-index 10000000) ; 10m
                       (doom-blend 'orange 'green size-index)
                     (doom-blend 'red 'orange (- size-index 1)))))
       (propertize (file-size-human-readable size) 'face (list :foreground color)))))
 
 ;; Magit
-
 (setq magit-repository-directories '(("~/workspace" . 2))
       magit-save-repository-buffers nil
       ;; Don't restore the wconf after quitting magit, it's jarring
@@ -80,6 +75,7 @@
 (setq hbmap:dir-user "~/org/hyperbole/")
 (setq hyrolo-file-list '("~/org/roam/notes/contacts/contacts.org"))
 (setq hyrolo-kill-buffers-after-use 1)
+(setq hywiki-directory "~/org/hyperbole/hywiki/")
 
 ;; hyperbole in a python identifier doesn't see Anaconda Mode
 ;; so this advice overrides it's smart-python-tag behavior
@@ -96,14 +92,13 @@
 
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
-      ;;org-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/org/"
       org-directory "~/org/"
       ;;org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
       org-roam-directory "~/org/roam/notes"
       org-roam-db-location (concat org-directory ".org-roam.db")
       ;;org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
       org-roam-dailies-directory "~/org/roam/journals/"
-      org-agenda-files (directory-files-recursively "~/org/" "\\.org$")
+      org-agenda-files '("~/org/todo.org" "~/org/projects.org")
       org-archive-location (concat org-directory ".archive/%s::"))
 (org-roam-db-autosync-mode)
 (setq org-log-done 'time
@@ -157,6 +152,7 @@
   ;; Open in focused buffer, despite popups
   (advice-add #'org-roam-node-visit :around #'+popup-save-a)
   )
+(setq org-roam-completion-everywhere t)
 
 ;;agenda
 (use-package! org-agenda
@@ -192,6 +188,7 @@
         org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA"
         org-agenda-start-with-log-mode t)
   (org-clock-persistence-insinuate))
+
 ;; super agenda
 (use-package! org-super-agenda
   :after org-agenda
@@ -259,30 +256,6 @@
                            :order 90)
                           (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
 
-;; Company Tabnine
-;; (use-package! company-tabnine
-;;   :when (modulep! :completion company)
-;;   :config
-;;   ;; Number the candidates (use M-1, M-2 etc to select completions).
-;;   (setq company-show-quick-access t)
-
-;;   ;; Use the tab-and-go frontend.
-;;   ;; Allows TAB to select and complete at the same time.
-;;   (company-tng-mode)
-;;   (setq company-frontends
-;;         '(company-tng-frontend
-;;           company-pseudo-tooltip-frontend
-;;           company-echo-metadata-frontend))
-;;   )
-;; (add-to-list 'company-backends #'company-tabnine)
-
-;; (setq +lsp-company-backends '(
-;;                               company-files
-;;                               company-yasnippet
-;;                               :separate
-;;                               company-tabnine
-;;                               ))
-
 (use-package! tabnine
   :hook ((prog-mode . tabnine-mode)
 	 (kill-emacs . tabnine-kill-process))
@@ -298,8 +271,8 @@
 	 ("C-g" . tabnine-clear-overlay)
 	 ("M-[" . tabnine-previous-completion)
 	 ("M-]" . tabnine-next-completion)))
+
 ;; in org mode, enable flyspell
-;;(add-hook 'org-mode-hook 'turn-on-flyspell)
 (after! org
   (add-hook 'org-mode-hook #'flyspell-mode)
   ;; don't create giant images in org mode
@@ -309,93 +282,6 @@
 (setq flyspell-issue-message-flag nil)
 (setq org-startup-folded 'show2levels
       org-ellipsis " [...] ")
-
-;; org-slide-tree fixes
-(after! org-tree-slide
-  (advice-remove 'org-tree-slide--display-tree-with-narrow
-                 #'+org-present--hide-first-heading-maybe-a)
-  )
-(map!
- "C->" #'org-tree-slide-move-next-tree
- "C-<" #'org-tree-slide-move-previous-tree
- )
-
-;; clean up the org-capture interfaces
-(defun org-mks-pretty (table title &optional prompt specials)
-
-  (save-window-excursion
-    (let ((inhibit-quit t)
-          (buffer (org-switch-to-buffer-other-window "*Org Select*"))
-          (prompt (or prompt "Select: "))
-          case-fold-search
-          current)
-      (unwind-protect
-          (catch 'exit
-            (while t
-              (setq-local evil-normal-state-cursor (list nil))
-              (erase-buffer)
-              (insert title "\n\n")
-              (let ((des-keys nil)
-                    (allowed-keys '("\C-g"))
-                    (tab-alternatives '("\s" "\t" "\r"))
-                    (cursor-type nil))
-                ;; Populate allowed keys and descriptions keys
-                ;; available with CURRENT selector.
-                (let ((re (format "\\`%s\\(.\\)\\'"
-                                  (if current (regexp-quote current) "")))
-                      (prefix (if current (concat current " ") "")))
-                  (dolist (entry table)
-                    (pcase entry
-                      ;; Description.
-                      (`(,(and key (pred (string-match re))) ,desc)
-                       (let ((k (match-string 1 key)))
-                         (push k des-keys)
-                         ;; Keys ending in tab, space or RET are equivalent.
-                         (if (member k tab-alternatives)
-                             (push "\t" allowed-keys)
-                           (push k allowed-keys))
-                         (insert (propertize prefix 'face 'font-lock-comment-face) (propertize k 'face 'bold) (propertize "›" 'face 'font-lock-comment-face) "  " desc "…" "\n")))
-                      ;; Usable entry.
-                      (`(,(and key (pred (string-match re))) ,desc . ,_)
-                       (let ((k (match-string 1 key)))
-                         (insert (propertize prefix 'face 'font-lock-comment-face) (propertize k 'face 'bold) "   " desc "\n")
-                         (push k allowed-keys)))
-                      (_ nil))))
-                ;; Insert special entries, if any.
-                (when specials
-                  (insert "─────────────────────────\n")
-                  (pcase-dolist (`(,key ,description) specials)
-                    (insert (format "%s   %s\n" (propertize key 'face '(bold nerd-icons-red)) description))
-                    (push key allowed-keys)))
-                ;; Display UI and let user select an entry or
-                ;; a sub-level prefix.
-                (goto-char (point-min))
-                (unless (pos-visible-in-window-p (point-max))
-                  (org-fit-window-to-buffer))
-                (let ((pressed (org--mks-read-key allowed-keys
-                                                  prompt
-                                                  (not (pos-visible-in-window-p (1- (point-max)))))))
-                  (setq current (concat current pressed))
-                  (cond
-                   ((equal pressed "\C-g") (user-error "Abort"))
-                   ;; Selection is a prefix: open a new menu.
-                   ((member pressed des-keys))
-                   ;; Selection matches an association: return it.
-                   ((let ((entry (assoc current table)))
-                      (and entry (throw 'exit entry))))
-                   ;; Selection matches a special entry: return the
-                   ;; selection prefix.
-                   ((assoc current specials) (throw 'exit current))
-                   (t (error "No entry available")))))))
-        (when buffer (kill-buffer buffer))))))
-(advice-add 'org-mks :override #'org-mks-pretty)
-
-(setf (alist-get 'height +org-capture-frame-parameters) 15)
-(setq +org-capture-fn
-      (lambda ()
-        (interactive)
-        (set-window-parameter nil 'mode-line-format 'none)
-        (org-capture)))
 
 ;; Make Markdown Pretty
 (custom-set-faces!
@@ -417,24 +303,24 @@
 (setq org-noter-notes-search-path '("~/org/roam/notes/research"))
 (setq org-cite-csl-styles-dir "~/org/roam/research/styles")
 
-;;gptel
-(setq gptel-default-mode #'org-mode)
-
-;; OPTIONAL configuration
-;; Secrets will be stored in the "pass" cli tool
-;; add passwords from cli or within emacs directly. details on pass here:  https://www.passwordstore.org/
-(setq
- gptel-model "fastgpt"
- gptel-backend (gptel-make-kagi "Kagi"
-                 :key (auth-source-pass-get 'secret "Emacs/kagi")))
-
 ;;function adding org ids to all files in DIR
 (defun add-org-ids-to-directory (directory)
   "Add Org mode IDs to all files in the specified directory."
-  (interactive "DDirectory to add IDs: ")
+  (interactive "Directory to add IDs: ")
   (setq org-id-link-to-org-use-id t)
   (dolist (file (directory-files-recursively directory "\\.org$"))
     (with-current-buffer (find-file file)
       (org-mode)
       (org-id-get-create)
       (save-buffer))))
+
+;; auto update elfeed when opened
+(add-hook 'elfeed-search-mode-hook #'elfeed-update)
+
+(use-package! elfeed
+  :config
+  (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
+  (setq-default elfeed-search-filter "@1-week-ago +unread"))
+
+(use-package! pocket-reader
+  :defer t)

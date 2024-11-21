@@ -1,4 +1,0 @@
-#indent#function <#function name#>(<#args#>) {
-	<#code#>
-	return false;
-}

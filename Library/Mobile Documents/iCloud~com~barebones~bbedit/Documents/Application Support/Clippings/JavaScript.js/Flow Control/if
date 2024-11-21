@@ -1,3 +1,0 @@
-#indent#if (<#condition#>) {
-    <#code#>
-}

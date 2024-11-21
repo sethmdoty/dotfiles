@@ -1,1 +1,0 @@
-﻿<define name="anything">	<mixed>		<zeroOrMore>			<element>				<anyName/>				<zeroOrMore>					<choice>						<attribute><anyName/></attribute>						<ref name="anything"/>					</choice>				</zeroOrMore>			</element>		</zeroOrMore>	</mixed></define>

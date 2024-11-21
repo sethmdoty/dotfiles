@@ -1,4 +1,0 @@
-#INDENT#
-delegate('<#selector#>', '<#event type(s)#>', {<#value#>}, function(<#event#>) {
-    <#Act on the event#>
-)};

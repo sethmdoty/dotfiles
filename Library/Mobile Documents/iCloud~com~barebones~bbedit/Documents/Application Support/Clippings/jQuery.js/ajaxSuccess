@@ -1,4 +1,0 @@
-#INDENT#
-ajaxSuccess(function(event, xhr, settings) {
-    #selstart#executes whenever an AJAX request completes successfully#selend#
-});

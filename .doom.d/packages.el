@@ -48,9 +48,7 @@
                                         ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
                                         ;(unpin! t)
-;;(package! company-tabnine)
 (package! tabnine)
 (package! org-super-agenda :pin "f4f528985397c833c870967884b013cf91a1da4a")
-
 (package! hyperbole)
-(package! gptel)
+(package! pocket-reader)

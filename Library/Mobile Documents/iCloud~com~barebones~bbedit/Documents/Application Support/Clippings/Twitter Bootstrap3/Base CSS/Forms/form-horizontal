@@ -1,1 +1,0 @@
-﻿#INDENT#<form class="form-horizontal" role="form">	formgroup<#?#>    <div class="form-actions">        <input type="submit" class="btn btn-default" value="Submit">    </div></form>

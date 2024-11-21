@@ -1,4 +1,0 @@
-#INDENT#
-ajaxStop(function() {
-    #selstart#stuff to do when all AJAX calls have completed#selend#
-});

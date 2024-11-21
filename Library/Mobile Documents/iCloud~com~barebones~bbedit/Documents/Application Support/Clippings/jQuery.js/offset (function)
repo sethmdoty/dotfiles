@@ -1,4 +1,0 @@
-#INDENT#
-offset(function(index, currentCoordinates) {
-    #selstart#return <#someObject#>#selend#
-})

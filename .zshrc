@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='lvim'
+  export EDITOR='nvim'
 else
   export EDITOR='emacs -nw'
 fi
@@ -101,7 +101,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nvim=lvim
 eval "$(zoxide init zsh)"
 export FZF_DEFAULT_COMMAND='fd -HI --color=always'
 alias find='fd -HI -E=".git" --color=always'
@@ -109,7 +108,7 @@ alias fzf='fzf --ansi --exact --multi --no-sort'
 alias rg='rg --color=always --hidden --glob !.git --ignore-case --line-number --no-heading --sort=path'
 eval "$('keychain --eval --agents ssh --inherit any id_rsa' 2> /dev/null)"
 # ls
-alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
+# alias ls='exa -aF --git --color=always --color-scale -s=extension --group-directories-first'
 alias tmux="tmux -CC"
 alias tree='ll -T -L=3'
 compdef _ls ll ll=ls

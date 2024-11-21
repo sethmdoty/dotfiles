@@ -1,4 +1,0 @@
-#INDENT#
-intercept[#PLACEHOLDERSTART#exception#PLACEHOLDEREND#] {
-	#INSERTION#
-}

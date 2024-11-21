@@ -1,1 +1,0 @@
-#indent#if (console.log) console.log('<#message#>');

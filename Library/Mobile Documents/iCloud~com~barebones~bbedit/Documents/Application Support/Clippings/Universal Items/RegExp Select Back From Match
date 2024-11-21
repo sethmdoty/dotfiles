@@ -1,3 +1,0 @@
-Simple Regex to select back to beginning of the string with and including the matched character
-
-^.*?:

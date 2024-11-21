@@ -1,4 +1,0 @@
-#INDENT#
-filter(function(index) {
-    #selstart#return something#selend#
-});

@@ -1,4 +1,0 @@
-#INDENT#
-.map(<#index#>, <#elem#>) {
-   <#return something;#>
-})

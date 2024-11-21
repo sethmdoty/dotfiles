@@ -1,4 +1,0 @@
-#INDENT#
-animate({<#options#>#selstart#}, <#speed#>, <#easing#>, function() {
-    <#stuff to do after animation is complete#>
-#selend#})

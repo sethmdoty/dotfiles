@@ -1,7 +1,0 @@
-#indent#for (var i in <#array#>) {
-
-	var value = <#array#>[i];
-
-	<#code#>
-
-}

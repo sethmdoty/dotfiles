@@ -1,3 +1,0 @@
-<jsp:forward page="#INSERTION#">
-	<jsp:param name="#INSERTION#" value="#INSERTION#"/>
-</jsp:forward>
