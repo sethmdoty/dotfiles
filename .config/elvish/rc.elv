@@ -47,6 +47,7 @@ github.com/zzamboni/elvish-modules     ^
 github.com/zzamboni/elvish-completions ^
 github.com/xiaq/edit.elv               ^
 github.com/muesli/elvish-libs          ^
+github.com/iandol/elvish-modules       ^
 github.com/iwoloschin/elvish-packages
 
 use github.com/zzamboni/elvish-modules/proxy
@@ -69,6 +70,12 @@ use github.com/zzamboni/elvish-modules/1pass
 use github.com/zzamboni/elvish-modules/lazy-vars
 
 use github.com/zzamboni/elvish-modules/alias
+
+use github.com/iandol/elvish-modules/cmds
+
+use github.com/iandol/elvish-modules/python
+
+use github.com/iandol/elvish-modules/mamba
 
 fn have-external { |prog|
   put ?(which $prog >/dev/null 2>&1)

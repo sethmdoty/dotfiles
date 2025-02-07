@@ -25,41 +25,6 @@
 
 (setq spell-fu-ignore-modes '(dired-mode vterm-mode elfeed-search-mode))
 
-;;vertigo cleanup file output
-(after! marginalia
-  (setq marginalia-censor-variables nil)
-
-  (defadvice! +marginalia--anotate-local-file-colorful (cand)
-    "Just a more colourful version of `marginalia--anotate-local-file'."
-    :override #'marginalia--annotate-local-file
-    (when-let (attrs (file-attributes (substitute-in-file-name
-                                       (marginalia--full-candidate cand))
-                                      'integer))
-      (marginalia--fields
-       ((marginalia--file-owner attrs)
-        :width 12 :face 'marginalia-file-owner)
-       ((marginalia--file-modes attrs))
-       ((+marginalia-file-size-colorful (file-attribute-size attrs))
-        :width 7)
-       ((+marginalia--time-colorful (file-attribute-modification-time attrs))
-        :width 12))))
-
-  (defun +marginalia--time-colorful (time)
-    (let* ((seconds (float-time (time-subtract (current-time) time)))
-           (color (doom-blend
-                   (face-attribute 'marginalia-date :foreground nil t)
-                   (face-attribute 'marginalia-documentation :foreground nil t)
-                   (/ 1.0 (log (+ 3 (/ (+ 1 seconds) 345600.0)))))))
-      ;; 1 - log(3 + 1/(days + 1)) % grey
-      (propertize (marginalia--time time) 'face (list :foreground color))))
-
-  (defun +marginalia-file-size-colorful (size)
-    (let* ((size-index (/ (log (+ 1 size)) 7.0))
-           (color (if (< size-index 10000000) ; 10m
-                      (doom-blend 'orange 'green size-index)
-                    (doom-blend 'red 'orange (- size-index 1)))))
-      (propertize (file-size-human-readable size) 'face (list :foreground color)))))
-
 ;; Magit
 (setq magit-repository-directories '(("~/workspace" . 2))
       magit-save-repository-buffers nil
@@ -123,6 +88,10 @@
           ("t" "topic" plain
            ,(format "#+title: ${title}\n%%[%s/template/topic.org]" org-roam-directory)
            :target (file "topics/%<%Y%m%d%H%M%S>-${slug}.org")
+           :unnarrowed t)
+          ("b" "blog" plain
+           ,(format "#+title: ${title}\n%%[%s/template/article.org]" org-roam-directory)
+           :target (file "blog/%<%Y%m%d%H%M%S>-${slug}.org")
            :unnarrowed t)
           ("c" "contact" plain
            ,(format "#+title: ${title}\n%%[%s/template/contact.org]" org-roam-directory)
@@ -256,32 +225,31 @@
                            :order 90)
                           (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
 
-(use-package! tabnine
-  :hook ((prog-mode . tabnine-mode)
-	 (kill-emacs . tabnine-kill-process))
-  :config
-  (add-to-list 'completion-at-point-functions #'tabnine-completion-at-point)
-  (tabnine-start-process)
-  :bind
-  (:map  tabnine-completion-map
-	 ("<tab>" . tabnine-accept-completion)
-	 ("TAB" . tabnine-accept-completion)
-	 ("M-f" . tabnine-accept-completion-by-word)
-	 ("M-<return>" . tabnine-accept-completion-by-line)
-	 ("C-g" . tabnine-clear-overlay)
-	 ("M-[" . tabnine-previous-completion)
-	 ("M-]" . tabnine-next-completion)))
+;; (use-package! tabnine
+;;   :hook ((prog-mode . tabnine-mode)
+;; 	 (kill-emacs . tabnine-kill-process))
+;;   :config
+;;   (add-to-list 'completion-at-point-functions #'tabnine-completion-at-point)
+;;   (tabnine-start-process)
+;;   :bind
+;;   (:map  tabnine-completion-map
+;; 	 ("<tab>" . tabnine-accept-completion)
+;; 	 ("TAB" . tabnine-accept-completion)
+;; 	 ("M-f" . tabnine-accept-completion-by-word)
+;; 	 ("M-<return>" . tabnine-accept-completion-by-line)
+;; 	 ("C-g" . tabnine-clear-overlay)
+;; 	 ("M-[" . tabnine-previous-completion)
+;; 	 ("M-]" . tabnine-next-completion)))
 
-;; in org mode, enable flyspell
 (after! org
-  (add-hook 'org-mode-hook #'flyspell-mode)
+  ;;(add-hook 'org-mode-hook #'flyspell-mode)
   ;; don't create giant images in org mode
   (setq org-image-actual-width 600)
+  (setq org-startup-folded 'show2levels
+        org-ellipsis " [...] ")
   )
 ;; disable the error output, its very verbose
 (setq flyspell-issue-message-flag nil)
-(setq org-startup-folded 'show2levels
-      org-ellipsis " [...] ")
 
 ;; Make Markdown Pretty
 (custom-set-faces!
@@ -313,14 +281,3 @@
       (org-mode)
       (org-id-get-create)
       (save-buffer))))
-
-;; auto update elfeed when opened
-(add-hook 'elfeed-search-mode-hook #'elfeed-update)
-
-(use-package! elfeed
-  :config
-  (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
-  (setq-default elfeed-search-filter "@1-week-ago +unread"))
-
-(use-package! pocket-reader
-  :defer t)
