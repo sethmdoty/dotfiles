@@ -51,3 +51,5 @@
 ;;(package! tabnine)
 (package! org-super-agenda)
 (package! hyperbole)
+;;(package! gptel)
+;;(package! elysium)

@@ -28,6 +28,7 @@
 # key= value
 # key =value
 # key = value
+keybind = global:cmd+grave_accent=toggle_quick_terminal
 #
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a

@@ -269,3 +269,33 @@
 (after! elfeed
   (setq elfeed-search-filter "@1-month-ago +unread"))
 (add-hook 'elfeed-search-mode-hook #'elfeed-update)
+
+;; LLMs
+;; (use-package! gptel
+;;   :custom
+;;   (gptel-model "claude-3-7-sonnet-20250219")
+;;   :config
+;;   (defun gptel-api-key ()
+;;     "Read API key from file and ensure it's clean."
+;;     (string-trim
+;;      (with-temp-buffer
+;;        (insert-file-contents "~/.secrets/claude_key")
+;;        (buffer-string))))
+
+;;   (setq gptel-backend
+;;         (gptel-make-anthropic "Claude"
+;;           :stream t
+;;           :key #'gptel-api-key)))
+
+;; ;; Elysium provides a nicer UI for gptel
+;; (use-package! elysium
+;;   :after gptel
+;;   :custom
+;;   (elysium-window-size 0.33)
+;;   (elysium-window-style 'vertical)
+;;   :config
+;;   ;; Fix for buffer-read-only error
+;;   (advice-add 'elysium :before
+;;               (lambda (&rest _)
+;;                 (when (eq major-mode 'doom-mode)
+;;                   (other-buffer (current-buffer) t)))))
