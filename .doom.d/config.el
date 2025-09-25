@@ -37,10 +37,10 @@
 ;;; Package Hyperbole
 (use-package! hyperbole)
 ;;(setq hyrolo-file-list (append (directory-files "~/org/roam/notes/contacts")))
-(setq hbmap:dir-user "~/org/hyperbole/")
-(setq hyrolo-file-list '("~/org/roam/notes/contacts/contacts.org"))
+(setq hbmap:dir-user "~/Documents/org/hyperbole/hywiki/")
+(setq hyrolo-file-list '("~/Documents/org/roam/notes/contacts/contacts.org"))
 (setq hyrolo-kill-buffers-after-use 1)
-(setq hywiki-directory "~/org/hyperbole/hywiki/")
+(setq hywiki-directory "~/Documents/org/hyperbole/hywiki/")
 
 ;; hyperbole in a python identifier doesn't see Anaconda Mode
 ;; so this advice overrides it's smart-python-tag behavior
@@ -57,13 +57,13 @@
 
 ;;; :lang org
 (setq +org-roam-auto-backlinks-buffer t
-      org-directory "~/org/"
+      org-directory "~/Documents/org/"
       ;;org-roam-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/pages/"
-      org-roam-directory "~/org/roam/notes"
+      org-roam-directory "~/Documents/org/roam/notes"
       org-roam-db-location (concat org-directory ".org-roam.db")
       ;;org-roam-dailies-directory "/Users/sethdoty/Library/Mobile Documents/iCloud~com~logseq~logseq/Documents/Notes/journals/"
-      org-roam-dailies-directory "~/org/roam/journals/"
-      org-agenda-files '("~/org/todo.org" "~/org/projects.org")
+      org-roam-dailies-directory "~/Documents/org/roam/journals/"
+      org-agenda-files '("~/Documents/org/todo.org" "~/Documents/org/projects.org")
       org-archive-location (concat org-directory ".archive/%s::"))
 (org-roam-db-autosync-mode)
 (setq org-log-done 'time
@@ -246,14 +246,14 @@
   '(markdown-header-face-6 :height 1.05 :foreground "#5e81ac" :weight semi-bold :inherit markdown-header-face))
 
 ;; biblio
-(setq! bibtex-completion-bibliography '("~/org/roam/research/references.bib"))
-(setq! bibtex-completion-library-path '("~/org/roam/library")
-       bibtex-completion-notes-path "~/org/roam/notes/research")
-(setq! citar-library-paths '("~/org/roam/library/")
-       citar-notes-paths '("~/org/roam/notes/research"))
-(setq! citar-bibliography '("~/org/roam/research/references.bib"))
-(setq org-noter-notes-search-path '("~/org/roam/notes/research"))
-(setq org-cite-csl-styles-dir "~/org/roam/research/styles")
+(setq! bibtex-completion-bibliography '("~/Documents/org/roam/research/references.bib"))
+(setq! bibtex-completion-library-path '("~/Documents/org/roam/library")
+       bibtex-completion-notes-path "~/Documents/org/roam/notes/research")
+(setq! citar-library-paths '("~/Documents/org/roam/library/")
+       citar-notes-paths '("~/Documents/org/roam/notes/research"))
+(setq! citar-bibliography '("~/Documents/org/roam/research/references.bib"))
+(setq org-noter-notes-search-path '("~/Documents/org/roam/notes/research"))
+(setq org-cite-csl-styles-dir "~/Documents/org/roam/research/styles")
 
 ;;function adding org ids to all files in DIR
 (defun add-org-ids-to-directory (directory)

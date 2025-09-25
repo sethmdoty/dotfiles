@@ -44,5 +44,5 @@ keybind = global:cmd+grave_accent=toggle_quick_terminal
 # resize-overlay-duration = 4s 200ms
 
 font-family = MonoLisa Regular
-theme = DoomOne
-
+theme = Doom One
+shell-integration-features = true

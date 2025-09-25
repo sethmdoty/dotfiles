@@ -157,3 +157,7 @@ compdef _ls ll ll=ls
 autoload -Uz zmv
 
 eval "$(atuin init zsh)"
+
+
+
+. "$HOME/.atuin/bin/env"
