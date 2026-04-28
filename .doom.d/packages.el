@@ -53,3 +53,5 @@
 (package! hyperbole)
 ;;(package! gptel)
 ;;(package! elysium)
+;; https://github.com/stevemolitor/claude-code.el
+(package! claude-code :recipe (:host github :repo "stevemolitor/claude-code.el"))

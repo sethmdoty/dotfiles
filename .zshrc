@@ -158,6 +158,4 @@ autoload -Uz zmv
 
 eval "$(atuin init zsh)"
 
-
-
 . "$HOME/.atuin/bin/env"

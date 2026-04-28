@@ -25,6 +25,10 @@
 
 (setq spell-fu-ignore-modes '(dired-mode vterm-mode elfeed-search-mode))
 
+(setq server-use-tcp 1)
+(server-start)
+(require 'org-protocol)
+
 ;; Magit
 (setq magit-repository-directories '(("~/workspace" . 2))
       magit-save-repository-buffers nil
@@ -299,3 +303,9 @@
 ;;               (lambda (&rest _)
 ;;                 (when (eq major-mode 'doom-mode)
 ;;                   (other-buffer (current-buffer) t)))))
+;;
+(use-package! claude-code
+  :config (claude-code-mode)
+  :hook (claude-code--start . sm-setup-claude-faces)
+  :bind-keymap ("C-c z" . claude-code-command-map))
+(setq claude-code-terminal-backend 'vterm)

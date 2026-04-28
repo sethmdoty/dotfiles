@@ -96,7 +96,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        (lookup +dictionary +offline +docsets)  ; navigate your code and its documentation
-       lsp                 ; M-x vscode
+       (lsp +eglot)                 ; M-x vscode
        magit               ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        (pass +auth)        ; password manager for nerds
@@ -152,7 +152,7 @@
        ;;lua               ; one-based indices? one-based indices
        (markdown +grip)          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
-       ;;nix               ; I hereby declare "nix geht mehr!"
+       nix               ; I hereby declare "nix geht mehr!"
        ;;(ocaml +lsp)             ; an objective camel
        (org +pandoc +dragndrop +roam2 +pretty +noter +present +hugo)    ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
